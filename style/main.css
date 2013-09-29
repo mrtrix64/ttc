@@ -1,0 +1,348 @@
+.red {
+	color: #b80f28;
+}
+.blue {
+	color: #14848e;
+}
+.green {
+	color: #71b506;
+}
+.biege {
+	color: #BEAF7C;
+}
+
+
+#schedule {
+position:absolute;
+left:0px;
+top:30px;
+width:86px;
+height:86px;
+z-index:1;
+}
+
+#speakers {
+position:absolute;
+left:101px;
+top:30px;
+width:86px;
+height:86px;
+z-index:1;
+}
+
+#qanda {
+position:absolute;
+left:203px;
+top:30px;
+width:86px;
+height:86px;
+z-index:1;
+}
+
+
+#map {
+position:absolute;
+left:0px;
+top:131px;
+width:86px;
+height:86px;
+z-index:1;
+}
+
+#sponsors {
+position:absolute;
+left:101px;
+top:131px;
+width:86px;
+height:86px;
+z-index:1;
+}
+
+#contact {
+position:absolute;
+left:203px;
+top:131px;
+width:86px;
+height:86px;
+z-index:1;
+}
+
+
+#twitter {
+position:absolute;
+left:0px;
+top: 232px;
+width:86px;
+height:86px;
+z-index:1;
+}
+
+#linkedin {
+position:absolute;
+left:101px;
+top:232px;
+width:86px;
+height:86px;
+z-index:1;
+}
+
+#appsponsor {
+position:absolute;
+left:203px;
+top:232px;
+width:86px;
+height:86px;
+z-index:1;
+}
+#home {
+background-image: url(../images/bigbg.jpg);
+background-repeat: no-repeat; 
+text-align: center;
+}
+
+#schedulemenu {
+background-image: url(../images/bigbg.jpg);
+background-repeat: no-repeat;
+
+}
+#session_list {
+background-image: url(../images/bigbg.jpg);
+background-repeat: no-repeat;
+
+}
+#app_sponsor {
+text-align: center;
+
+}
+#twitter_page {
+background-image: url(../images/bigbg.jpg);
+background-repeat: no-repeat;
+}
+
+#contact_page, #contact_message_page {
+background-image: url(../images/bigbg.jpg);
+background-repeat: no-repeat;
+text-align: center;
+}
+#qanda_desk {
+background-image: url(../images/bigbglight.jpg);
+background-repeat: no-repeat;
+}
+#abta_detail {
+	text-align: center;
+}
+#day1 {
+background-image: url(../images/bigbg.jpg);
+background-repeat: no-repeat;
+}
+#day2 {
+background-image: url(../images/bigbg.jpg);
+background-repeat: no-repeat;
+}
+#day3 {
+background-image: url(../images/bigbg.jpg);
+background-repeat: no-repeat;
+}
+#day4 {
+background-image: url(../images/bigbg.jpg);
+background-repeat: no-repeat;
+}
+.day1_time {
+font-weight: bold;
+color: #FFF;
+background-color: #489598;
+padding: 10px;
+}
+.day1Title {
+padding: 0px;
+margin-bottom: 0px;
+border: 1px solid #489598;
+color: #489598;
+background-color: #FFF;
+padding: 0px 8px;
+}
+
+.day2_time {
+font-weight: bold;
+color: #FFF;
+background-color: #9A1129;
+padding: 10px;
+}
+.day2Title {
+padding: 0px;
+margin-bottom: 0px;
+border: 1px solid #9A1129;
+color: #9A1129;
+background-color: #FFF;
+padding: 0px 8px;
+}
+.day3_time {
+font-weight: bold;
+color: #FFF;
+background-color: #71B506;
+padding: 10px;
+}
+.day3Title {
+padding: 0px;
+margin-bottom: 0px;
+border: 1px solid #71B506;
+color: #71B506;
+background-color: #FFF;
+padding: 0px 8px;
+}
+.day4_time {
+font-weight: bold;
+color: #FFF;
+background-color: #BEAF7C;
+padding: 10px;
+}
+.day4Title {
+padding: 0px;
+margin-bottom: 0px;
+border: 1px solid #BEAF7C;
+color: #BEAF7C;
+background-color: #FFF;
+padding: 0px 8px;
+}
+.top_detail img {
+	float: left;
+	margin: 0px 15px 0px 0px;
+}
+.top_detail {
+	-moz-box-shadow: 3px 3px 10px #666;
+	-webkit-box-shadow: 3px 3px 10px #666;
+	box-shadow: 3px 3px 10px #666;
+	background-color: #FFF;
+	border: 1px solid #999;
+	font-size: 10px;
+	position: relative;
+	width: 100%;
+	padding: 15px 15px 20px 15px;
+}
+#sponsor_detail {
+	text-align: center;
+}
+#sponsor_detail .top_detail {
+	min-height: 75px;
+	padding-bottom: 15px;
+}
+#sponsor_detail .top_detail img, #app_sponsor .top_detail img, #abta_detail .top_detail img  {
+	float: none;
+	margin: 0px 0px 0px -30px;
+	}
+.top_detail h1 {
+	color: #b80f28;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
+#hotel_detail .top_detail h1 {
+	color: #14848e;
+	font-size: 20px;
+}
+#sponsor_detail .top_detail h1 {
+	color: #71b506;
+	font-size: 20px;
+}
+#speaker_detail .ui-content, #sponsor_detail .ui-content, #hotel_detail .ui-content, #plenary_detail .ui-content, #plenary_speaker_detail .ui-content, #masterclass_detail .ui-content, #masterclass_speaker_detail .ui-content, #discussion_detail .ui-content, #discussion_speaker_detail .ui-content, #forum_detail .ui-content, #forum_speaker_detail .ui-content, #app_sponsor .ui-content, #abta_detail .ui-content  {
+	margin: 0;
+	padding: 0;
+}
+#day1 .ui-content, #day2 .ui-content, #day3 .ui-content {
+	padding: 0px;
+}
+
+.descriptive_text {
+	padding: 15px;
+	text-align: left;
+}
+
+.contactlink a:link, .contactlink a:visited, .contactlink a:hover, .contactlink a:active,
+.weblink a:link, .weblink a:visited, .weblink a:hover, .weblink a:active  {
+	text-decoration: none;
+	display: block;
+	border: 1px solid #999;
+	padding: 10px;
+	background-color: #FFF;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: #666;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+p.weblink {
+	margin: 0px 0px 10px 0px;
+}
+.link_button {
+	margin: 5px auto 0 auto;
+	text-align: left;
+}
+.link_button p {
+	margin: 5px 0px 0px 0px;
+}
+.SpryHiddenRegion {
+visibility: hidden;
+}
+
+#menu_items {
+width: 288px;
+height: 500px;
+position: relative;
+text-align: left;
+margin: 0px auto;
+}
+.ui-header .ui-title {
+	font-size: 22px;
+	margin: .4em 90px .6em;
+}
+#qanda_desk .ui-content {
+	padding: 0 5%;
+}
+#qanda_desk form label {
+	color: #ffffff;
+}
+#jscriptmessage {
+	margin: 15px;
+	border: 1px solid #FFF;
+	padding: 10px;
+}
+.noscriptmsg {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	background-image: url(../images/bigbg.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	margin: 0px;
+	padding-top: 50px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+}
+.sponsor_image {
+	background-image: url(../images/appsponsor.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 90px;
+	width: 100%;
+}
+.sponsor_hompeage {
+	margin-top: 0px;
+	background-image: url(../images/appsponsor.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 90px;
+	width: 100%;
+	position: absolute;
+	top: 320px;
+}
