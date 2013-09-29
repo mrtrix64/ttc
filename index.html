@@ -130,10 +130,9 @@
 -->        <div id="map"><a href="#hotel_list"><img src="images/map.png" width="86" height="86" alt="Map"></a></div>
         <div id="sponsors"><a href="#sponsor_list"><img src="images/sponsors.png" width="86" height="86" alt="Sponsors"></a></div>
         <div id="contact"><a href="#contact_page"><img src="images/contact.png" width="86" height="86" alt="schedule"></a></div>
-        <div id="qanda"><a href="http://twitter.com/thetravelconv" target="_blank"><img src="images/twitter.png" width="86" height="86" alt="Twitter"></a></div>
+        <div id="qanda"><a href="#" onclick="window.open('http://twitter.com/thetravelconv','_blank','location=yes','closebuttoncaption=Return','EnableViewPortScale=yes');"><img src="images/twitter.png" width="86" height="86" alt="Twitter"></a></div>
         <div id="twitter"><a href="#abta_detail"><img src="images/abta.png" width="86" height="86" alt="LinkeIn"></a></div>
-       <div><h1><a href="#" onclick="window.open('http://bit.ly/iphonedevlog','_blank','location=yes','closebuttoncaption=Return');">Click Here</a></h1>
-       </div>
+
        <!-- <div id="appsponsor"><a href="#app_sponsor"><img src="images/app-sponsor.png" width="86" height="86" alt="App Sponsor"></a></div><div class="sponsor_hompeage"></div>-->
       </div>
       
@@ -629,8 +628,13 @@
       </div>
       <div class="descriptive_text"> <!--<img src="http://www.thetravelconvention.com/uploads/{iphone_image}" alt="{hotel_name}" width="291" height="145" border="0">-->
         <p>{description}</p><p>{amenities}</p>
-        <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'" class="weblink" ><a href="{website}" target="_blank">Visit Website</a></p>
-        <p spry:if="'{google_map}' != ''&amp;&amp; '{google_map}' != 'undefined'" class="weblink" ><a href="{google_map}" target="_blank">Click here to view in Google Maps</a></p>
+        
+        
+        
+        <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'" class="weblink" ><a href="#" onclick="window.open('{website}','_blank','location=yes','closebuttoncaption=Return','EnableViewPortScale=yes');">Visit Website</a></p>
+        
+        
+        <p spry:if="'{google_map}' != ''&amp;&amp; '{google_map}' != 'undefined'" class="weblink" ><a href="#" onclick="window.open('{google_map}','_blank','location=yes','closebuttoncaption=Return','EnableViewPortScale=yes');">Click here to view in Google Maps</a></p>
       </div>
       </div>
     </div>
@@ -747,7 +751,9 @@
       <div class="descriptive_text">
         <h3>{exhibitor_name}</h3>
         <p>{description}</p>
-        <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'" class="weblink" ><a href="{website}" target="_blank">Visit Website</a></p>
+        
+        
+        <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'" class="weblink" ><a href="#" onclick="window.open('{website}','_blank','location=yes','closebuttoncaption=Return','EnableViewPortScale=yes');">Visit Website</a></p>
       </div>
       </div>
     </div>
@@ -783,7 +789,8 @@
         <p>Formed in 1950 by 22 leading travel companies, ABTA - The Travel Association - now represents over 5,500 travel agencies and 900 tour operations, throughout the British Isles. Our Members range from small, specialist tour operators and independent travel agencies through to publicly-listed companies and household names; from call centres to internet booking services to high street shops. All of them carry the ABTA logo, which means choice, value, and high levels of service. </p>
         <p>ABTA&rsquo;s main aims are to maintain high standards of trading practice for the benefit of its Members, the travel industry at large, and the consumers that they serve, and to create as favourable a business climate as possible for its Members.</p>                    
         <p class="weblink">
-          <a href="http://www.abta.com/home" target="_blank">Visit Website</a>
+        
+          <a href="#" onclick="window.open('http://www.abta.com/home','_blank','location=yes','closebuttoncaption=Return','EnableViewPortScale=yes');">Visit Website</a>
           </p>
         
       </div>
