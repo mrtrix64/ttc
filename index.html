@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:spry="http://ns.adobe.com/spry">
-<head>
+<html xmlns:spry="http://ns.adobe.com/spry"><head>
 <title>The Travel Convention</title>
-<link href="jquerymobile/jquerymobilemin.css" rel="stylesheet" type="text/css"/>
-	<script src="jquerymobile/jquerymin.js" type="text/javascript"></script>
-	<script src="jquerymobile/jquerymobilemin.js" type="text/javascript"></script>
+<link href="jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
 	<script src="SpryAssets/xpath.js" type="text/javascript"></script>
 	<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
     <script src="webform.js" type="text/javascript"></script>    
@@ -24,114 +23,24 @@
 	-->
 	<!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
 	<script src="phonegap.js"></script>
-    <script type="text/javascript">
-
-
-	// If you want to prevent dragging, uncomment this section
-	/*
-	function preventBehavior(e) 
-	{ 
-      e.preventDefault(); 
-    };
-	document.addEventListener("touchmove", preventBehavior, false);
-	*/
-	
-	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
-	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
-	for more details -jm */
-	/*
-	function handleOpenURL(url)
-	{
-		// TODO: do something with the url passed in.
-	}
-	*/
-	
-	function onBodyLoad()
-	{		
-		document.addEventListener("deviceready", onDeviceReady, false);
-		
-	}
-	
-	/* When this function is called, PhoneGap has been initialized and is ready to roll */
-	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
-	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
-	for more details -jm */
-	function onDeviceReady()
-	{
-		// do your thing!
-		//navigator.notification.alert("PhoneGap is working")
-		
-	}
-    
-    </script>
-    
-    
-     <script type="text/javascript" charset="utf-8">
-
-    // Wait for Cordova to load
-    // 
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-    // Cordova is loaded and it is now safe to make calls Cordova methods
-    //
-    function onDeviceReady() {
-        checkConnection();
-    }
-
-    function checkConnection() {
-        var networkState = navigator.network.connection.type;
-		//alert(networkState);
-
-        var states = {};
-        states[Connection.UNKNOWN]  = 'Uknown connection';
-        states[Connection.ETHERNET] = 'Ethernet connection';
-        states[Connection.WIFI]     = 'WiFi connection';
-        states[Connection.CELL_2G]  = 'Cell 2G connection';
-        states[Connection.CELL_3G]  = 'Cell 3G connection';
-        states[Connection.CELL_4G]  = 'Cell 4G connection';
-        states[Connection.NONE]     = 'No network connection';
-		 //alert('Connection type: ' + states[networkState]);
-		 
-		 if (states[networkState] == 'No network connection') {
-  			alert('It appears you have no network connection. Please switch in your wi-fi or 3G to enable this App');
-			};
-			
-		if (states[networkState] == 'Uknown connection') {
-  			alert('It appears you have no network connection. Please switch in your wi-fi or 3G to enable this App');
-			};	
-       
-    }
-	
-	
-
-    </script>
-
-    
-    
-    
-    
-    
-    
+  
 </head>
   <body onload="onBodyLoad()">
-  
-  
-  
 	<div class="pagecontainer">
 
 <!-- Home -->
   <div data-role="page" id="home" >
     <div data-role="content" id="menupage">	
-      <img src="images/ttclogo.png" width="160" height="104">
+      <img src="site_images/ttclogo.png" width="160" height="104">
       <div id="menu_items">
-        <div id="schedule"><a href="#schedulemenu"><img src="images/schedule.png" width="86" height="86" alt="Schedule"></a></div>
-        <div id="speakers"><a href="#session_list"><img src="images/speakers.png" width="86" height="86" alt="Speakers"></a></div>
+        <div id="schedule"><a href="#schedulemenu"><img src="site_images/schedule.png" width="86" height="86" alt="Schedule"></a></div>
+        <div id="speakers"><a href="#session_list"><img src="site_images/speakers.png" width="86" height="86" alt="Speakers"></a></div>
 <!--        <div id="qanda"><a href="#contact_message_page"><img src="images/qanda.png" width="86" height="86" alt="Q &amp; A Desk"></a></div>
--->        <div id="map"><a href="#hotel_list"><img src="images/map.png" width="86" height="86" alt="Map"></a></div>
-        <div id="sponsors"><a href="#sponsor_list"><img src="images/sponsors.png" width="86" height="86" alt="Sponsors"></a></div>
-        <div id="contact"><a href="#contact_page"><img src="images/contact.png" width="86" height="86" alt="schedule"></a></div>
-        <div id="qanda"><a href="#" onclick="window.open('http://twitter.com/thetravelconv','_blank','location=yes','closebuttoncaption=Return','EnableViewPortScale=yes');"><img src="images/twitter.png" width="86" height="86" alt="Twitter"></a></div>
-        <div id="twitter"><a href="#abta_detail"><img src="images/abta.png" width="86" height="86" alt="LinkeIn"></a></div>
+-->        <div id="map"><a href="#hotel_list"><img src="site_images/map.png" width="86" height="86" alt="Map"></a></div>
+        <div id="sponsors"><a href="#sponsor_list"><img src="site_images/sponsors.png" width="86" height="86" alt="Sponsors"></a></div>
+        <div id="contact"><a href="#contact_page"><img src="site_images/contact.png" width="86" height="86" alt="schedule"></a></div>
+        <div id="qanda"><a href="#" onclick="window.open('http://twitter.com/thetravelconv','_blank','location=yes','closebuttoncaption=Return','EnableViewPortScale=yes');"><img src="site_images/twitter.png" width="86" height="86" alt="Twitter"></a></div>
+        <div id="twitter"><a href="#abta_detail"><img src="site_images/abta.png" width="86" height="86" alt="LinkeIn"></a></div>
 
        <!-- <div id="appsponsor"><a href="#app_sponsor"><img src="images/app-sponsor.png" width="86" height="86" alt="App Sponsor"></a></div><div class="sponsor_hompeage"></div>-->
       </div>
@@ -141,15 +50,15 @@
     
   <!--SCHEDULE MENU-->
   <div data-role="page" id="schedulemenu" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
-      <a href="#home" data-icon="home" >Home</a>
+     <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
+    <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left">Home</a>
       <h1>Schedule</h1>
       </div>
     <div data-role="content">	
       <ul data-role="listview" data-inset="true">
-        <li><a href="#day1">Sunday 20 October 2013</a></li>
-        <li><a href="#day2">Monday 21 October 2013</a></li>
-        <li><a href="#day3">Tuesday 22 October 2013</a></li>
+        <li><a href="#day1">Sunday 21 September 2014</a></li>
+        <li><a href="#day2">Monday 21 September 2014</a></li>
+        <li><a href="#day3">Tuesday 21 September 2014</a></li>
         <!--<li><a href="#day4">Friday 12 October 2012</a></li>-->
       </ul>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
@@ -159,9 +68,10 @@
   
   <!--Session list-->
   <div data-role="page" id="session_list" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
-      <a href="#home" data-icon="home" >Home</a>
-      <h1>Sessions</h1>
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
+    <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left">Home</a>
+       <!--<a href="#home" data-icon="home" >Home</a>-->
+     <h1>Sessions</h1>
       </div>
     <div data-role="content">	
       <ul data-role="listview" data-inset="true">
@@ -176,10 +86,10 @@
   
   <!-- START OF PLENARY BLOCK -->
   <div data-role="page" id="plenary_list" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Plenary Sessions</h1>
-      <a href="#session_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+      <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
     </div>
     
 
@@ -201,11 +111,11 @@
   
   <!-- Plenary Detail-->
   <div data-role="page" id="plenary_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Plenary Sessions</h1>
-      <a href="#plenary_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
-      </div>
+      <a href="#plenary_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
+       </div>
     <div spry:detailregion="dsPlenary" data-role="content" class="SpryHiddenRegion">
       <div class="top_detail" >
         <h1>{cms_heading}</h1>
@@ -221,10 +131,10 @@
   
   <!-- Plenary Speaker Detail -->
   <div data-role="page" id="plenary_speaker_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Speakers</h1>
-      <a href="#plenary_detail" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+      <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
       </div>
     <div spry:detailregion="dsPlenary" data-role="content" class="SpryHiddenRegion">
       <div spry:choose="spry:choose">
@@ -249,10 +159,10 @@
   
   <!-- START OF SPECIALIST SESSIONS BLOCK -->
   <div data-role="page" id="specialist_list" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Specialist Sessions</h1>
-      <a href="#session_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+          <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
     </div>
     <div spry:region="dsSpecialist" data-role="content" class="SpryHiddenRegion">
             <ul data-role="listview">
@@ -271,10 +181,10 @@
   
   <!-- Specialist Sessions Detail-->
  <div data-role="page" id="specialist_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Specialist Sessions</h1>
-      <a href="#masterclass_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+      <a href="#masterclass_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
       </div>
     <div spry:detailregion="dsSpecialist" data-role="content" class="SpryHiddenRegion">
       <div class="top_detail" >
@@ -290,10 +200,10 @@
   
   <!-- Specialist Speaker Detail -->
   <div data-role="page" id="specialist_session_speaker_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Speakers</h1>
-      <a href="#specialist_detail" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+       <a href="#specialist_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
       </div>
     <div spry:detailregion="dsSpecialist" data-role="content" class="SpryHiddenRegion">
       <div spry:choose="spry:choose">
@@ -318,10 +228,10 @@
   
   <!-- START OF Marketing & Innovation Forum BLOCK -->
   <div data-role="page" id="forum_list" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Marketing &amp; Innovation Forum</h1>
-      <a href="#session_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+          <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
     </div>
     <div spry:region="dsForum" data-role="content" class="SpryHiddenRegion">
       <ul data-role="listview">
@@ -340,10 +250,11 @@
   
   <!-- Forum Detail-->
   <div data-role="page" id="forum_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Marketing &amp; Innovation Forum</h1>
-      <a href="#forum_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+        <a href="#forum_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
+
       </div>
     <div spry:detailregion="dsForum" data-role="content" class="SpryHiddenRegion">
       <div class="top_detail" >
@@ -359,10 +270,10 @@
   
   <!-- Forum Speaker Detail -->
   <div data-role="page" id="forum_speaker_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Speakers</h1>
-      <a href="#forum_detail" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+       <a href="#forum_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
       </div>
     <div spry:detailregion="dsForum" data-role="content" class="SpryHiddenRegion">
       <div spry:choose="spry:choose">
@@ -385,79 +296,13 @@
     </div>
     </div>
   
-  <!-- START OF DISCUSSION BLOCK 
-  <div data-role="page" id="discussion_list" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
-      <h1>Discussion Groups</h1>
-      <a href="#session_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
-    </div>
-    <div spry:region="dsDiscussion" data-role="content" class="SpryHiddenRegion">
-      <ul data-role="listview">
-        <li data-role="list-divider">Day One (Monday 3 October)</li>
-        <li spry:repeat="dsDiscussion" spry:test="'{date_time}'.match(/^[M]/i);" spry:setrow="dsDiscussion" > <a href="#discussion_detail">{time} -  {cms_heading}</a>
-        <li data-role="list-divider">Day Two (Tuesday 4 October)</li>
-        <li spry:repeat="dsDiscussion" spry:test="'{date_time}'.match(/^[T]/i);" spry:setrow="dsDiscussion" > <a href="#discussion_detail">{time} -  {cms_heading}</a>
-        <li data-role="list-divider">Day Three (Wednesday 5 October)</li>
-        <li spry:repeat="dsDiscussion" spry:test="'{date_time}'.match(/^[W]/i);" spry:setrow="dsDiscussion" > <a href="#discussion_detail">{time} -  {cms_heading}</a>
-      </ul>
-      <p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p></div>
-    
-    </div>-->
-  
-  <!-- Discussion Detail
-  <div data-role="page" id="discussion_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
-      <h1>Discussion Groups</h1>
-      <a href="#discussion_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
-      </div>
-    <div spry:detailregion="dsDiscussion" data-role="content" class="SpryHiddenRegion">
-      <div class="top_detail" >
-        <h1>{cms_heading}</h1>
-        <h3>{date_time} - {time}</h3>
-        </div>  
-      <div class="descriptive_text">
-        <p class="weblink"><a href="#discussion_speaker_detail">Speaker - {spkr_heading}</a></p>
-        <p>{cms_content}</p>
-        </div>
-    </div>
-    </div>-->
-  
-  <!-- Discussion Speaker Detail
-  <div data-role="page" id="discussion_speaker_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
-      <h1>Speakers</h1>
-      <a href="#discussion_detail" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
-      </div>
-    <div spry:detailregion="dsDiscussion" data-role="content" class="SpryHiddenRegion">
-      <div spry:choose="spry:choose">
-        <div spry:when="'{spkr_image1}' != '' &amp;&amp; '{spkr_image1}' != 'undefined'" class="top_detail">
-          <img src="mugshots/{spkr_image1}" alt="{spkr_heading}" width="75" height="95" border="0">
-          <h1>{spkr_heading}</h1>
-          <h2>{cms_heading}</h2>
-          <h3>{time} - {date_time}</h3>  
-        </div>  
-        <div spry:default="spry:default" class="top_detail">
-          <img src="mugshots/head.png" alt="{spkr_heading}" width="75" height="95" border="0">
-          <h1>{spkr_heading}</h1>
-          <h2>{cms_heading}</h2>
-          <h3>{time} - {date_time}</h3>  
-        </div>
-      </div>
-      <div class="descriptive_text">
-        <p>{spkr_content}</p>
-        </div>
-    </div>
-    </div> -->
-  
   <!--DAY 1-->
   <div data-role="page" id="day1" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Sun 20th</h1>
-      <a href="#schedulemenu" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+      
+         <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
     </div>
     <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
       <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[2]/i);">
@@ -468,13 +313,13 @@
     
     </div>
   
-  
   <!--DAY 2-->
   <div data-role="page" id="day2" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Mon 21st</h1>
-      <a href="#schedulemenu" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+         <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
+
     </div>
     <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
       <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[3]/i);">
@@ -485,13 +330,13 @@
     
     </div>
   
-  
   <!--DAY 3-->
   <div data-role="page" id="day3" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Tues 22nd</h1>
-      <a href="#schedulemenu" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+         <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
+
     </div>
     <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
       <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[4]/i);">
@@ -501,30 +346,12 @@
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
     
     </div>
-    
-   <!--DAY 4
-  <div data-role="page" id="day4" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
-      <h1>Fri 12th</h1>
-      <a href="#schedulemenu" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
-    </div>
-    <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
-      <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[5]/i);">
-        <div class="day4_time">Fri 12th at {start_time} - {end_time}</div>
-        <div class="day4Title">{title}</div>
-      </div>
-      <p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p></div>
-    
-    </div>   -->
-  
-  
+      
   <!-- Contact page -->
   <div data-role="page" id="contact_page" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Contact</h1>
-      <a href="#home" data-icon="home" >Home</a>
-      
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left">Home</a>      
       </div>
     <div data-role="content">
       <div class="link_button">
@@ -559,10 +386,9 @@
   
   <!-- Contact & Message page -->
   <div data-role="page" id="contact_message_page" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Contact</h1>
-      <a href="#home" data-icon="home" >Home</a>
-      
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left">Home</a>      
       </div>
     <div data-role="content">
       <div class="link_button">
@@ -578,10 +404,9 @@
   
   <!-- Q & A Desk -->
   <div data-role="page" id="qanda_desk" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Q & A Desk</h1>
-      <a href="#home" data-icon="home" >Home</a>
-      </div>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left">Home</a>      </div>
     <div data-role="content">
       <h3>Submit a comment or question:</h3>
       
@@ -605,10 +430,9 @@
   
   <!-- Hotels -->
   <div data-role="page" id="hotel_list" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Places</h1>
-      <a href="#home" data-icon="home" >Home</a>
-      </div>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left">Home</a>      </div>
     <div data-role="content" spry:region="dsHotels">
       
       <ul data-role="listview">
@@ -623,10 +447,11 @@
   
   <!--Hotel Detail-->
   <div data-role="page" id="hotel_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Places</h1>
-      <a href="#hotel_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+         <a href="#hotel_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
+
       </div>
     <div spry:detailregion="dsHotels" data-role="content" class="SpryHiddenRegion">
       <div class="top_detail">
@@ -647,10 +472,9 @@
   
   <!--Sponsor pages-->
   <div data-role="page" id="sponsor_list" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Sponsors</h1>
-      <a href="#home" data-icon="home" >Home</a>
-      </div>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left">Home</a>      </div>
     <div spry:region="dsSponsors" data-role="content" class="SpryHiddenRegion">
       <ul data-role="listview">
         <li data-role="list-divider">A</li>
@@ -737,10 +561,10 @@
   
   <!--Sponsor Detail-->
   <div data-role="page" id="sponsor_detail" >
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>Sponsors</h1>
-      <a href="#sponsor_list" data-icon="back" >back</a>
-      <a href="#home" data-icon="home" >Home</a>
+         <a href="#sponsor_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left">back</a>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-right">Home</a>
       </div>
     
     <div spry:detailregion="dsSponsors" data-role="content" class="SpryHiddenRegion">
@@ -766,10 +590,9 @@
   
   <!--APP SPONSOR-->
   <div data-role="page" id="app_sponsor">
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>App Sponsor</h1>
-      <a href="#home" data-icon="home" >Home</a>
-    </div>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left">Home</a>    </div>
     <div data-role="content">
       <div class="top_detail"><!--<img src="images/app-sponsor.jpg" alt="Premier World Choice" width="290" height="84">--></div>
       <div class="descriptive_text">
@@ -782,13 +605,11 @@
     </div>
     </div>
   
-  
   <!--ABTA PAGE-->
   <div data-role="page" id="abta_detail">
-    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="f">
+    <div data-role="header" data-position="fixed" tapToggle="false" transition='none' data-theme="b">
       <h1>ABTA</h1>
-      <a href="#home" data-icon="home" >Home</a>
-    </div>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left">Home</a>    </div>
     <div data-role="content">
       <div class="top_detail"><img src="abta.gif" alt="ABTA" width="145" height="78"></div>
       <div class="descriptive_text">

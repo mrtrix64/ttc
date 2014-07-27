@@ -91,18 +91,18 @@ height:86px;
 z-index:1;
 }
 #home {
-background-image: url(../images/bigbg.jpg);
+background-image: url(../site_images/bigbg.jpg);
 background-repeat: no-repeat; 
 text-align: center;
 }
 
 #schedulemenu {
-background-image: url(../images/bigbg.jpg);
+background-image: url(../site_images/bigbg.jpg);
 background-repeat: no-repeat;
 
 }
 #session_list {
-background-image: url(../images/bigbg.jpg);
+background-image: url(../site_images/bigbg.jpg);
 background-repeat: no-repeat;
 
 }
@@ -111,36 +111,36 @@ text-align: center;
 
 }
 #twitter_page {
-background-image: url(../images/bigbg.jpg);
+background-image: url(../site_images/bigbg.jpg);
 background-repeat: no-repeat;
 }
 
 #contact_page, #contact_message_page {
-background-image: url(../images/bigbg.jpg);
+background-image: url(../site_images/bigbg.jpg);
 background-repeat: no-repeat;
 text-align: center;
 }
 #qanda_desk {
-background-image: url(../images/bigbglight.jpg);
+background-image: url(../site_images/bigbglight.jpg);
 background-repeat: no-repeat;
 }
 #abta_detail {
 	text-align: center;
 }
 #day1 {
-background-image: url(../images/bigbg.jpg);
+background-image: url(../site_images/bigbg.jpg);
 background-repeat: no-repeat;
 }
 #day2 {
-background-image: url(../images/bigbg.jpg);
+background-image: url(../site_images/bigbg.jpg);
 background-repeat: no-repeat;
 }
 #day3 {
-background-image: url(../images/bigbg.jpg);
+background-image: url(../site_images/bigbg.jpg);
 background-repeat: no-repeat;
 }
 #day4 {
-background-image: url(../images/bigbg.jpg);
+background-image: url(../site_images/bigbg.jpg);
 background-repeat: no-repeat;
 }
 .day1_time {
@@ -289,8 +289,8 @@ text-align: left;
 margin: 0px auto;
 }
 .ui-header .ui-title {
-	font-size: 22px;
-	margin: .4em 90px .6em;
+	/*font-size: 22px;
+	margin: .4em 90px .6em;*/
 }
 #qanda_desk .ui-content {
 	padding: 0 5%;
@@ -306,7 +306,7 @@ margin: 0px auto;
 .noscriptmsg {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #FFF;
-	background-image: url(../images/bigbg.jpg);
+	background-image: url(../site_images/bigbg.jpg);
 	background-repeat: no-repeat;
 	text-align: center;
 	vertical-align: middle;
@@ -336,7 +336,7 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 }
 .sponsor_hompeage {
 	margin-top: 0px;
-	background-image: url(../images/appsponsor.jpg);
+	background-image: url(../site_images/appsponsor.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	margin-top: 10px;
