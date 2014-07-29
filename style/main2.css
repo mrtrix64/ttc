@@ -356,3 +356,12 @@ body, html {
   .landscape, .landscape .ui-page {
 	  min-height: 100%;
   }
+  
+ #delegates {
+	display: none;
+}
+#blocked {
+	display: none;
+}
+#theform {
+} 

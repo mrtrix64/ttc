@@ -27,3 +27,5 @@ dsForum.setColumnType("spkr_content", "html");
 var dsDates = new Spry.Data.XMLDataSet("http://e-update.co.uk/ttc_ios/data/dates.php?view_xml=1?view_xml=1", "recordset/record", {sortOnLoad: "schedule_title_id", sortOrderOnLoad: "ascending"});
 dsDates.setColumnType("schedule_title_id", "number");
 dsDates.setColumnType("schedule_date", "date");
+
+var delegates = new Spry.Data.XMLDataSet("http://e-update.co.uk/ttc_ios/data/delegates.php?view_xml=1", "recordset/record");
