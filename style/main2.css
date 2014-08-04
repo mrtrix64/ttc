@@ -17,6 +17,10 @@ body, html {
 #home, #schedulemenu, #session_list, #app_sponsor, #twitter_page, #contact_page,
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4 {
 	background: url(../site_images/iphone5_background.png) no-repeat left top;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #home, #app_sponsor, #contact_page, #contact_message_page, #abta_detail, #sponsor_detail {
 	text-align:center;
@@ -170,8 +174,8 @@ margin: 0 auto;
 #menu_items table {
 	margin-top: 20px;
 }
-#app_sponsor_logo {
-	  position:absolute;
+#app_sponsor_logo, #app_sponsor_logo img{
+	  position:fixed;
 	  width:100%;
 	  height:auto;
 	  bottom: 0px;
@@ -251,3 +255,11 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	display: none;
 }
 
+@media only screen and (min-width: 768px) { 
+#home, #schedulemenu, #session_list, #app_sponsor, #twitter_page, #contact_page,
+#contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4
+{
+  background-color: red;
+  background-image:none;
+}
+}
