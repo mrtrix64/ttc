@@ -174,11 +174,14 @@ margin: 0 auto;
 #menu_items table {
 	margin-top: 20px;
 }
-#app_sponsor_logo, #app_sponsor_logo img{
-	  position:fixed;
+#app_sponsor_logo {
+	  position:absolute;
 	  width:100%;
 	  height:auto;
 	  bottom: 0px;
+}
+#app_sponsor_logo img {
+	display: block;
 }
 #home, #schedulemenu, #session_list, #contact_page {
 	position: relative;
