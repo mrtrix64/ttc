@@ -16,14 +16,23 @@
 <link href="SpryAssets/SpryStackedContainers.css" rel="stylesheet" type="text/css">
 <link href="style/main2.css" rel="stylesheet" type="text/css">
 <link href="style/customtheme.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+function testInApp(theurl) {
+	var ref = window.open('http://www.google.com', '_blank', 'location=yes');
+	//ref.close();
+	
+	}
 
+
+
+</script>
 </head>
 <body>
 <div class="pagecontainer"> 
   
   <!-- Homer Simpson is a yellow bastard with ugly children-->
   <div data-role="page" id="home" >
-    <div data-role="content" id="menupage"> <img src="site_images/ttclogo.png" width="160" height="104">
+    <div data-role="content" id="menupage"> <a href="#"><img src="site_images/ttclogo.png" width="160" height="104" onClick="testInApp()"></a>
       <div id="menu_items">
       <table width="100%" cellspacing="0" cellpadding="0">
   <tr>
