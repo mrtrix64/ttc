@@ -43,13 +43,16 @@ The Travel Convention is the UK's largest and most significant annual event for 
 	<gap:splash src="768x1280_splash_windows.jpg" gap:platform="winphone" />
 	
 	<preference name="show-splash-screen-spinner" value="true" />
-	<preference name="stay-in-webview" value="false" />
+<!--	<preference name="stay-in-webview" value="false" />-->
 	<preference name="orientation" value="portrait" />
-	<access origin="*" />
+	
 	<!--<gap:plugin name="org.tt.inappbrowser" version="4" />-->
-	<!--<gap:plugin name="org.tt.inappbrowser" version="6" />-->
     <!--<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />-->
+	<!--<gap:plugin name="org.tt.inappbrowser" version="6" />-->
+	
 	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
 	
 	<!--<preference name="phonegap-version" value="2.9.0" />-->
+	
+	<access origin="*" />
 </widget>
