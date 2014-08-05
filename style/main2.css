@@ -12,6 +12,12 @@
 .green {
 	color: #71b506;
 }
+ul {
+	margin: 10px;
+	padding: 10px;
+}
+
+	
 #home, #schedulemenu, #session_list,  #twitter_page, #contact_page,
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4 {
 	background: url(../site_images/iphone5_background.png) no-repeat left top;
