@@ -14,7 +14,7 @@ body, html {
 .green {
 	color: #71b506;
 }
-#home, #schedulemenu, #session_list, #app_sponsor, #twitter_page, #contact_page,
+#home, #schedulemenu, #session_list,  #twitter_page, #contact_page,
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4 {
 	background: url(../site_images/iphone5_background.png) no-repeat left top;
 	-webkit-background-size: cover;
@@ -172,7 +172,7 @@ text-align: center;
 	display:block;
 }
 #menu_items table {
-	margin-top: 20px;
+	margin-top: 30px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -273,16 +273,28 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 }
 
 @media only screen and (min-width: 768px) { 
-#home, #schedulemenu, #session_list, #app_sponsor, #twitter_page, #contact_page,
+#home, #schedulemenu, #session_list, #twitter_page, #contact_page,
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4
 {
   background: url(../site_images/ipad_background.png) no-repeat left top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 #menu_items table {
-	width: 90% !important;
+	margin-top: 0px;
+	width:50%
+}
+#menu_items table img {
 }
 #menu_items table td {
-	padding: 15px;
+	padding: 10px;
+	width: auto;
+}
+#logo_container {
+	width: 30%;
+	margin: 0 auto;
 }
 }
 
