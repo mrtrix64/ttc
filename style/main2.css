@@ -175,6 +175,7 @@ text-align: center;
 	margin-top: 30px;
 	width: 100%;
 	margin: 0 auto;
+	margin-top: 30px;
 }
 #menu_items table td {
 	padding: 2px;
@@ -283,8 +284,8 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
    background-size: cover;
 }
 #menu_items table {
-	margin-top: 0px;
-	width:50%
+	margin-top: 50px;
+	width:70%
 }
 #menu_items table img {
 }
