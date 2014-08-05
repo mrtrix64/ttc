@@ -16,7 +16,9 @@ ul {
 	margin: 10px;
 	padding: 10px;
 }
-
+#sponsor_detail .descriptive_text h3 {
+	margin: 0px 0px 10px 0px;
+}
 	
 #home, #schedulemenu, #session_list,  #twitter_page, #contact_page,
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4 {
