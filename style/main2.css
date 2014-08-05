@@ -287,11 +287,8 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	margin-top: 70px;
 	width:70%
 }
-#menu_items table img {
-}
 #menu_items table td {
 	padding: 10px;
-	width: auto;
 }
 #logo_container {
 	width: 30%;
