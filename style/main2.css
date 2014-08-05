@@ -172,7 +172,7 @@ text-align: center;
 	display:block;
 }
 #menu_items table {
-	margin-top: 30px;
+	margin-top: 20px;
 	width: 100%;
 	margin: 0 auto;
 	margin-top: 30px;
@@ -284,7 +284,7 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
    background-size: cover;
 }
 #menu_items table {
-	margin-top: 50px;
+	margin-top: 70px;
 	width:70%
 }
 #menu_items table img {
