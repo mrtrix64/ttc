@@ -263,15 +263,6 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	display: none;
 }
 
-#logo_container {
-	width: 50%;
-	margin: 0 auto;
-}
-#logo_container img {
-	width: 100%;
-	height: auto;
-}
-
 @media only screen and (min-width: 768px) { 
 #home, #schedulemenu, #session_list, #app_sponsor, #twitter_page, #contact_page,
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4
