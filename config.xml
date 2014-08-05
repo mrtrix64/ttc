@@ -31,6 +31,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 	<gap:splash src="launch640x1136.png" width="640" height="1136" />
 	<gap:splash src="launch768x1004.png" width="768" height="1004" />
 	<gap:splash src="launch748x1024.png" width="748" height="1024" />-->
+	<gap:splash src="splash.png" />
 	<gap:splash src="320x480_splash_ios.png" gap:platform="ios" width="320" height="480" />
 	<gap:splash src="640x960_splash_ios.png" gap:platform="ios" width="640" height="960" />
 	<gap:splash src="640x1136_splash_ios.png" gap:platform="ios" width="640" height="1136" />

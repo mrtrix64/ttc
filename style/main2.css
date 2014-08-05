@@ -2,9 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-body, html {
-	height: 100%;
-}
+
 .red {
 	color: #b80f28;
 }
@@ -295,4 +293,6 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	margin: 0 auto;
 }
 }
-
+body, html {
+	height: 100%;
+}
