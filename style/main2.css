@@ -164,15 +164,20 @@ visibility: hidden;
 #menu_items {
 width: 100%;
 height: 100%;
-text-align: left;
-margin: 0 auto;
+text-align: center;
 }
 #menu_items img {
 	width: 100%;
 	height: auto;
+	display:block;
 }
 #menu_items table {
 	margin-top: 20px;
+	width: 100%;
+	margin: 0 auto;
+}
+#menu_items table td {
+	padding: 2px;
 }
 #app_sponsor_logo {
 	  position:absolute;
@@ -262,7 +267,13 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 #home, #schedulemenu, #session_list, #app_sponsor, #twitter_page, #contact_page,
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4
 {
-  background-color: red;
-  background-image:none;
+  background: url(../site_images/ipad_background.png) no-repeat left top;
+}
+#menu_items table {
+	width: 90% !important;
+}
+#menu_items table td {
+	padding: 15px;
 }
 }
+
