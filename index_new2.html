@@ -13,11 +13,17 @@
 <script type="text/javascript" src="externalConn.js"></script>
 
 <script type="text/javascript" src="delegates.js"></script>
-<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 <link href="SpryAssets/SpryStackedContainers.css" rel="stylesheet" type="text/css">
 <link href="style/main2.css" rel="stylesheet" type="text/css">
 <link href="style/customtheme.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+function testInApp(theurl) {
+	var ref = window.open('http://www.google.com', '_system', 'location=no', 'closebuttoncaption=Done');
+	}
 
+
+
+</script>
 </head>
 <body>
 <div class="pagecontainer"> 
@@ -25,7 +31,7 @@
   <!-- Homer Simpson is a yellow bastard with ugly children-->
   <div data-role="page" id="home" >
     <div data-role="content" id="menupage">
-      <div id="logo_container"><img src="site_images/ttc_logo_large.png" width="100%" /></div>
+      <div id="logo_container"><a href="http://www.google.co.uk" target="_blank"><img src="site_images/ttc_logo_large.png" width="100%" /></a></div>
 <div id="menu_items">
 <table width="100%" cellpadding="0" cellspacing="0">
   <tr>
@@ -36,7 +42,7 @@
   <tr>
     <td><a href="#hotel_list"><img src="site_images/iphone5_menu_4_places.png" alt="Places"></a></td>
     <td><a href="#sponsor_list"><img src="site_images/iphone5_menu_5_sponsors.png" alt="Sponsors"></a></td>
-    <td><a href="http://twitter.com/thetravelconv" onclick="window.open('http://twitter.com/thetravelconv','_blank','location=yes');"><img src="site_images/iphone5_menu_6_twitter.png"  alt="Twitter"></a></td>
+    <td><a href="http://twitter.com/thetravelconv" onclick="window.open('http://twitter.com/thetravelconv','_blank','location=yes', 'closebuttoncaption=Return','EnableViewPortScale=yes');"><img src="site_images/iphone5_menu_6_twitter.png"  alt="Twitter"></a></td>
     </tr>
   <tr>
     <td><a href="#abta_detail"><img src="site_images/iphone5_menu_7_abta.png" alt="Abta"></a></td>
