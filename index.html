@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:spry="http://ns.adobe.com/spry"><head>
 <title>The Travel Convention</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-mobile/jquery.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
@@ -351,9 +352,10 @@
         <input type="text" id="search_input">
         <input type="submit" value="Search" onClick="saveSettings();">
       </div>-->
-      <form>
+      <form id="search_area">
         <input data-type="search" id="divOfPs-input">
       </form>
+      
       <div class="elements" data-filter="true" data-input="#divOfPs-input">
         <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
         <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>

@@ -278,6 +278,18 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	height: auto;
 }
 
+form#search_area {
+	position: fixed;
+	width:95%;
+	margin-top: -10px;
+}
+form#search_area input {
+	height: 30px;
+}
+div.elements {
+	padding-top: 50px;
+}
+
 @media only screen and (min-width: 768px) { 
 #home, #schedulemenu, #session_list, #twitter_page, #contact_page,
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4
@@ -300,6 +312,8 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	margin: 0 auto;
 }
 }
+
+
 body, html {
 	height: 100%;
 }
