@@ -316,7 +316,7 @@ div.elements {
 div.clear {
 	clear: both;
 }
-body {
+div[data-role=content] {
 	font-size: 1.5em;
 }
 }
