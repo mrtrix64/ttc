@@ -130,6 +130,9 @@ padding: 0px 8px;
 	margin: 0;
 	padding: 0;
 }
+#plenary_speaker_detail .top_detail {
+	min-height: 95px;
+}
 #day1 .ui-content, #day2 .ui-content, #day3 .ui-content, #day4 .ui-content {
 	padding: 0px;
 }
