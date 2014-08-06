@@ -280,14 +280,13 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 
 form#search_area {
 	position: fixed;
-	width:95%;
-	margin-top: -10px;
+	width:90%;
 }
 form#search_area input {
 	height: 30px;
 }
 div.elements {
-	padding-top: 50px;
+	padding-top: 4em;
 }
 
 @media only screen and (min-width: 768px) { 
@@ -310,6 +309,12 @@ div.elements {
 #logo_container {
 	width: 30%;
 	margin: 0 auto;
+}
+div.clear {
+	clear: both;
+}
+body {
+	font-size: 1.5em;
 }
 }
 
