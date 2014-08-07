@@ -58,7 +58,7 @@ $(document).bind("mobileinit", function(){
   
   <!--SCHEDULE MENU-->
   <div data-role="page" id="schedulemenu" >
-    <div data-role="header" data-position="fixed" data-theme="a"> <a href="#home" data-role="button" data-icon="home">Home</a>
+    <div data-role="header" data-position="fixed" data-theme="b"> <a href="#home" data-role="button" data-icon="home">Home</a>
       <h1>Schedule</h1>
     </div>
     <div data-role="content">
@@ -97,7 +97,7 @@ $(document).bind("mobileinit", function(){
       <h1>Plenary Sessions</h1>
       <a href="#session_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsPlenary" data-role="content" class="SpryHiddenRegion">
-      <ul data-role="listview" data-divider-theme="d">
+      <ul data-role="listview">
         <li data-role="list-divider">Day One (Sunday 20 October)</li>
         <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>
         <li data-role="list-divider">Day Two (Monday 21 October)</li>
@@ -159,7 +159,7 @@ $(document).bind("mobileinit", function(){
       <h1>Specialist Sessions</h1>
       <a href="#session_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsSpecialist" data-role="content" class="SpryHiddenRegion">
-      <ul data-role="listview" data-divider-theme="d">
+      <ul data-role="listview">
         <li data-role="list-divider">Day One (Sunday 20 October)</li>
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a>
         <li data-role="list-divider">Day Two (Monday 21 October)</li>
@@ -219,7 +219,7 @@ $(document).bind("mobileinit", function(){
       <h1>Marketing &amp; Innovation Forum</h1>
       <a href="#session_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsForum" data-role="content" class="SpryHiddenRegion">
-      <ul data-role="listview" data-divider-theme="d">
+      <ul data-role="listview">
         <li data-role="list-divider">Day One (Sunday 20 October)</li>
         <li spry:repeat="dsForum" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsForum" > <a href="#forum_detail">{time} - {cms_heading}</a>
         <li data-role="list-divider">Day Two (Monday 21 October)</li>
@@ -518,7 +518,7 @@ $(document).bind("mobileinit", function(){
       <h1>Places</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div data-role="content" spry:region="dsHotels">
-      <ul data-role="listview" data-divider-theme="d">
+      <ul data-role="listview">
         <li data-role="list-divider">Hotels</li>
         <li spry:repeat="dsHotels" spry:test="'{type}'.match(/^[H]/i);" spry:setrow="dsHotels" ><a href="#hotel_detail">{hotel_name}</a></li>
         <li data-role="list-divider">Venues</li>
@@ -552,7 +552,7 @@ $(document).bind("mobileinit", function(){
       <h1>Sponsors</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsSponsors" data-role="content" class="SpryHiddenRegion">
-      <ul data-role="listview" data-divider-theme="d">
+      <ul data-role="listview">
         <li data-role="list-divider">A</li>
         <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[A]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
         <li data-role="list-divider">B</li>
