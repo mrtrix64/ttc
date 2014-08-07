@@ -25,11 +25,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 	<icon src="icon72x72.png" width="72" height="72" />
 	<icon src="icon114x114.png" width="114" height="114" />
 
-  	<!--<gap:splash src="launch320x480.png" />
-  	<gap:splash src="launch320x480.png" width="320" height="480" />
-	<gap:splash src="launch640x960.png" width="640" height="960" />
-	<gap:splash src="launch640x1136.png" width="640" height="1136" />
-	<gap:splash src="launch768x1004.png" width="768" height="1004" />
+  
 	<gap:splash src="launch748x1024.png" width="748" height="1024" />-->
 	<gap:splash src="Default.png" gap:platform="ios" width="320" height="480" />
 	<gap:splash src="Default-@2x.png" gap:platform="ios" width="640" height="960" />
@@ -46,10 +42,13 @@ The Travel Convention is the UK's largest and most significant annual event for 
 
 	<preference name="orientation" value="portrait" />
 	
+	<preference name="DisallowOverscroll" value="true" />
+	
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	
 	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
 	
-	<!--<preference name="phonegap-version" value="2.9.0" />-->
+	
 	
 	<access origin="*" />
 </widget>
