@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-mobile/jquery.min.js" type="text/javascript"></script>
+<script>
+$(document).bind("mobileinit", function(){
+    $.mobile.defaultPageTransition = 'slide';
+ });
+</script>
 <script src="jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
 <script src="SpryAssets/xpath.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryData.js" type="text/javascript"></script>
@@ -30,13 +35,13 @@
 <div id="menu_items">
 <table width="100%" cellpadding="0" cellspacing="0">
   <tr>
-    <td><a href="#schedulemenu" data-transition="pop"><img src="site_images/iphone5_menu_1_schedule.png" ></a></td>
-    <td><a href="#session_list" data-transition="slide"><img src="site_images/iphone5_menu_2_sessions.png" alt="Sessions"></a></td>
-    <td><a href="#delegate_page" data-transition="slideup"><img src="site_images/iphone5_menu_3_delegates.png" alt="Delegates"></a></td>
+    <td><a href="#schedulemenu" ><img src="site_images/iphone5_menu_1_schedule.png" ></a></td>
+    <td><a href="#session_list"><img src="site_images/iphone5_menu_2_sessions.png" alt="Sessions"></a></td>
+    <td><a href="#delegate_page"><img src="site_images/iphone5_menu_3_delegates.png" alt="Delegates"></a></td>
     </tr>
   <tr>
-    <td><a href="#hotel_list" data-transition="slidedown"><img src="site_images/iphone5_menu_4_places.png" alt="Places"></a></td>
-    <td><a href="#sponsor_list" data-transition="fade"><img src="site_images/iphone5_menu_5_sponsors.png" alt="Sponsors"></a></td>
+    <td><a href="#hotel_list"><img src="site_images/iphone5_menu_4_places.png" alt="Places"></a></td>
+    <td><a href="#sponsor_list"><img src="site_images/iphone5_menu_5_sponsors.png" alt="Sponsors"></a></td>
     <td><a href="#" onclick="window.open('http://twitter.com/thetravelconv','_blank','location=yes', 'enableViewPortScale=yes');"><img src="site_images/iphone5_menu_6_twitter.png"  alt="Twitter"></a></td>
     </tr>
   <tr>
