@@ -286,7 +286,7 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	margin-top: 20px;
 }
 
-a[data-icon=home], a[data-icon=back] {
+a[data-icon=home], a[data-icon=back],  a.ui-btn {
 	-webkit-border-radius:1em !important;
 	-moz-border-radius:1em !important;
 	border-radius:1em !important;

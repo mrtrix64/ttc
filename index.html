@@ -122,8 +122,7 @@ $(document).bind("mobileinit", function(){
         <h1>{cms_heading}</h1>
         <h3>{friendly_date} - {time}</h3>
       </div>
-      <div class="descriptive_text">
-        <p class="weblink"><a href="#plenary_speaker_detail">Speaker - {spkr_heading}</a></p>
+      <div class="descriptive_text"> <a href="#plenary_speaker_detail" data-role="button">Speaker - {spkr_heading}</a>
         <p>{cms_content}</p>
       </div>
     </div>
@@ -183,8 +182,7 @@ $(document).bind("mobileinit", function(){
         <h1>{cms_heading}</h1>
         <h3>{friendly_date} - {time}</h3>
       </div>
-      <div class="descriptive_text">
-        <p class="weblink"><a href="#specialist_session_speaker_detail">Speaker - {spkr_heading}</a></p>
+      <div class="descriptive_text"> <a href="#specialist_session_speaker_detail" data-role="button">Speaker - {spkr_heading}</a>
         <p>{cms_content}</p>
       </div>
     </div>
@@ -243,8 +241,7 @@ $(document).bind("mobileinit", function(){
         <h1>{cms_heading}</h1>
         <h3>{friendly_date} - {time}</h3>
       </div>
-      <div class="descriptive_text">
-        <p class="weblink"><a href="#forum_speaker_detail">Speaker - {spkr_heading}</a></p>
+      <div class="descriptive_text"> <a href="#forum_speaker_detail" data-role="button">Speaker - {spkr_heading}</a>
         <p>{cms_content}</p>
       </div>
     </div>
@@ -356,9 +353,11 @@ $(document).bind("mobileinit", function(){
       
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div data-role="content">
-    <form id="search_area">
-        <input data-type="search" id="divOfPs-input">
-      </form>
+      <div id="search_area">
+        <form>
+          <input data-type="search" id="divOfPs-input">
+        </form>
+      </div>
       <!--<div id="theform">
         <input type="text" id="search_input">
         <input type="submit" value="Search" onClick="saveSettings();">
@@ -437,7 +436,9 @@ $(document).bind("mobileinit", function(){
         <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
         <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
         <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>
+        <p><strong>Colin Miller Li</strong></p>
+        <div class="search_area">Content for  class "search_area" Goes Here</div>
+        <p><strong>mited</strong> - Anne Emanuel</p>
         <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
         <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
         <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
@@ -541,8 +542,8 @@ $(document).bind("mobileinit", function(){
       <div class="descriptive_text"> <!--<img src="http://www.thetravelconvention.com/uploads/{iphone_image}" alt="{hotel_name}" width="291" height="145" border="0">-->
         <p>{description}</p>
         <p>{amenities}</p>
-        <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'" class="weblink" ><a href="#" onclick="window.open('{website}','_blank','location=yes','enableViewPortScale=yes');">Visit Website</a></p>
-        <p spry:if="'{google_map}' != ''&amp;&amp; '{google_map}' != 'undefined'" class="weblink" ><a href="#" onclick="window.open('{google_map}','_blank','location=yes','EnableViewPortScale=yes');">Click here to view in Google Maps</a></p>
+<a href="#" onclick="window.open('{website}','_blank','location=yes','enableViewPortScale=yes');" data-role="button">Visit Website</a>
+        <p spry:if="'{google_map}' != ''&amp;&amp; '{google_map}' != 'undefined'"><a href="#" onclick="window.open('{google_map}','_blank','location=yes','EnableViewPortScale=yes');" data-role="button">Click here to view in Google Maps</a></p>
       </div>
     </div>
   </div>
@@ -628,7 +629,7 @@ $(document).bind("mobileinit", function(){
       <div class="descriptive_text">
         <h3>{exhibitor_name}</h3>
         <p>{description}</p>
-        <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'" class="weblink" ><a href="#" onclick="window.open('{website}','_blank','location=yes','enableViewPortScale=yes');">Visit Website</a></p>
+        <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'"><a href="#" onclick="window.open('{website}','_blank','location=yes','enableViewPortScale=yes');" role="button">Visit Website</a></p>
       </div>
     </div>
   </div>
@@ -644,8 +645,7 @@ $(document).bind("mobileinit", function(){
         <p>Welcome to Premier Worldchoice. We have been booking unmistakable value holidays to Northern Cyprus for over 18 years and are experts in the field. We are now offering travel agents access to some of the premier accommodations that we feature as well as extending our range of destinations.</p>
         <p>Click on the link below to find out more and to leave your contact details in order that we can get back in touch with you with our exclusive offers and favourable commission rates.</p>
         <p>Experience, Reliability, Commitment</p>
-        <p class="weblink"><a href="#"  target="_blank"  onclick="window.open('http://www.premierworldchoice.com','_blank','location=yes','enableViewPortScale=yes');">Visit Website</a></p>
-      </div>
+<a href="#"  target="_blank"  onclick="window.open('http://www.premierworldchoice.com','_blank','location=yes','enableViewPortScale=yes');" data-role="button">Visit Website</a>      </div>
     </div>
   </div>
   
@@ -660,8 +660,7 @@ $(document).bind("mobileinit", function(){
         <p>ABTA is the UK’s leading travel association; we have been at the heart of travel for over 60 years. Our purpose is to help our Members to grow their businesses successfully and sustainably, and to help their customers – the travelling public – have confidence in their travel experience.</p>
         <p>The ABTA brand stands for expertise, reliability and fairness, and our level of brand recognition and trust among consumers is the highest of any travel trade association.</p>
         <p>It is estimated that over £31.5bn is spent on holiday arrangements with ABTA Members every year. We believe this is because booking with an ABTA Member gives you peace of mind because they are committed to following a strict code of conduct, which means you’ll receive a high standard of service, fair terms of trading and accurate information. In fact, our research shows that seven out of ten people see ABTA membership as essential when booking their travel arrangements. </p>
-        <p class="weblink"> <a href="#" onclick="window.open('http://www.abta.com/home','_blank','location=yes','enableViewPortScale=yes');">Visit Website</a> </p>
-      </div>
+<a href="#" onclick="window.open('http://www.abta.com/home','_blank','location=yes','enableViewPortScale=yes');" data-role="button">Visit Website</a>      </div>
     </div>
   </div>
 </div>
