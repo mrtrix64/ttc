@@ -186,7 +186,7 @@ text-align: center;
 #menu_items table {
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 #menu_items table td {
 	padding: 2px;
@@ -307,7 +307,7 @@ div.elements {
    background-size: cover;
 }
 #menu_items table {
-	margin-top: 70px;
+	margin-top: 80px;
 	width:70%
 }
 #menu_items table td {
