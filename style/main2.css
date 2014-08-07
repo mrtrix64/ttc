@@ -285,14 +285,11 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	margin-top: 20px;
 }
 
-/*form#search_area, form#search_area div.ui-input-search {
-	background-color: #fff !important;
-	border: none !important;
-	color: #000 !important;
+a[data-icon=home], a[data-icon=back] {
+	-webkit-border-radius:1em !important;
+	-moz-border-radius:1em !important;
+	border-radius:1em !important;
 }
-#delegate_page div[data-role="header"] {
-	border-bottom: none !important;
-}*/
 
 @media only screen and (min-width: 768px) { 
 #home, #schedulemenu, #session_list, #twitter_page, #contact_page,
