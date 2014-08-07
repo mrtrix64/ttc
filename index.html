@@ -62,7 +62,7 @@ $(document).bind("mobileinit", function(){
   
   <!--SCHEDULE MENU-->
   <div data-role="page" id="schedulemenu" >
-    <div data-role="header" data-position="fixed" data-theme="b"> <a href="#home" data-role="button" data-icon="home">Home</a>
+    <div data-role="header" data-position="fixed"> <a href="#home" data-role="button" data-icon="home">Home</a>
       <h1>Schedule</h1>
     </div>
     <div data-role="content">
@@ -79,7 +79,7 @@ $(document).bind("mobileinit", function(){
   
   <!--Session list-->
   <div data-role="page" id="session_list" >
-    <div data-role="header" data-position="fixed"  data-theme="b"> <a href="#home" data-role="button" data-icon="home">Home</a> 
+    <div data-role="header" data-position="fixed"> <a href="#home" data-role="button" data-icon="home">Home</a> 
       <!--<a href="#home" data-icon="home" >Home</a>-->
       <h1>Sessions</h1>
     </div>
@@ -97,7 +97,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- START OF PLENARY BLOCK -->
   <div data-role="page" id="plenary_list" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Plenary Sessions</h1>
       <a href="#session_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsPlenary" data-role="content" class="SpryHiddenRegion">
@@ -117,7 +117,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Plenary Detail-->
   <div data-role="page" id="plenary_detail" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header">
       <h1>Plenary Sessions</h1>
       <a href="#plenary_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:detailregion="dsPlenary" data-role="content" class="SpryHiddenRegion">
@@ -134,7 +134,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Plenary Speaker Detail -->
   <div data-role="page" id="plenary_speaker_detail" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Speakers</h1>
       <a href="#plenary_detail" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:detailregion="dsPlenary" data-role="content" class="SpryHiddenRegion">
@@ -159,7 +159,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- START OF SPECIALIST SESSIONS BLOCK -->
   <div data-role="page" id="specialist_list" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Specialist Sessions</h1>
       <a href="#session_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsSpecialist" data-role="content" class="SpryHiddenRegion">
@@ -178,7 +178,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Specialist Sessions Detail-->
   <div data-role="page" id="specialist_detail" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Specialist Sessions</h1>
       <a href="#masterclass_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:detailregion="dsSpecialist" data-role="content" class="SpryHiddenRegion">
@@ -195,7 +195,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Specialist Speaker Detail -->
   <div data-role="page" id="specialist_session_speaker_detail" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Speakers</h1>
       <a href="#specialist_detail" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:detailregion="dsSpecialist" data-role="content" class="SpryHiddenRegion">
@@ -219,7 +219,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- START OF Marketing & Innovation Forum BLOCK -->
   <div data-role="page" id="forum_list" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed" >
       <h1>Marketing &amp; Innovation Forum</h1>
       <a href="#session_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsForum" data-role="content" class="SpryHiddenRegion">
@@ -238,7 +238,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Forum Detail-->
   <div data-role="page" id="forum_detail" >
-    <div data-role="header" data-position="fixed"  data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Marketing &amp; Innovation Forum</h1>
       <a href="#forum_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:detailregion="dsForum" data-role="content" class="SpryHiddenRegion">
@@ -255,7 +255,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Forum Speaker Detail -->
   <div data-role="page" id="forum_speaker_detail" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Speakers</h1>
       <a href="#forum_detail" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:detailregion="dsForum" data-role="content" class="SpryHiddenRegion">
@@ -279,7 +279,7 @@ $(document).bind("mobileinit", function(){
   
   <!--DAY 1-->
   <div data-role="page" id="day1" >
-    <div data-role="header" data-position="fixed" data-theme="c">
+    <div data-role="header" data-position="fixed">
       <h1>Sun 21st</h1>
       <a href="#schedulemenu" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
@@ -292,7 +292,7 @@ $(document).bind("mobileinit", function(){
   
   <!--DAY 2-->
   <div data-role="page" id="day2" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Mon 22nd</h1>
       <a href="#schedulemenu" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
@@ -305,7 +305,7 @@ $(document).bind("mobileinit", function(){
   
   <!--DAY 3-->
   <div data-role="page" id="day3" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Tues 23rd</h1>
       <a href="#schedulemenu" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
@@ -318,7 +318,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Contact page -->
   <div data-role="page" id="contact_page" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Contact</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div data-role="content">
@@ -354,7 +354,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- NEW DELEGATES page -->
   <div data-role="page" id="delegate_page" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Delegates</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div data-role="content">
@@ -471,7 +471,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Contact & Message page -->
   <div data-role="page" id="contact_message_page" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Contact</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div data-role="content">
@@ -492,7 +492,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Q & A Desk -->
   <div data-role="page" id="qanda_desk" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Q & A Desk</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div data-role="content">
@@ -518,7 +518,7 @@ $(document).bind("mobileinit", function(){
   
   <!-- Hotels -->
   <div data-role="page" id="hotel_list" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Places</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div data-role="content" spry:region="dsHotels">
@@ -533,7 +533,7 @@ $(document).bind("mobileinit", function(){
   
   <!--Hotel Detail-->
   <div data-role="page" id="hotel_detail" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Places</h1>
       <a href="#hotel_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:detailregion="dsHotels" data-role="content" class="SpryHiddenRegion">
@@ -552,7 +552,7 @@ $(document).bind("mobileinit", function(){
   
   <!--Sponsor pages-->
   <div data-role="page" id="sponsor_list" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Sponsors</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:region="dsSponsors" data-role="content" class="SpryHiddenRegion">
@@ -615,7 +615,7 @@ $(document).bind("mobileinit", function(){
   
   <!--Sponsor Detail-->
   <div data-role="page" id="sponsor_detail" >
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>Sponsors</h1>
       <a href="#sponsor_list" data-role="button" data-icon="back">back</a> <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div spry:detailregion="dsSponsors" data-role="content" class="SpryHiddenRegion">
@@ -638,7 +638,7 @@ $(document).bind("mobileinit", function(){
   
   <!--APP SPONSOR-->
   <div data-role="page" id="app_sponsor">
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>App Sponsor</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div data-role="content">
@@ -654,7 +654,7 @@ $(document).bind("mobileinit", function(){
   
   <!--ABTA PAGE-->
   <div data-role="page" id="abta_detail">
-    <div data-role="header" data-position="fixed" data-theme="b">
+    <div data-role="header" data-position="fixed">
       <h1>ABTA</h1>
       <a href="#home" data-role="button" data-icon="home">Home</a> </div>
     <div data-role="content">
