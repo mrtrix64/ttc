@@ -186,7 +186,7 @@ text-align: center;
 #menu_items table {
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 #menu_items table td {
 	padding: 2px;
@@ -277,11 +277,12 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 
 #logo_container {
 	width: 50%;
-	margin: 0 auto;
+	margin: 0px auto;
 }
 #logo_container img {
 	width: 100%;
 	height: auto;
+	margin-top: 20px;
 }
 
 form#search_area {
@@ -306,7 +307,7 @@ div.elements {
    background-size: cover;
 }
 #menu_items table {
-	margin-top: 90px;
+	margin-top: 70px;
 	width:70%
 }
 #menu_items table td {
