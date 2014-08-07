@@ -285,16 +285,14 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	margin-top: 20px;
 }
 
-form#search_area {
-	position: fixed;
-	width:90%;
+/*form#search_area, form#search_area div.ui-input-search {
+	background-color: #fff !important;
+	border: none !important;
+	color: #000 !important;
 }
-form#search_area input {
-	height: 30px;
-}
-div.elements {
-	padding-top: 4em;
-}
+#delegate_page div[data-role="header"] {
+	border-bottom: none !important;
+}*/
 
 @media only screen and (min-width: 768px) { 
 #home, #schedulemenu, #session_list, #twitter_page, #contact_page,
