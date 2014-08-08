@@ -286,7 +286,16 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	margin-top: 20px;
 }
 
-
+/*a[data-icon=home], a[data-icon=back]  a.ui-btn {
+	-webkit-border-radius:1em !important;
+	-moz-border-radius:1em !important;
+	border-radius:1em !important;
+}
+a.ui-btn {
+	-webkit-border-radius:0.8em !important;
+	-moz-border-radius:0.8em !important;
+	border-radius:0.8em !important;
+}*/
 #search_area {
 	position: fixed;
 	background-color: #f9f9f9;
