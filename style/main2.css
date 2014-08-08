@@ -286,12 +286,11 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	margin-top: 20px;
 }
 
-div[data-role=header] .ui-corner-all {
+.ui-corner-all {
 	-webkit-border-radius:1em !important;
 	-moz-border-radius:1em !important;
 	border-radius:1em !important;
 }
-
 #search_area {
 	position: fixed;
 	background-color: #f9f9f9;
