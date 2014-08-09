@@ -85,12 +85,12 @@ function check_credentials (delegate) {
 $.ajax({
      type:"GET",
      //url: "data.php?view_xml=1",
-	 //url: "http://localhost/ttc_data/data/delegates.php?view_xml=1",
 	 url: "http://e-update.co.uk/ttc_ios/data/delegates.php?view_xml=1",
+	 
      dataType: "xml",
      success: function(xml){
 		//Get form input
-		var searchFor = delegate;ƒ
+		var searchFor = delegate;
 		 	
           // Filter the input out of the bunch
           myXML = $(xml).find("record").filter(function() {
