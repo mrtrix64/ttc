@@ -16,7 +16,7 @@ $(document).ready(function() {
 	
 	//first of retrieve stored delegate email, if any and store as variable 'check_storage' then call the function 'check_credentials.
 var check_storage = localStorage.getItem("ttcemail");
-alert ("Stored email is "+check_storage);
+alert ("START UP - Stored email is "+check_storage);
 
 check_credentials (check_storage);
 	
@@ -76,9 +76,10 @@ function saveSettings() {
 	
 	
 function check_credentials (delegate) {
+	alert("Checking email credentials");
 	if (delegate === "undefined") {
 	//Show the input screen
-	//alert ("Stored email is empty");
+	alert ("Stored email is empty");
 
 } else {
 $.ajax({
@@ -101,12 +102,13 @@ $.ajax({
             	}).get().join(' ');
             
 			if(display != "") {
-			//alert("Result is "+display);	
+			alert("Result is "+display);	
 				$("#theform").hide();
 				$("#message").hide();
 				$("#delegate_listview").show();	
 				$("#search_area").show();
 			} else {
+				alert("Result is DONT "+display);
 					$("#message").show();
 					$("#delegate_listview").hide();
 					$("#search_area").hide();
