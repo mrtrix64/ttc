@@ -5,17 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
 
-<script src="jquery-mobile/jquery.min.js" type="text/javascript"></script><script>
-$(document).bind("mobileinit", function(){
-    $.mobile.defaultPageTransition = 'slide'
- });
-</script>
+<script src="jquery-mobile/jquery.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
 <script src="SpryAssets/xpath.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryData.js" type="text/javascript"></script>
 <script src="webform.js" type="text/javascript"></script>
-<!--<script type="text/javascript" src="localConn.js"></script>
--->
+<script type="text/javascript" src="scripts/myScripts.js"></script>
+
+<script>
+
+/*var dsSponsors = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/sponsors.php?view_xml=1?view_xml=1", "recordset/record", {sortOrderOnLoad: "ascending"});
+dsSponsors.setColumnType("description", "html");
+dsSponsors.setColumnType("aims", "html");
+dsSponsors.setColumnType("website", "html");
+	var dsSchedule = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/schedule.php?view_xml=1", "recordset/record", {sortOnLoad: "sort_order", sortOrderOnLoad: "ascending"});
+dsSchedule.setColumnType("title", "html");
+dsSchedule.setColumnType("sort_order", "number");
+	var dsHotels = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/hotels.php?view_xml=1", "recordset/record", {sortOnLoad: "hotel_name", sortOrderOnLoad: "ascending"});
+dsHotels.setColumnType("hotel_name", "html");
+dsHotels.setColumnType("google_map", "html");
+dsHotels.setColumnType("description", "html");
+dsHotels.setColumnType("amenities", "html");
+dsHotels.setColumnType("website", "html");
+var dsSpecialist = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/specialist.php?view_xml=1", "recordset/record");
+dsSpecialist.setColumnType("cms_content", "html");
+dsSpecialist.setColumnType("sort_order", "number");
+dsSpecialist.setColumnType("spkr_content", "html");
+var dsPlenary = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/plenary.php?view_xml=1", "recordset/record");
+dsPlenary.setColumnType("cms_content", "html");
+dsPlenary.setColumnType("sort_order", "number");
+dsPlenary.setColumnType("spkr_content", "html");
+var dsForum = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/marketing.php?view_xml=1", "recordset/record");
+dsForum.setColumnType("cms_content", "html");
+dsForum.setColumnType("sort_order", "number");
+dsForum.setColumnType("spkr_content", "html");
+var dsDates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/dates.php?view_xml=1?view_xml=1", "recordset/record", {sortOnLoad: "schedule_title_id", sortOrderOnLoad: "ascending"});
+dsDates.setColumnType("schedule_title_id", "number");
+dsDates.setColumnType("schedule_date", "date");
+
+var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegates.php?view_xml=1", "recordset/record");
+*/
+
+</script>
+
 <script type="text/javascript" src="externalConn.js"></script>
 
 <script type="text/javascript" src="delegates.js"></script>
@@ -345,123 +377,81 @@ $(document).bind("mobileinit", function(){
     </div>
   </div>
   
-  <!-- NEW DELEGATES page -->
-  <div data-role="page" id="delegate_page" >
+  
+  
+  
+
+      
+       <!-- NEW DELEGATES page -->
+<div data-role="page" id="delegate_page" >
+<div data-role="header" data-position="fixed" data-theme="b">
+<h1>Delegates</h1>
+<a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+<div data-role="content">
+<div id="search_area">
+<form>
+<input data-type="search" id="divOfPs-input">
+</form>
+</div>
+
+
+
+
+
+
+<div id="delegate_listview" spry:region="delegates" class="elements" data-filter="true" data-input="#divOfPs-input">
+<p class="delegatelist" spry:repeat="delegates" spry:setrow="delegates"> <a href="#delegate_detail"><strong>{Organization}</strong> - {First_Name} {Last_Name}</a></p>
+
+
+</div>
+
+<div id="theform">
+<p>To view the delegate list, please enter the email address that you have used to register with The Travel Convention.</p>
+  
+  <p>Email Address:
+  <input type='text' id='txtEmail'/>
+    <input type='submit' id='btnValidate' Value='Validate Email' />
+  </p>
+</div>
+
+<div id="message">
+  <h1></h1>
+</div>
+</div>
+</div>
+      
+      
+      
+      
+      
+      
+      
+  
+  
+  <!-- NEW DELEGATES DETAIL page -->
+  <div data-role="page" id="delegate_detail" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Delegates</h1>
       
-      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+      <a href="#delegate_page" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
     <div data-role="content">
-      <div id="search_area">
-        <form>
-          <input data-type="search" id="divOfPs-input">
-        </form>
-      </div>
-      <!--<div id="theform">
-        <input type="text" id="search_input">
-        <input type="submit" value="Search" onClick="saveSettings();">
-      </div>-->
-      <div class="elements" data-filter="true" data-input="#divOfPs-input">
-        <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>
-        <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
-        <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
-        <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
-        <p><strong>Jamie Oliver</strong> - Seventy quid tip</p>
-        <p><strong>Ockendon Ltd</strong> - Thieving Cunts</p>
-        <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
-        <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
-        <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>
-        <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
-        <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
-        <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
-        <p><strong>Jamie Oliver</strong> - Seventy quid tip</p>
-        <p><strong>Ockendon Ltd</strong> - Thieving Cunts</p>
-        <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
-        <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
-        <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>
-        <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
-        <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
-        <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
-        <p><strong>Jamie Oliver</strong> - Seventy quid tip</p>
-        <p><strong>Ockendon Ltd</strong> - Thieving Cunts</p>
-        <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
-        <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
-        <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>
-        <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
-        <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
-        <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
-        <p><strong>Jamie Oliver</strong> - Seventy quid tip</p>
-        <p><strong>Ockendon Ltd</strong> - Thieving Cunts</p>
-        <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
-        <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
-        <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>
-        <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
-        <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
-        <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
-        <p><strong>Jamie Oliver</strong> - Seventy quid tip</p>
-        <p><strong>Ockendon Ltd</strong> - Thieving Cunts</p>
-        <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
-        <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
-        <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>
-        <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
-        <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
-        <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
-        <p><strong>Jamie Oliver</strong> - Seventy quid tip</p>
-        <p><strong>Ockendon Ltd</strong> - Thieving Cunts</p>
-        <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
-        <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
-        <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>
-        <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
-        <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
-        <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
-        <p><strong>Jamie Oliver</strong> - Seventy quid tip</p>
-        <p><strong>Ockendon Ltd</strong> - Thieving Cunts</p>
-        <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
-        <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
-        <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Limited</strong> - Anne Emanuel</p>
-        <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
-        <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
-        <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
-        <p><strong>Jamie Oliver</strong> - Seventy quid tip</p>
-        <p><strong>Ockendon Ltd</strong> - Thieving Cunts</p>
-        <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
-        <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
-        <p><strong>Colin Miller Limited</strong> - Colin Miller</p>
-        <p><strong>Colin Miller Li</strong></p>
-        <p><strong>mited</strong> - Anne Emanuel</p>
-        <p><strong>Dellar Davies</strong> - Tracy Phillips</p>
-        <p><strong>Dellar Davies</strong> - Sinbad The Sailor</p>
-        <p><strong>Italian Chicken</strong> - Cluckio Cluckio</p>
-        <p><strong>Jamie Oliver</strong> - Seventy quid tip</p>
-        <p><strong>Ockendon Ltd</strong> - Thieving Cunts</p>
-        <p><strong>Starbuckshhh</strong> - Shome bloke beginning with M</p>
-        <p><strong>Clueless Tree Surgeons</strong> - Old Wood</p><p><strong>Heinz</strong>Mr Baked Bean</p>
+      <div id="delegate details">
+      <div spry:detailregion="delegates">
+      <h3>{First_Name} {Last_Name}</h3>
+      <p>Organisation: {Organization}
+        <br>
+        Position: {Position}
         
-        <!--<div id="delegates">
-  <div spry:region="delegates" class="StackedContainers">
-    <div spry:repeat="delegates" class="RowContainer">
-      <div class="RowColumn">{First_Name} {Last_Name}</div>
-      <div class="RowColumn">{Organization}</div>
-      <div class="RowColumn">{Position}</div>
-      <div class="RowColumn">{Email_Address}</div>
-      <div class="RowColumn">{alt_email}</div>
-    </div>
-  </div>
-</div>
--->
-        
-        <div id="blocked">
-          <h1>Sorry your email wasn't recognised</h1>
-        </div>
+      </p>
+        <br>
+        <br>
+
+      <p><a href="mailto:{Email_Address}?cc={alt_email}&subject=I am attending TTC 2015" class="ui-btn ui-mini ui-icon-mail ui-btn-icon-right">Send {First_Name} an email </a></p>
       </div>
+
+      </div>
+    
+      
     </div>
   </div>
   
