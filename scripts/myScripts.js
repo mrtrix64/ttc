@@ -111,7 +111,7 @@ $.ajax({
 					$("#message").show();
 					$("#delegate_listview").hide();
 					$("#search_area").hide();
-					$('#message h1').text(delegate+" isn't registered");
+					$('#message h1').text("You have entered "+delegate+" - This email address is not registered with us. Please enter the email address used when registering with TTC.");
 			}
         } 
   });	
