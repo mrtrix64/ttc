@@ -378,3 +378,8 @@ body, html {
 }
 #theform {
 }
+#message h1 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+}

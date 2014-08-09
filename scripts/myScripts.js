@@ -16,7 +16,7 @@ $(document).ready(function() {
 	
 	//first of retrieve stored delegate email, if any and store as variable 'check_storage' then call the function 'check_credentials.
 var check_storage = localStorage.getItem("ttcemail");
-//alert ("Stored email is "+check_storage);
+alert ("Stored email is "+check_storage);
 
 check_credentials (check_storage);
 	
@@ -29,29 +29,29 @@ check_credentials (check_storage);
         var sEmail = $('#txtEmail').val();
         if ($.trim(sEmail).length == 0) {
 			$('#message h1').text('Please enter a valid email address');
-            //alert('Please enter valid email address');
+            alert('Please enter valid email address');
 			localStorage.removeItem("ttcemail");
 			var check_storage = localStorage.getItem("ttcemail");
 			$("#message").show();
 			$("#delegate_listview").hide();
 			$("#search_area").hide();
-			//alert ("Stored email is "+check_storage);
+			alert ("Stored email is "+check_storage);
             //e.preventDefault();
 			
         }
         if (validateEmail(sEmail)) {
-            //alert('Email is valid');
+            alert('Email is valid');
 			saveSettings();
         }
         else {
-            //alert('Invalid Email Address');
+            alert('Invalid Email Address');
 			$('#message h1').text('Please enter a valid email address');
 			localStorage.removeItem("ttcemail");
 			var check_storage = localStorage.getItem("ttcemail");
 			$("#message").show();
 			$("#delegate_listview").hide();
 			$("#search_area").hide();
-			//alert ("Stored email is "+check_storage);
+			alert ("Stored email is "+check_storage);
             //e.preventDefault();
 			
 
@@ -67,7 +67,7 @@ function saveSettings() {
 	
 	//retrieve the storage, just to be sure!
 	var check_storage = localStorage.getItem("ttcemail");
-	//alert ("The NEW storage is "+check_storage);
+	alert ("The NEW storage is "+check_storage);
 	
 	//Now run a check on it and display as appropriate
 	check_credentials (check_storage);
@@ -78,7 +78,7 @@ function saveSettings() {
 function check_credentials (delegate) {
 	if (delegate === "undefined") {
 	//Show the input screen
-	////alert ("Stored email is empty");
+	//alert ("Stored email is empty");
 
 } else {
 $.ajax({
@@ -101,7 +101,7 @@ $.ajax({
             	}).get().join(' ');
             
 			if(display != "") {
-			////alert("Result is "+display);	
+			//alert("Result is "+display);	
 				$("#theform").hide();
 				$("#message").hide();
 				$("#delegate_listview").show();	
