@@ -111,6 +111,7 @@ $.ajax({
 					$("#message").show();
 					$("#delegate_listview").hide();
 					$("#search_area").hide();
+					$('#message h1').text(delegate+" isn't registered");
 			}
         } 
   });	
