@@ -104,7 +104,7 @@ $.ajax({
             
 			if(display != "") {
 			alert("Result is "+display);	
-				$("#theform").hide();
+				//$("#theform").hide();
 				$("#message").hide();
 				$("#delegate_listview").show();	
 				$("#search_area").show();
