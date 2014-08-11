@@ -19,10 +19,6 @@ ul {
 p, h1, h2, h3 {
 	margin-bottom: 10px;
 }
-a:link, a:visited, a:hover, a:active {
-	color: #900;
-	text-decoration: none;
-}
 #sponsor_detail .descriptive_text h3 {
 	margin: 0px 0px 10px 0px;
 }
@@ -354,24 +350,9 @@ body, html {
 	border-bottom-style: solid;
 	border-bottom-color: #CCC;
 }
-.delegatelist a:link {
+.delegatelist a:link, .delegatelist a:visited, .delegatelist a:hover, .delegatelist a:active {
 	text-decoration: none;
 	font-weight: normal;
-}
-.delegatelist a:visited {
-	text-decoration: none;
-		font-weight: normal;
-
-}
-.delegatelist a:hover {
-	text-decoration: none;
-		font-weight: normal;
-
-}
-.delegatelist a:active {
-	text-decoration: none;
-		font-weight: normal;
-
 }
 
 #delegate_listview {
