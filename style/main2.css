@@ -34,7 +34,14 @@ p, h1, h2, h3 {
 #home, #app_sponsor, #contact_page, #contact_message_page, #abta_detail, #sponsor_detail {
 	text-align:center;
 }
-
+#twitter_feed .top_detail {
+	text-align:center;
+	min-height:120px;
+}
+#twitter_feed .top_detail img {
+	float:none;
+}
+	
 .day1_time {
 font-weight: bold;
 color: #FFF;
