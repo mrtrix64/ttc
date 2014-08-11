@@ -6,6 +6,12 @@
 <link href="jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
 
 <script src="jquery-mobile/jquery.min.js" type="text/javascript"></script>
+<script>
+//Page transition
+$(document).bind("mobileinit", function(){
+    $.mobile.defaultPageTransition = 'slide'
+ });
+</script>
 <script src="jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
 <script src="SpryAssets/xpath.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryData.js" type="text/javascript"></script>

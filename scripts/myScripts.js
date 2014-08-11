@@ -126,7 +126,3 @@ $.ajax({
 
 
 
-//Page transition
-$(document).bind("mobileinit", function(){
-    $.mobile.defaultPageTransition = 'slide'
- });
