@@ -19,6 +19,10 @@ ul {
 p, h1, h2, h3 {
 	margin-bottom: 10px;
 }
+a:link, a:visited, a:hover, a:active {
+	color: #900;
+	text-decoration: none;
+}
 #sponsor_detail .descriptive_text h3 {
 	margin: 0px 0px 10px 0px;
 }
