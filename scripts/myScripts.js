@@ -84,7 +84,7 @@ function check_credentials (delegate) {
 } else {
 $.ajax({
      type:"GET",
-	 url: "http://e-update.co.uk/ttc_ios/data/delegates.php?view_xml=1",
+	 url: "http://e-update.co.uk/ttc_ios/data/delegates.xml",
      dataType: "xml",
      success: function(xml){
 		//Get form input
