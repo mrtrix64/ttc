@@ -390,6 +390,7 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
 <h1>Delegates</h1>
 <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
 <div data-role="content">
+<h4 id="attendee_sponsor">Attendee List Brought to you by Intuitive</h4>
 <div id="search_area">
 <form>
 <input data-type="search" id="divOfPs-input">
@@ -398,9 +399,9 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
 
 <div id="delegate_listview" spry:region="delegates" class="elements" data-filter="true" data-input="#divOfPs-input">
 <p class="delegatelist" spry:repeat="delegates" spry:setrow="delegates"> <a href="#delegate_detail"><strong>{Organization}</strong> - {First_Name} {Last_Name}</a></p>
-
-
 </div>
+
+
 
 <div id="theform">
 <p>To view the delegate list, please enter the email address that you have used to register with The Travel Convention.</p>
@@ -414,6 +415,13 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
 <div id="message">
   <h1></h1>
 </div>
+
+
+<div>
+<button id="clearbutton" onclick="clearStorage()">Use this button to clear Email for testing</button> 
+</div>
+
+
 </div>
 </div>
       
