@@ -127,8 +127,8 @@ function check_credentials (delegate) {
 	
 $.ajax({
         type: "GET",
-        //url: "http://localhost/ttc_data/data/delegates.xml",
-		url: "http://e-update.co.uk/ttc_ios/data/delegates.xml",
+        //url: "http://e-update.co.uk/ttc_ios/data/delegates.php",
+		url: "http://e-update.co.uk/ttc_ios/data/delegates.php",
         dataType: "xml",
         success: function (xml) {
             //check if any Email element has the entered email as its value
