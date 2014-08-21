@@ -370,8 +370,9 @@ body, html {
 }
 
 #attendee_sponsor {
-	font-size: 12px;
-	color: #FFF;
-	background-color: #666;
-	padding: 7px;
+	font-size: 13px;
+	color: #666;
+	background-color: #CCC;
+	padding: 10px;
+	border: 1px solid #666;
 }
