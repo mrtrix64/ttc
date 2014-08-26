@@ -132,11 +132,11 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
       <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
     <div spry:region="dsPlenary" data-role="content" class="SpryHiddenRegion">
       <ul data-role="listview">
-        <li data-role="list-divider">Day One (Sunday 20 October)</li>
+        <li data-role="list-divider">Day One (Sunday 21st September)</li>
         <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>
-        <li data-role="list-divider">Day Two (Monday 21 October)</li>
+        <li data-role="list-divider">Day Two (Monday 22nd September)</li>
         <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>
-        <li data-role="list-divider">Day Three (Tuesday 22 October)</li>
+        <li data-role="list-divider">Day Three (Tuesday 23rd September)</li>
         <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a> 
           <!--<li data-role="list-divider">Day One (Friday 12 October)</li>
         <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[5]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} -  {cms_heading}</a>-->
@@ -193,11 +193,11 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
       <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
     <div spry:region="dsSpecialist" data-role="content" class="SpryHiddenRegion">
       <ul data-role="listview">
-        <li data-role="list-divider">Day One (Sunday 20 October)</li>
+        <li data-role="list-divider">Day One (Sunday 21st September)</li>
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a>
-        <li data-role="list-divider">Day Two (Monday 21 October)</li>
+        <li data-role="list-divider">Day Two (Monday 22nd September)</li>
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a>
-        <li data-role="list-divider">Day Three (Tuesday 22 October)</li>
+        <li data-role="list-divider">Day Three (Tuesday 23rd September)</li>
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a> 
           <!--<li data-role="list-divider">Day Four (Friday 12 October)</li>
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[5]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} -  {cms_heading}</a>-->
@@ -209,7 +209,7 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
   <div data-role="page" id="specialist_detail" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Specialist Sessions</h1>
-      <a href="#masterclass_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+      <a href="#specialist_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
     <div spry:detailregion="dsSpecialist" data-role="content" class="SpryHiddenRegion">
       <div class="top_detail" >
         <h1>{cms_heading}</h1>
