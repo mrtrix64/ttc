@@ -37,7 +37,7 @@ p, h1, h2, h3 {
 #home, #app_sponsor, #contact_page, #contact_message_page, #abta_detail, #sponsor_detail {
 	text-align:center;
 }
-	
+
 .day1_time {
 font-weight: bold;
 color: #FFF;
@@ -110,6 +110,7 @@ padding: 0px 8px;
 	width: 100%;
 	padding: 15px 15px 20px 15px;
 }
+
 #sponsor_detail .top_detail {
 	min-height: 75px;
 	padding-bottom: 15px;
