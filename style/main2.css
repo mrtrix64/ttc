@@ -133,6 +133,12 @@ padding: 0px 8px;
 	color: #71b506;
 	font-size: 20px;
 }
+#app_sponsor .top_detail, #app_sponsor .top_detail img {
+	margin: 0;
+	padding: 0;
+/*	border: none;*/
+	display: block;
+}
 #speaker_detail .ui-content, #sponsor_detail .ui-content, #hotel_detail .ui-content, #plenary_detail .ui-content, #plenary_speaker_detail .ui-content, #specialist_detail .ui-content, #specialist_speaker_detail .ui-content, #discussion_detail .ui-content, #discussion_speaker_detail .ui-content, #forum_detail .ui-content, #forum_speaker_detail .ui-content, #app_sponsor .ui-content, #abta_detail .ui-content  {
 	margin: 0;
 	padding: 0;
