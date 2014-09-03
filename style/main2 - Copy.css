@@ -183,59 +183,37 @@ p.weblink {
 .SpryHiddenRegion {
 visibility: hidden;
 }
-#logo_container {
-	width: 50%;
-	margin: 0px auto;
-}
-#logo_container img {
-	width: 100%;
-	height: auto;
-	margin: 2em 0;
-}
-#menu_items {
-	width: 100%;
-	text-align: center;
-	display:inline-block;
-}
 
+#menu_items {
+width: 100%;
+height: 100%;
+text-align: center;
+}
 #menu_items img {
 	width: 100%;
 	height: auto;
 	display:block;
 }
-
-.buttons img {
-	width:100%;
-	height: auto;
-	display:block;
+#menu_items table {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 40px;
 }
-.buttons {
-	display:inline-block;
-	width:30%;
-	height:auto;
+#menu_items table td {
+	padding: 2px;
 }
 #app_sponsor_logo {
 	  position:absolute;
 	  width:100%;
 	  height:auto;
-	  bottom: 0;
+	  bottom: 0px;
 }
-
-#app_sponsor_logo img, #app_sponsor_logo_home img, div[data-role=footer] img {
+#app_sponsor_logo img {
 	display: block;
-}
-#home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow  {
-	border: none;
-	text-shadow: none;
-	margin:0;
-	padding:0;
-	background: none;
-	width:100%;
 }
 #home, #schedulemenu, #session_list, #contact_page {
 	position: relative;
 }
-
 .ui-header .ui-title {
 	/*font-size: 22px;
 	margin: .4em 90px .6em;*/
@@ -305,7 +283,15 @@ ul.ui-listview[data-inset="true"] + p.sponsor_image {
 	display: none;
 }
 
-
+#logo_container {
+	width: 50%;
+	margin: 0px auto;
+}
+#logo_container img {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+}
 
 div[data-role=header] a.ui-corner-all, div[data-role=content] a.ui-corner-all {
 	-webkit-border-radius:1em !important;
@@ -333,9 +319,12 @@ div[data-role=header] a.ui-corner-all, div[data-role=content] a.ui-corner-all {
    -o-background-size: cover;
    background-size: cover;
 }
-#menu_items {
-	width:70%;
-	text-align:center;
+#menu_items table {
+	margin-top: 80px;
+	width:70%
+}
+#menu_items table td {
+	padding: 10px;
 }
 #logo_container {
 	width: 30%;
@@ -344,7 +333,7 @@ div[data-role=header] a.ui-corner-all, div[data-role=content] a.ui-corner-all {
 div[data-role=content] {
 	line-height: 1.5em;
 }
-
+}
 
 
 body, html {
@@ -397,4 +386,3 @@ body, html {
 	padding: 10px;
 	border: 1px solid #666;
 }
-
