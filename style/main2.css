@@ -224,7 +224,8 @@ visibility: hidden;
 #app_sponsor_logo img, #app_sponsor_logo_home img, div[data-role=footer] img {
 	display: block;
 }
-#home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow  {
+#home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow,
+#contact_page .ui-footer, #contact_page .ui-footer a.ui-link, #contact_page .ui-footer a.ui-btn, #contact_page .ui-footer a.ui-shadow  {
 	border: none;
 	text-shadow: none;
 	margin:0;
