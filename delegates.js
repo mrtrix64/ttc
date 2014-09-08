@@ -117,16 +117,13 @@ function saveSettings() {
     function onDeviceReady() {
         // Now safe to use the PhoneGap API
 alert ("DEVICE IS READY");
-if(navigator.onLine)
-  {
-    alert('You are Online');
-  }
-  else
-  {
-    alert('You are Offline')
-  }
+
 
 }
+
+$(document).on('offline online', function (event) {
+    alert('You are ' + event.type + '!');
+});
 
 
 
