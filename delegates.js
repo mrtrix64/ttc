@@ -117,29 +117,14 @@ function saveSettings() {
     function onDeviceReady() {
         // Now safe to use the PhoneGap API
 alert ("DEVICE IS READY");
-if (navigator.onLine) {
-    alert("online");
-}
-
-var xhr = new XMLHttpRequest();
-xhr.addEventListener('readystatechange', state_change, true);
-xhr.open("GET", url, true);
-xhr.send(null);
-
-function state_change(){
-   if(xhr.readyState == 4){
-        if(xhr.status == 200){
-          console.log('worked'); 
-		  alert("ONLINE");
-        } else if(xhr.status == 0) {
-          console.log('no internet');
-		  alert("NOT ONLINE"); 
-        } else {
-			alert("SCRIPT SHIT");
-          // Some other error
-        } 
-   }
-}
+if(navigator.onLine)
+  {
+    alert('You are Online');
+  }
+  else
+  {
+    alert('You are Offline')
+  }
 
 }
 
