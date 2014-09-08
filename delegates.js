@@ -127,6 +127,8 @@ function isOnline() {
     if ((states[networkState]) == states[Connection.NONE]) {
 		$.mobile.changePage($("#offline"), "none");
         alert('Very slow or no Internet Connection');
+		states[networkState] = states[Connection.UNKNOWN]
+		alert(states[networkState]);
         //navigator.app.exitApp();
     }
 }
