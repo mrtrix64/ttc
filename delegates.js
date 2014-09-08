@@ -118,7 +118,14 @@ function saveSettings() {
         // Now safe to use the PhoneGap API
 alert ("DEVICE IS READY");
 
+var networkState = navigator.connection.type;
+    if (networkState == Connection.NONE){
+                alert('No Internet');
 
+    }else{
+
+                   alert('Internet Connection there');
+                }
 
 
 }
