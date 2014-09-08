@@ -116,23 +116,10 @@ function saveSettings() {
     //
     function onDeviceReady() {
         // Now safe to use the PhoneGap API
-function checkNetConnection(){
- var xhr = new XMLHttpRequest();
- var file = "http://demos.subinsb.com/cdn/dot.png";
- var r = Math.round(Math.random() * 10000);
- xhr.open('HEAD', file + "?subins=" + r, false);
- try {
-  xhr.send();
-  if (xhr.status >= 200 && xhr.status < 304) {
-   return true;
-   alert ("ONLINE");
-  } else {
-   return false;
-  }
- } catch (e) {
-  return false;
- }
+alert ("DEVICE IS READY");
+
+
+
+
 }
-	checkNetConnection();
-	}
 
