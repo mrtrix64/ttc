@@ -117,6 +117,14 @@ function saveSettings() {
     function onDeviceReady() {
         // Now safe to use the PhoneGap API
 		alert ("DEVICE READY");
+		document.addEventListener("offline", onOffline, false);
+
+function onOffline() {
+    // Handle the offline event
+	alert ("Device OFFLINE!!");
+}
+		
+		
     }
 
 
