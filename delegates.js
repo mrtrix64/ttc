@@ -113,17 +113,15 @@ function saveSettings() {
     document.addEventListener("deviceready", onDeviceReady, false);
 
     // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
-	alert("DEVICE READY");
     //
     function onDeviceReady() {
-        document.addEventListener("offline", onOffline, false);
-    }
+        // Now safe to use the PhoneGap API
 
-    // Handle the offline event
-    //
-    function onOffline() {
-		alert ("OFFLINE");
-    }
-
-
+	var status = navigator.onLine;
+	if (status) {
+	alert("online");
+	} else {
+	alert("offline");
+	}
+	}
 
