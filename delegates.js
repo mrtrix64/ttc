@@ -119,9 +119,9 @@ function saveSettings() {
 
 	var status = navigator.onLine;
 	if (status) {
-		alert("online");
+		alert("Device online");
 	} else {
-		alert("offline");
+		alert("Device offline");
 	}
 	}
 
