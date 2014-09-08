@@ -117,31 +117,31 @@ function saveSettings() {
     function onDeviceReady() {
         // Now safe to use the PhoneGap API
 alert ("DEVICE IS READY");
-
-function init() {
-document.addEventListener("online", toggleCon, false);
-document.addEventListener("offline", toggleCon, false);
- 
-if(navigator.network.connection.type == Connection.NONE) {
-navigator.notification.alert("Sorry, you are offline.", function() {}, "Offline!");
-} else {
-setupButtonHandler();
-}
- 
-}
- 
-function toggleCon(e) {
-console.log("Called",e.type);
-if(e.type == "offline") {
-$("#searchBtn").off("touchstart").attr("disabled","disabled");
-navigator.notification.alert("Sorry, you are offline.", function() {}, "Offline!");
-} else {
-$("#searchBtn").removeAttr("disabled");
-navigator.notification.alert("Woot, you are back online.", function() {}, "Online!");
-setupButtonHandler();
-}
+if (navigator.onLine) {
+    alert("online");
 }
 
+var xhr = new XMLHttpRequest();
+xhr.addEventListener('readystatechange', state_change, true);
+xhr.open("GET", url, true);
+xhr.send(null);
+
+function state_change(){
+   if(xhr.readyState == 4){
+        if(xhr.status == 200){
+          console.log('worked'); 
+		  alert("ONLINE");
+        } else if(xhr.status == 0) {
+          console.log('no internet');
+		  alert("NOT ONLINE"); 
+        } else {
+			alert("SCRIPT SHIT");
+          // Some other error
+        } 
+   }
+}
 
 }
+
+
 
