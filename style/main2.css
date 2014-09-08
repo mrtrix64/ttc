@@ -373,11 +373,13 @@ body, html {
 	padding: 0px;	/*display: none;*/
 }
 #message {
-	display: none;
+	/*display: none;*/
+	font-size: 16px;
+	font-weight: bold;
+	color: #F00;
 }
 #theform {
 	margin-top: 15px;
-	display: none;
 }
 #message h1 {
 	font-size: 16px;
@@ -403,3 +405,9 @@ body, html {
 	border: 1px solid #666;
 }
 
+#delegate_email_view {
+	display: none;
+}
+#clearbutton {
+	display: none;
+}

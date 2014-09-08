@@ -46,6 +46,8 @@ The Travel Convention is the UK's largest and most significant annual event for 
 	
 	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
 	
+	<gap:plugin name="org.apache.cordova.network-information"/>
+	
 	
 	
 	<access origin="*" />
