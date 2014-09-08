@@ -124,7 +124,8 @@ function isOnline() {
     states[Connection.CELL] = 'Cell generic connection';
     states[Connection.NONE] = 'No network connection';
     if ((states[networkState]) == states[Connection.NONE]) {
-        alert('No Internet Connection. Click OK to exit app');
+		$.mobile.changePage($("#offline"), "none");
+        alert('Very slow or no Internet Connection');
         navigator.app.exitApp();
     }
 }

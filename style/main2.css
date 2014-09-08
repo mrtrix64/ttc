@@ -411,3 +411,12 @@ body, html {
 #clearbutton {
 	display: none;
 }
+
+#offline {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #F00;
+	padding: 20px;
+	text-shadow: none;
+}
