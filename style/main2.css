@@ -345,7 +345,8 @@ div[data-role=header] a.ui-corner-all, div[data-role=content] a.ui-corner-all {
 div[data-role=content] {
 	line-height: 1.5em;
 }
-#home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow  {
+#home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow,
+#contact_page .ui-footer, #contact_page .ui-footer a.ui-link, #contact_page .ui-footer a.ui-btn, #contact_page .ui-footer a.ui-shadow  {
 	margin-top:4em;
 }
 }
