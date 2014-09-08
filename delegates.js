@@ -104,24 +104,30 @@ function saveSettings() {
 });
 
 
-// Call onDeviceReady when PhoneGap is loaded.
-    //
-    // At this point, the document has loaded but phonegap-1.0.0.js has not.
-    // When PhoneGap is loaded and talking with the native device,
-    // it will call the event `deviceready`.
+// Wait for PhoneGap to load
     // 
     document.addEventListener("deviceready", onDeviceReady, false);
 
     // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
     //
     function onDeviceReady() {
-        // Now safe to use the PhoneGap API
-alert ("DEVICE IS READY");
-document.addEventListener("offline", function(){ alert("You're offline") }, false);
-document.addEventListener("online", function(){ alert("You're online") }, false);
+        checkConnection();
+    }
 
-}
+    function checkConnection() {
+        var networkState = navigator.network.connection.type;
 
+        var states = {};
+        states[Connection.UNKNOWN]  = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI]     = 'WiFi connection';
+        states[Connection.CELL_2G]  = 'Cell 2G connection';
+        states[Connection.CELL_3G]  = 'Cell 3G connection';
+        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.NONE]     = 'No network connection';
+
+        alert('Connection type: ' + states[networkState]);
+    }
 
 
 
