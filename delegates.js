@@ -103,3 +103,36 @@ function saveSettings() {
 
 });
 
+
+// Call onDeviceReady when PhoneGap is loaded.
+    //
+    // At this point, the document has loaded but phonegap-1.0.0.js has not.
+    // When PhoneGap is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    // 
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
+    //
+    function onDeviceReady() {
+        // Now safe to use the PhoneGap API
+function checkNetConnection(){
+ var xhr = new XMLHttpRequest();
+ var file = "http://demos.subinsb.com/cdn/dot.png";
+ var r = Math.round(Math.random() * 10000);
+ xhr.open('HEAD', file + "?subins=" + r, false);
+ try {
+  xhr.send();
+  if (xhr.status >= 200 && xhr.status < 304) {
+   return true;
+   alert ("ONLINE");
+  } else {
+   return false;
+  }
+ } catch (e) {
+  return false;
+ }
+}
+	checkNetConnection();
+	}
+
