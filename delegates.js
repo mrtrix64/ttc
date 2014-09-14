@@ -47,7 +47,7 @@ function check_credentials() {
 		$.mobile.changePage($("#delegate_list"), "none");
 	} else {
 		//alert (isContains);
-		$('#message').text('The email address you entered is not registered, please try again.');
+		$('#message').text('Sorry there is an error. Either you have no internet connection or the email address you have entered is not registered. Please try re-connecting to the internet or re-enter your email address ensuring it is all lower case.');
 	}
 }
 	
