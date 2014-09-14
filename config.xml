@@ -11,7 +11,7 @@
         id = "com.dellardavies.ttc"
         version = "4.0.2">
 <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-<string>114</string>
+<string>118</string>
 </gap:config-file>
 	<name>TTC</name>
 
