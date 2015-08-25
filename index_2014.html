@@ -3,16 +3,16 @@
 <meta charset="UTF-8">
 <title>The Travel Convention</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.min.css" rel="stylesheet" type="text/css"/>
 
-<script src="jquery-mobile/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.min.js" type="text/javascript"></script>
 <script>
 //Page transition
 $(document).bind("mobileinit", function(){
     $.mobile.defaultPageTransition = 'slide'
  });
 </script>
-<script src="jquery-mobile/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile.min.js" type="text/javascript"></script>
 <script src="SpryAssets/xpath.js" type="text/javascript"></script>
 <script src="SpryAssets/SpryData.js" type="text/javascript"></script>
 <script src="webform.js" type="text/javascript"></script>
@@ -62,9 +62,8 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
 <div class="pagecontainer"> 
   
   <!-- Homer Simpson is a yellow bastard with ugly children-->
-  <!--HOME-->
   <div data-role="page" id="home">
-    <div role="main" class="ui-content" id="menupage">
+    <div data-role="content" id="menupage">
       <div id="logo_container"><img src="site_images/ttc_logo_large.png" width="100%" /></div>
 <div id="menu_items">
         <div class="buttons"><a href="#schedulemenu" ><img src="site_images/iphone5_menu_1_schedule.png" ></a></div>
@@ -83,12 +82,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
 	</div><!--end footer-->
     </div><!--end home-->
     
+    
+    
   <!--SCHEDULE MENU-->
   <div data-role="page" id="schedulemenu" >
     <div data-role="header" data-position="fixed" data-theme="b"> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a>
       <h1>Schedule</h1>
     </div>
-    <div role="main" class="ui-content">
+    <div data-role="content">
       <ul data-role="listview" data-inset="true">
         <li><a href="#day1">Monday 12th October 2015</a></li>
         <li><a href="#day2">Tuesday 13th October 2015</a></li>
@@ -98,15 +99,15 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
       <div id="app_sponsor_logo"><a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="100%"></a>
     </div>
-  </div><!-- end schedulemenu-->
+  </div>
   
-  <!--SESSION LIST-->
+  <!--Session list-->
   <div data-role="page" id="session_list" >
     <div data-role="header" data-theme="b" data-position="fixed"> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> 
       
       <h1>Sessions</h1>
     </div>
-    <div role="main" class="ui-content">
+    <div data-role="content">
       <ul data-role="listview" data-inset="true">
         <li><a href="#plenary_list">Plenary Sessions</a></li>
         <li><a href="#specialist_list">Specialist Sessions</a></li>
@@ -116,14 +117,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
       <div id="app_sponsor_logo"><a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="100%"></a>
     </div>
-  </div><!--end session_list-->
+  </div>
   
   <!-- START OF PLENARY BLOCK -->
   <div data-role="page" id="plenary_list" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Plenary Sessions</h1>
       <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:region="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:region="dsPlenary" data-role="content" class="SpryHiddenRegion">
       <ul data-role="listview">
         <li data-role="list-divider">Day One (Monday 12th October)</li>
         <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>
@@ -136,14 +137,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
       </ul>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--> 
     </div>
-  </div><!--end plenary_list-->
+  </div>
   
-  <!-- PLENARY DETAIL-->
+  <!-- Plenary Detail-->
   <div data-role="page" id="plenary_detail" >
     <div data-role="header" data-theme="b">
       <h1>Plenary Sessions</h1>
       <a href="#plenary_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:detailregion="dsPlenary" data-role="content" class="SpryHiddenRegion">
       <div class="top_detail" >
         <h1>{cms_heading}</h1>
         <h3>{friendly_date} - {time}</h3>
@@ -152,14 +153,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p>{cms_content}</p>
       </div>
     </div>
-  </div><!--end plenary_detail-->
+  </div>
   
-  <!-- PLENARY SPEAKER DETAIL -->
+  <!-- Plenary Speaker Detail -->
   <div data-role="page" id="plenary_speaker_detail" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Speakers</h1>
       <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:detailregion="dsPlenary" data-role="content" class="SpryHiddenRegion">
       <div spry:choose="spry:choose">
         <div spry:when="'{spkr_image1}' != '' &amp;&amp; '{spkr_image1}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{spkr_image1}" alt="{spkr_heading}" width="75" height="95" border="0">
           <h1>{spkr_heading}</h1>
@@ -177,14 +178,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p>{spkr_content}</p>
       </div>
     </div>
-  </div><!--end plenary_speaker_detail-->
+  </div>
   
   <!-- START OF SPECIALIST SESSIONS BLOCK -->
   <div data-role="page" id="specialist_list" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Specialist Sessions</h1>
       <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:region="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:region="dsSpecialist" data-role="content" class="SpryHiddenRegion">
       <ul data-role="listview">
         <li data-role="list-divider">Day One (Monday 12th October)</li>
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a>
@@ -196,14 +197,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[5]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} -  {cms_heading}</a>-->
       </ul>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
-  </div><!--end specialist_list-->
+  </div>
   
-  <!-- SPECIALIST SESSIONS DETAIL-->
+  <!-- Specialist Sessions Detail-->
   <div data-role="page" id="specialist_detail" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Specialist Sessions</h1>
       <a href="#specialist_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:detailregion="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:detailregion="dsSpecialist" data-role="content" class="SpryHiddenRegion">
       <div class="top_detail" >
         <h1>{cms_heading}</h1>
         <h3>{friendly_date} - {time}</h3>
@@ -212,14 +213,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p>{cms_content}</p>
       </div>
     </div>
-  </div><!--end specialist_detail -->
+  </div>
   
-  <!-- SPECIALIST SPEAKER DETAIL -->
+  <!-- Specialist Speaker Detail -->
   <div data-role="page" id="specialist_session_speaker_detail" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Speakers</h1>
       <a href="#specialist_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:detailregion="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:detailregion="dsSpecialist" data-role="content" class="SpryHiddenRegion">
       <div spry:choose="spry:choose">
         <div spry:when="'{spkr_image1}' != '' &amp;&amp; '{spkr_image1}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{spkr_image1}" alt="{spkr_heading}" width="75" height="95" border="0">
           <h1>{spkr_heading}</h1>
@@ -236,14 +237,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p>{spkr_content}</p>
       </div>
     </div>
-  </div><!--end specialist_session_speaker_detail-->
+  </div>
   
-  <!-- START OF MARKETING & INNOVATION FORUM BLOCK -->
+  <!-- START OF Marketing & Innovation Forum BLOCK -->
   <div data-role="page" id="forum_list" >
     <div data-role="header" data-position="fixed"data-theme="b">
       <h1>Marketing &amp; Innovation Forum</h1>
       <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:region="dsForum" role="main" class="ui-content SpryHiddenRegion">
+    <div spry:region="dsForum" data-role="content" class="SpryHiddenRegion">
       <ul data-role="listview">
         <li data-role="list-divider">Day One (Mon 12 October)</li>
         <li spry:repeat="dsForum" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsForum" > <a href="#forum_detail">{time} - {cms_heading}</a>
@@ -255,14 +256,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <li spry:repeat="dsForum" spry:test="'{date_time}'.match(/^[5]/i);" spry:setrow="dsForum" > <a href="#forum_detail">{time} -  {cms_heading}</a>-->
       </ul>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
-  </div><!--end forum_list-->
+  </div>
   
-  <!-- FORUM DETAIL-->
+  <!-- Forum Detail-->
   <div data-role="page" id="forum_detail" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Marketing &amp; Innovation Forum</h1>
       <a href="#forum_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:detailregion="dsForum" role="main" class="ui-content SpryHiddenRegion">
+    <div spry:detailregion="dsForum" data-role="content" class="SpryHiddenRegion">
       <div class="top_detail" >
         <h1>{cms_heading}</h1>
         <h3>{friendly_date} - {time}</h3>
@@ -271,14 +272,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p>{cms_content}</p>
       </div>
     </div>
-  </div><!--end forum_detail-->
+  </div>
   
-  <!--FORUM SPEAKER DETAIL -->
+  <!-- Forum Speaker Detail -->
   <div data-role="page" id="forum_speaker_detail" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Speakers</h1>
       <a href="#forum_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:detailregion="dsForum" role="main" class="ui-content SpryHiddenRegion">
+    <div spry:detailregion="dsForum" data-role="content" class="SpryHiddenRegion">
       <div spry:choose="spry:choose">
         <div spry:when="'{spkr_image1}' != '' &amp;&amp; '{spkr_image1}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{spkr_image1}" alt="{spkr_heading}" width="75" height="95" border="0">
           <h1>{spkr_heading}</h1>
@@ -295,53 +296,53 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p>{spkr_content}</p>
       </div>
     </div>
-  </div><!--end forum_speaker_detail-->
+  </div>
   
   <!--DAY 1-->
   <div data-role="page" id="day1" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Mon 12th</h1>
       <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
       <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[2]/i);">
         <div class="day1_time">Mon 12th at {start_time} - {end_time}</div>
         <div class="day1Title">{title}</div>
       </div>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
-  </div><!--end day1-->
+  </div>
   
   <!--DAY 2-->
   <div data-role="page" id="day2" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Tues 13th</h1>
       <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:region="dsSchedule" role="main" class="ui-content SpryHiddenRegion">
+    <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
       <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[3]/i);">
         <div class="day2_time">Tues 13th at {start_time} - {end_time}</div>
         <div class="day2Title">{title}</div>
       </div>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
-  </div><!--end day2-->
+  </div>
   
   <!--DAY 3-->
   <div data-role="page" id="day3" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Wed 14th</h1>
       <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:region="dsSchedule" data-role="content" class="SpryHiddenRegion">
       <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[4]/i);">
         <div class="day3_time">Wed 14th at {start_time} - {end_time}</div>
         <div class="day3Title">{title}</div>
       </div>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
-  </div><!--end day3-->
+  </div>
   
-  <!-- CONTACT PAGE -->
+  <!-- Contact page -->
   <div data-role="page" id="contact_page" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Contact</h1>
       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div role="main" class="ui-content">
+    <div data-role="content">
       <div class="link_button">
         <p > <a href="mailto:moreinfo@thetravelconvention.com?subject=Email from iPhone App" target="_blank" class="ui-btn ui-corner-all">General Convention Queries:<br />
           moreinfo@thetravelconvention.com</a></p>
@@ -371,14 +372,15 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
      <div data-role="footer">
 		<a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="100%"></a>
 	</div><!--end footer--> 
-  </div><!--end contact_page-->
+  </div>
+  
   
   <!-- NEW DELEGATES LOGIN page -->
 <div data-role="page" id="delegate_page" >
 <div data-role="header" data-position="fixed" data-theme="b">
 <h1>Delegates</h1>
 <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-<div role="main" class="ui-content">
+<div data-role="content">
 
 <div id="theform">
 <p>To view the delegate list, please enter the email address that you have used to register with The Travel Convention.</p>
@@ -399,14 +401,17 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
 <p class="delegatelist" spry:repeat="delegates" spry:setrow="delegates"> {Email_Address}</p>
 </div>
 </div>
-</div><!--end delegate_page-->
+</div>
+  
+  
+  
 
 <!-- NEW DELEGATES page -->
 <div data-role="page" id="delegate_list" >
 <div data-role="header" data-position="fixed" data-theme="b">
 <h1>Delegates</h1>
 <a href="#delegate_page" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">Login</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-<div role="main" class="ui-content">
+<div data-role="content">
 <div id="attendee_sponsor">Attendee List Brought to you by Intuitive</div>
 <div id="search_area">
 <form>
@@ -418,7 +423,15 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
 <p class="delegatelist" spry:repeat="delegates" spry:setrow="delegates"> <a href="#delegate_detail"><strong>{Organization}</strong> - {First_Name} {Last_Name}</a></p>
 </div>
 </div>
-</div><!--end delegate_list-->
+</div>
+      
+      
+      
+      
+      
+      
+      
+  
   
   <!-- NEW DELEGATES DETAIL page -->
   <div data-role="page" id="delegate_detail" >
@@ -426,7 +439,7 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
       <h1>Delegates</h1>
       
       <a href="#delegate_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div role="main" class="ui-content">
+    <div data-role="content">
       <div id="delegate details">
       <div spry:detailregion="delegates">
       <h3>{First_Name} {Last_Name}</h3>
@@ -439,16 +452,19 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
 
       <p><a href="mailto:{Email_Address}?cc={G}&subject=I am attending TTC 2014" class="ui-btn ui-mini ui-icon-mail ui-btn-icon-right">Send {First_Name} an email </a></p>
       </div>
+
       </div>
+    
+      
     </div>
-  </div><!--end delegate_detail-->
+  </div>
   
-  <!-- CONTACT & MESSAGE PAGE -->
+  <!-- Contact & Message page -->
   <div data-role="page" id="contact_message_page" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Contact</h1>
       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div role="main" class="ui-content">
+    <div data-role="content">
       <div class="link_button">
         <p class="contactlink"><a href="mailto:comments@thetravelconvention.com?subject=Email from iPhone App" target="_blank">comments@thetravelconvention.com</a></p>
       </div>
@@ -462,14 +478,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p class="contactlink"><a href="#qanda_desk"><strong>Send us a message</strong></a></p>
       </div>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
-  </div><!--end contact_message_page-->
+  </div>
   
-  <!-- Q & A DESK -->
+  <!-- Q & A Desk -->
   <div data-role="page" id="qanda_desk" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Q & A Desk</h1>
       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div role="main" class="ui-content">
+    <div data-role="content">
       <h3>Submit a comment or question:</h3>
       <form id="commentform" method="post" action="http://tmr.tokyo26.com/web_form/ttc">
         <!-- make webform folder work too? -->
@@ -488,14 +504,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <input type="hidden" name="error_url" size="100" value="http://demo.tokyo26.com/error.html" />
       </form>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
-  </div><!--end qanda_desk-->
+  </div>
   
-  <!-- HOTELS -->
+  <!-- Hotels -->
   <div data-role="page" id="hotel_list" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Places</h1>
       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div role="main" class="ui-content" spry:region="dsHotels">
+    <div data-role="content" spry:region="dsHotels">
       <ul data-role="listview">
         <li data-role="list-divider">Hotels</li>
         <li spry:repeat="dsHotels" spry:test="'{type}'.match(/^[H]/i);" spry:setrow="dsHotels" ><a href="#hotel_detail">{hotel_name}</a></li>
@@ -503,14 +519,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <li spry:repeat="dsHotels" spry:test="'{type}'.match(/^[V]/i);" spry:setrow="dsHotels" ><a href="#hotel_detail">{hotel_name}</a></li>
       </ul>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
-  </div><!--end hotel_list-->
+  </div>
   
-  <!--HOTEL DETAIL-->
+  <!--Hotel Detail-->
   <div data-role="page" id="hotel_detail" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Places</h1>
       <a href="#hotel_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:detailregion="dsHotels" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:detailregion="dsHotels" data-role="content" class="SpryHiddenRegion">
       <div class="top_detail">
         <h1>{hotel_name}</h1>
         <h4>{address}</h4>
@@ -522,14 +538,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p spry:if="'{google_map}' != ''&amp;&amp; '{google_map}' != 'undefined'"><a href="#" onclick="window.open('{google_map}','_blank','location=yes','EnableViewPortScale=yes');" class="ui-btn ui-corner-all">View in Google Maps</a></p>
       </div>
     </div>
-  </div><!--end hotel_detail-->
+  </div>
   
-  <!--SPONSOR PAGES-->
+  <!--Sponsor pages-->
   <div data-role="page" id="sponsor_list" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Sponsors</h1>
       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:region="dsSponsors" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:region="dsSponsors" data-role="content" class="SpryHiddenRegion">
       <ul data-role="listview">
         <li data-role="list-divider">A</li>
         <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[A]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
@@ -585,14 +601,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[Z]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
       </ul>
       <!--<p class="sponsor_image"><img src="images/app-sponsor.jpg" width="290" height="84"></p>--></div>
-  </div><!--end sponsor_list-->
+  </div>
   
-  <!--SPONSOR DETAIL-->
+  <!--Sponsor Detail-->
   <div data-role="page" id="sponsor_detail" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>Sponsors</h1>
       <a href="#sponsor_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div spry:detailregion="dsSponsors" role="main"  class="ui-content SpryHiddenRegion">
+    <div spry:detailregion="dsSponsors" data-role="content" class="SpryHiddenRegion">
       <div spry:choose="dsSponsors">
         <div spry:when="'{iphone_image}' != '' &amp;&amp; '{iphone_image}' != 'undefined'"> 
           <!--          <img src="http://www.thetravelconvention.com/uploads/{iphone_image}" alt="{exhibitor_name}">
@@ -608,14 +624,14 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'"><a href="#" onclick="window.open('{website}','_system','location=yes','enableViewPortScale=yes');" class="ui-btn ui-corner-all">Visit Website</a></p>
       </div>
     </div>
-  </div><!--end sponsor_detail-->
+  </div>
   
   <!--APP SPONSOR-->
   <div data-role="page" id="app_sponsor">
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>App Sponsor</h1>
       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div role="main" class="ui-content">
+    <div data-role="content">
       <div class="top_detail"><img src="site_images/iphone5_menu_intuitive_base.png" width="100%" alt="Intuitive"></div> 
       <div class="descriptive_text">
         <p><strong>intuitive</strong> is excited to be sponsoring The Travel Convention 2015. We are a dynamic and progressive travel technology company based in South London. Our flagship product iVector is a powerful end-to-end reservation platform for tour operators, OTAs and accommodation wholesalers. The system delivers many benefits to enable our customers to succeed and grow in a competitive travel market.</p>
@@ -630,26 +646,30 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p> intuitive and iVector deliver outstanding functionality for some of the UK’s leading travel companies, including tools to enable tour operators to maximise revenue from directly contracted product, best in class supplier integrations that enable OTAs and bed banks to sell more product to more people or fast, highly-relevant search results to maximise conversion and simplify booking processes.</p>
 <a href="#"  target="_blank"  onclick="window.open('http://www.intuitivesystems.com','_system','location=yes','enableViewPortScale=yes');" class="ui-btn ui-corner-all">Visit Website</a>      </div>
     </div>
-  </div><!--end app_sponsor-->
- 
-  <!--  OFFLINE -->
+  </div>
+
 <div data-role="page" id="offline" >
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>OFFLINE</h1>
     </div>
-    <div role="main" class="ui-content">
+    <div data-role="content">
     <div id="offline">You have slow, or no internet connection. Please quit the App, connect to the internet and relaunch.</div>
     
       </div>
       
-  </div><!--end offline-->
+  </div>
+
+
+
+
+
 
   <!--ABTA PAGE-->
   <div data-role="page" id="abta_detail">
     <div data-role="header" data-position="fixed" data-theme="b">
       <h1>ABTA</h1>
       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-    <div role="main" class="ui-content">
+    <div data-role="content">
       <div class="top_detail"><img src="abta.gif" alt="ABTA" width="145" height="78"></div>
       <div class="descriptive_text">
         <p>ABTA is the UK’s leading travel association; we have been at the heart of travel for over 60 years. Our purpose is to help our Members to grow their businesses successfully and sustainably, and to help their customers – the travelling public – have confidence in their travel experience.</p>
@@ -657,7 +677,7 @@ var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_data/data/delegat
         <p>It is estimated that over £31.5bn is spent on holiday arrangements with ABTA Members every year. We believe this is because booking with an ABTA Member gives you peace of mind because they are committed to following a strict code of conduct, which means you’ll receive a high standard of service, fair terms of trading and accurate information. In fact, our research shows that seven out of ten people see ABTA membership as essential when booking their travel arrangements. </p>
 <a href="#" onclick="window.open('http://www.abta.com/home','_blank','location=yes','enableViewPortScale=yes');" class="ui-btn ui-corner-all">Visit Website</a>      </div>
     </div>
-  </div><!--end abta_detail-->
-</div><!--end pagecontainer-->
+  </div>
+</div>
 </body>
 </html>
