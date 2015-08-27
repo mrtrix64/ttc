@@ -46,7 +46,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 	
 	<preference name='phonegap-version' value='cli-5.1.1' />
 			
-	<!--<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />-->
+	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
 	
 	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
 	
