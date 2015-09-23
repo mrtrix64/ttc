@@ -41,14 +41,14 @@ p, h1, h2, h3 {
 .day1_time {
 font-weight: bold;
 color: #FFF;
-background-color: #489598;
+background-color: #e03a3e;
 padding: 10px;
 }
 .day1Title {
 padding: 0px;
 margin-bottom: 0px;
-border: 1px solid #489598;
-color: #489598;
+border: 1px solid #e03a3e;
+color: #e03a3e;
 background-color: #FFF;
 padding: 0px 8px;
 }
@@ -56,28 +56,28 @@ padding: 0px 8px;
 .day2_time {
 font-weight: bold;
 color: #FFF;
-background-color: #9A1129;
+background-color: #ad7ab5;
 padding: 10px;
 }
 .day2Title {
 padding: 0px;
 margin-bottom: 0px;
-border: 1px solid #9A1129;
-color: #9A1129;
+border: 1px solid #ad7ab5;
+color: #ad7ab5;
 background-color: #FFF;
 padding: 0px 8px;
 }
 .day3_time {
 font-weight: bold;
 color: #FFF;
-background-color: #71B506;
+background-color: #fcb316;
 padding: 10px;
 }
 .day3Title {
 padding: 0px;
 margin-bottom: 0px;
-border: 1px solid #71B506;
-color: #71B506;
+border: 1px solid #fcb316;
+color: #fcb316;
 background-color: #FFF;
 padding: 0px 8px;
 } 
