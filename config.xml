@@ -92,7 +92,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 <!--Windows Phone-->
 <gap:splash src="splash/splash.jpg" gap:platform="winphone" />
 
-<preference name='phonegap-version' value='cli-5.1.1' />
+<preference name='phonegap-version' value='cli-5.2.0' />
 	
 	<preference name="show-splash-screen-spinner" value="true" />
 
