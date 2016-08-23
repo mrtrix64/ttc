@@ -3,7 +3,6 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id = "com.dellardavies.ttc"
         version = "6.0.0">
-</gap:config-file>
 	<name>TTC</name>
 
 	<description>
