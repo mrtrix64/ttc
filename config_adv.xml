@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id = "com.dellardavies.ttc"
-        version = "6.0.0">
+        id = "com.advantagetravel"
+        version = "0.0.3">
+<gap:config-file platform="ios" parent="CFBundleShortVersionString">
+<string>1</string>
 </gap:config-file>
-	<name>TTC</name>
+	<name>Advantage Travel</name>
 
-	<description>
-The Travel Convention is the UK's largest and most significant annual event for senior travel industry professionals, organised by ABTA - The UK's leading travel association. This handy App gives you everything you will need for the 2014 Convention, schedule times, session information, places, sponsor list and more...	</description>
+	<description>The official app for the 2016 Advantage Conference.</description>
 
-	<author href="http://thetravelconvention.com" email="support@thetravelconvention.com">
+	<author href="http://advantageconference.co.uk" email="events@advantagetravelpartnership.com">
 		Colin Miller
 	</author>
 <!--ICONS-->
@@ -99,13 +101,15 @@ The Travel Convention is the UK's largest and most significant annual event for 
 	
 	<preference name="DisallowOverscroll" value="true" />
 	
-	<preference name='phonegap-version' value='cli-5.1.1' />
-			
-	<plugin name="cordova-plugin-inappbrowser" spec="1.0.1" source="pgb" />
+<!--	<preference name='phonegap-version' value='cli-5.1.1' />
+-->			
+	<!--<gap:plugin name="com.fantasyskiracer.inappbrowser" version="1.0.4" />-->
 	
 	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
 	
     <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
+	
+	<plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
 	
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	

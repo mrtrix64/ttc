@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html xmlns:spry="http://ns.adobe.com/spry" manifest="http://advantagetravel.e-update.co.uk/mobile/cachemanifest.php"><head>
+<meta charset="UTF-8">
+<title>The Advantage Travel Partnership</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Advantage Conference">
+<link rel="apple-touch-icon" href="icon@2x.png"/>
+<link href="jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+
+<script src="jquery-mobile/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script>
+//Page transition
+$(document).bind("mobileinit", function(){
+    $.mobile.defaultPageTransition = 'slide'
+ });
+ 
+
+
+</script>
+<script src="jquery-mobile/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+<script src="SpryAssets/xpath.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+
+
+<!--<script type="text/javascript" src="staticConn.js"></script>-->
+<!--<script type="text/javascript" src="externalConn.js"></script>-->
+<script type="text/javascript" src="connection.js"></script>
+<!--<script type="text/javascript" src="localConn.js"></script>-->
+
+
+<link rel="stylesheet" href="themes/advantage.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link href="style/main2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="style/addtohomescreen.css">
+<script src="src/addtohomescreen.js"></script>
+<script>
+addToHomescreen();
+</script>
+</head>
+<body>
+<body>
+<div class="pagecontainer"> 
+  
+  <!--HOME-->
+  <div data-role="page" id="home">
+    <div role="main" class="ui-content" id="menupage">
+      <div id="logo_container"><img src="site_images/adv_logo_large.png" width="100%" /></div>
+<div id="menu_items">
+		<div class="buttons"><a href="#app_sponsor"><img src="site_images/menu_buttons/welcome.png" alt="MSC Cruises 2016"></a></div>
+        <div class="buttons"><a href="#schedulemenu" ><img src="site_images/menu_buttons/programme.png" alt="Schedule" ></a></div>
+        <div class="buttons"><a href="#session_list"><img src="site_images/menu_buttons/sessions.png" alt="Programme"></a></div>
+        <div class="buttons"><a href="#social_list"><img src="site_images/menu_buttons/social.png" alt="Social Events"></a></div>
+        <div class="buttons"><a href="#sponsor_list"><img src="site_images/menu_buttons/sponsors.png" alt="Sponsors"></a></div>
+        <div class="buttons"><a href="#" onclick="window.open('https://twitter.com/AdvantageHQ','_blank','location=yes', 'enableViewPortScale=yes');"><img src="site_images/menu_buttons/twitter.png"  alt="Twitter"></a></div>
+        <div class="buttons"><a href="#news_list"><img src="site_images/menu_buttons/news.png" alt="Latest News"></a></div>
+        <div class="buttons"><a href="#contact_page"><img src="site_images/menu_buttons/contact.png" alt="Contact"></a></div>
+         <div class="buttons"><a href="#delegate_list"><img src="site_images/menu_buttons/delegates.png" alt="Delegates"></a></div>
+       
+    </div><!--end menu_items-->    
+    </div><!--end role=content-->
+<div data-role="footer">
+		<a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="60%"></a>
+	</div><!--end footer-->
+    </div><!--end home-->
+    
+  <!--SCHEDULE MENU-->
+  <div data-role="page" id="schedulemenu" >
+    <div data-role="header" data-position="fixed" data-theme="b"> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a>
+      <h1>Programme</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#day1">Saturday 16th April 2016</a></li>
+        <li><a href="#day2">Sunday 17th April 2016</a></li>
+        <li><a href="#day3">Monday 18th April 2016</a></li>
+        <li><a href="#day4">Tuesday 19th April 2016</a></li>
+		<li><a href="#day5">Wednesday 20th April 2016</a></li>      </ul>
+      </div>
+      <div data-role="footer">
+		<a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="60%"></a>
+	</div><!--end footer-->
+  </div><!-- end schedulemenu-->
+  
+  <!--SESSION LIST-->
+  <div data-role="page" id="session_list" >
+    <div data-role="header" data-theme="b" data-position="fixed"> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> 
+      
+      <h1>Sessions</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#plenary_list">Plenary Sessions</a></li>
+        <li><a href="#leisure_list">Leisure Breakouts</a></li>
+        <li><a href="#breakout_list">Business Breakouts</a></li>
+      </ul>
+      </div>
+      <div data-role="footer">
+		<a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="60%"></a>
+	</div><!--end footer-->
+  </div><!--end session_list-->
+  
+  <!-- START OF PLENARY BLOCK -->
+  <div data-role="page" id="plenary_list" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Plenary Sessions</h1>
+      <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a> </div>
+    <div spry:region="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <ul data-role="listview">
+        <!--<li data-role="list-divider">Day One (Saturday 16th April)</li>
+        <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>-->
+        <li data-role="list-divider">Day Two (Sunday 17th April)</li>
+        <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>
+        <!--<li data-role="list-divider">Day Three (Monday 18th April)</li>
+        <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a> -->
+        <li data-role="list-divider">Day Four (Tuesday 19th April)</li>
+        <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[5]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a> 
+        <!--<li data-role="list-divider">Day Five (Wednesday 20th April)</li>
+        <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[6]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a> -->
+      </ul> 
+    </div>
+  </div><!--end plenary_list-->
+  
+  <!-- PLENARY DETAIL-->
+  <div data-role="page" id="plenary_detail" >
+    <div data-role="header" data-theme="b">
+      <h1>Plenary Sessions</h1>
+      <a href="#plenary_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div class="top_detail" >
+        <h1>{cms_heading}</h1>
+        <h3>{friendly_date} - {time}</h3>
+      </div>
+      <div class="descriptive_text">
+      <p class="speakers">Speaker(s)</p>
+      <a spry:if="'{speaker1_name}' != '' &amp;&amp; '{speaker1_name}' != 'undefined'" href="#plenary_speaker1_detail" class="ui-btn ui-corner-all">{speaker1_name} >></a>
+      <a  spry:if="'{speaker2_name}' != '' &amp;&amp; '{speaker2_name}' != 'undefined'" href="#plenary_speaker2_detail" class="ui-btn ui-corner-all">{speaker2_name} >></a><a spry:if="'{speaker3_name}' != '' &amp;&amp; '{speaker3_name}' != 'undefined'" href="#plenary_speaker3_detail" class="ui-btn ui-corner-all">{speaker3_name} >></a>
+        <p>{cms_content}</p>
+      </div>
+    </div>
+  </div><!--end plenary_detail-->
+  
+  <!-- PLENARY SPEAKER 1 DETAIL -->
+  <div data-role="page" id="plenary_speaker1_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker1_img}' != '' &amp;&amp; '{speaker1_img}' != 'undefined'" class="top_detail"> <img src="uploads/{speaker1_img}" alt="{speaker1_name}" width="75" height="95" border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail">
+        <img src="head.png" alt="{speaker1_name}" width="75" height="95" border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker1_desc}</p>
+      </div>
+    </div>
+  </div><!--end plenary_speaker1_detail-->
+  
+    <!-- PLENARY SPEAKER 2 DETAIL -->
+  <div data-role="page" id="plenary_speaker2_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker2_img}' != '' &amp;&amp; '{speaker2_img}' != 'undefined'" class="top_detail"> <img src="uploads/{speaker2_img}" alt="{speaker2_name}" width="75" height="95" border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker2_name}" width="75" height="95" border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker2_desc}</p>
+      </div>
+
+    </div>
+  </div><!--end plenary_speaker2_detail-->
+  
+  
+      <!-- PLENARY SPEAKER 3 DETAIL -->
+  <div data-role="page" id="plenary_speaker3_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker3_img}' != '' &amp;&amp; '{speaker3_img}' != 'undefined'" class="top_detail"> <img src="uploads/{speaker3_img}" alt="{speaker3_name}" width="75" height="95" border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker3_name}" width="75" height="95" border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker3_desc}</p>
+      </div>
+    </div>
+  </div><!--end plenary_speaker3_detail-->
+    
+  <!-- START OF LEISURE BLOCK -->
+  <div data-role="page" id="leisure_list" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Breakout Sessions</h1>
+      <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a> </div>
+    <div spry:region="dsLeisure" role="main"  class="ui-content SpryHiddenRegion">
+      <ul data-role="listview">
+        <!--<li data-role="list-divider">Day One (Saturday 16th April)</li>
+        <li spry:repeat="dsLeisure" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsLeisure" > <a href="#leisure_detail">{time} - {cms_heading}</a>-->
+        <li data-role="list-divider">Day Two (Sunday 17th April)</li>
+        <li spry:repeat="dsLeisure" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsLeisure" > <a href="#leisure_detail">{time} - {cms_heading}</a>
+        <!--<li data-role="list-divider">Day Three (Monday 18th April)</li>
+        <li spry:repeat="dsLeisure" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsLeisure" > <a href="#leisure_detail">{time} - {cms_heading}</a> -->
+        <li data-role="list-divider">Day Four (Tuesday 19th April)</li>
+        <li spry:repeat="dsLeisure" spry:test="'{date_time}'.match(/^[5]/i);" spry:setrow="dsLeisure" > <a href="#leisure_detail">{time} - {cms_heading}</a> 
+        <!--<li data-role="list-divider">Day Five (Wednesday 20th April)</li>
+        <li spry:repeat="dsLeisure" spry:test="'{date_time}'.match(/^[6]/i);" spry:setrow="dsLeisure" > <a href="#leisure_detail">{time} - {cms_heading}</a> -->
+      </ul> 
+    </div>
+  </div><!--end leisure_list-->
+  
+  <!-- LEISURE DETAIL-->
+  <div data-role="page" id="leisure_detail" >
+    <div data-role="header" data-theme="b">
+      <h1>Breakout Sessions</h1>
+      <a href="#leisure_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsLeisure" role="main"  class="ui-content SpryHiddenRegion">
+      <div class="top_detail" >
+        <h1>{cms_heading}</h1>
+        <h3>{friendly_date} - {time}</h3>
+      </div>
+      <div class="descriptive_text">
+      <p class="speakers">Speaker(s)</p>
+        <a spry:if="'{speaker1_name}' != '' &amp;&amp; '{speaker1_name}' != 'undefined'" href="#leisure_speaker1_detail" class="ui-btn ui-corner-all">{speaker1_name} >></a>
+          <a spry:if="'{speaker2_name}' != '' &amp;&amp; '{speaker2_name}' != 'undefined'" href="#leisure_speaker2_detail" class="ui-btn ui-corner-all">{speaker2_name} >></a>
+          <a spry:if="'{speaker3_name}' != '' &amp;&amp; '{speaker3_name}' != 'undefined'" href="#leisure_speaker3_detail" class="ui-btn ui-corner-all">{speaker3_name} >></a>
+        
+        <p>{cms_content}</p>
+      </div>
+    </div>
+  </div><!--end leisure_detail-->
+  
+  <!-- LEISURE SPEAKER 1 DETAIL -->
+  <div data-role="page" id="leisure_speaker1_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#leisure_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsLeisure" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker1_img}' != '' &amp;&amp; '{speaker1_img}' != 'undefined'" class="top_detail"> <img src="uploads/{speaker1_img}" alt="{speaker1_name}" width="75" height="95" border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker1_name}" width="75" height="95" border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker1_desc}</p>
+      </div>
+      
+    </div>
+  </div><!--end leisure_speaker1_detail-->
+  
+    <!-- LEISURE SPEAKER 2 DETAIL -->
+  <div data-role="page" id="leisure_speaker2_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#leisure_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsLeisure" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker2_img}' != '' &amp;&amp; '{speaker2_img}' != 'undefined'" class="top_detail"> <img src="uploads/{speaker2_img}" alt="{speaker2_name}" width="75" height="95" border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker2_name}" width="75" height="95" border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+    <div class="descriptive_text">
+        <p>{speaker2_desc}</p>
+      </div>  
+      
+    </div>
+  </div><!--end leisure_speaker2_detail-->
+  
+  
+      <!-- LEISURE SPEAKER 3 DETAIL -->
+  <div data-role="page" id="leisure_speaker3_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#leisure_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsLeisure" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker3_img}' != '' &amp;&amp; '{speaker3_img}' != 'undefined'" class="top_detail"> <img src="uploads/{speaker3_img}" alt="{speaker3_name}" width="75" height="95" border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker3_name}" width="75" height="95" border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div><div class="descriptive_text">
+        <p>{speaker3_desc}</p>
+      </div>
+    </div>
+  </div><!--end leisure_speaker3_detail-->
+  
+    <!-- START OF BREAKOUT BLOCK -->
+  <div data-role="page" id="breakout_list" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Breakout Sessions</h1>
+      <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a> </div>
+    <div spry:region="dsBreakout" role="main"  class="ui-content SpryHiddenRegion">
+      <ul data-role="listview">
+        <!--<li data-role="list-divider">Day One (Saturday 16th April)</li>
+        <li spry:repeat="dsBreakout" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsBreakout" > <a href="#breakout_detail">{time} - {cms_heading}</a>-->
+        <li data-role="list-divider">Day Two (Sunday 17th April)</li>
+        <li spry:repeat="dsBreakout" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsBreakout" > <a href="#breakout_detail">{time} - {cms_heading}</a>
+        <!--<li data-role="list-divider">Day Three (Monday 18th April)</li>
+        <li spry:repeat="dsBreakout" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsBreakout" > <a href="#breakout_detail">{time} - {cms_heading}</a> -->
+        <li data-role="list-divider">Day Four (Tuesday 19th April)</li>
+        <li spry:repeat="dsBreakout" spry:test="'{date_time}'.match(/^[5]/i);" spry:setrow="dsBreakout" > <a href="#breakout_detail">{time} - {cms_heading}</a> 
+        <!--<li data-role="list-divider">Day Five (Wednesday 20th April)</li>
+        <li spry:repeat="dsBreakout" spry:test="'{date_time}'.match(/^[6]/i);" spry:setrow="dsBreakout" > <a href="#breakout_detail">{time} - {cms_heading}</a> -->
+      </ul> 
+    </div>
+  </div><!--end breakout_list-->
+  
+  <!-- BREAKOUT DETAIL-->
+  <div data-role="page" id="breakout_detail">
+    <div data-role="header" data-theme="b">
+      <h1>Breakout Sessions</h1>
+      <a href="#breakout_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsBreakout" role="main"  class="ui-content SpryHiddenRegion">
+      <div class="top_detail" >
+        <h1>{cms_heading}</h1>
+        <h3>{friendly_date} - {time}</h3>
+      </div>
+      <div class="descriptive_text"> 
+      <p class="speakers">Speaker(s)</p>
+      <a spry:if="'{speaker1_name}' != '' &amp;&amp; '{speaker1_name}' != 'undefined'" href="#breakout_speaker1_detail" class="ui-btn ui-corner-all">{speaker1_name} >></a>
+      <a spry:if="'{speaker2_name}' != '' &amp;&amp; '{speaker2_name}' != 'undefined'" href="#breakout_speaker2_detail" class="ui-btn ui-corner-all">{speaker2_name} >></a>
+      <a spry:if="'{speaker3_name}' != '' &amp;&amp; '{speaker1_name}' != 'undefined'" href="#breakout_speaker3_detail" class="ui-btn ui-corner-all">{speaker3_name} >></a>
+        <p>{cms_content}</p>
+      </div>
+    </div>
+  </div><!--end breakout_detail-->
+  
+  <!-- BREAKOUT SPEAKER 1 DETAIL -->
+  <div data-role="page" id="breakout_speaker1_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#breakout_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsBreakout" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker1_img}' != '' &amp;&amp; '{speaker1_img}' != 'undefined'" class="top_detail"> <img src="uploads/{speaker1_img}" alt="{speaker1_name}" width="75"  border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker1_name}" width="75" height="95" border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker1_desc}</p>
+      </div>
+
+      
+    </div>
+  </div><!--end breakout_speaker1_detail-->
+  
+    <!-- BREAKOUT SPEAKER 2 DETAIL -->
+  <div data-role="page" id="breakout_speaker2_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#breakout_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsBreakout" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker2_img}' != '' &amp;&amp; '{speaker2_img}' != 'undefined'" class="top_detail"> <img src="uploads/{speaker2_img}" alt="{speaker2_name}" width="75"  border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker2_name}" width="75" height="95" border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+  <div class="descriptive_text">
+        <p>{speaker2_desc}</p>
+      </div>    
+      
+    </div>
+  </div><!--end breakout_speaker2_detail-->
+  
+  
+      <!-- BREAKOUT SPEAKER 3 DETAIL -->
+  <div data-role="page" id="breakout_speaker3_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#breakout_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsBreakout" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker3_img}' != '' &amp;&amp; '{speaker3_img}' != 'undefined'" class="top_detail"> <img src="uploads/{speaker3_img}" alt="{speaker3_name}" width="75"  border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker3_name}" width="75" height="95" border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker3_desc}</p>
+      </div>
+    </div>
+  </div><!--end breakout_speaker3_detail-->
+  
+  <!--DAY 1-->
+  <div data-role="page" id="day1" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sat 16th</h1>
+      <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[2]/i);">
+        <div class="day1_time">Sat 16th at {start_time} - {end_time}</div>
+        <div class="day1Title">{title}</div>
+      </div></div>
+  </div><!--end day1-->
+  
+  <!--DAY 2-->
+  <div data-role="page" id="day2" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sun 17th</h1>
+      <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsSchedule" role="main" class="ui-content SpryHiddenRegion">
+      <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[3]/i);">
+        <div class="day2_time">Sun 17th at {start_time} - {end_time}</div>
+        <div class="day2Title">{title}</div>
+      </div></div>
+  </div><!--end day2-->
+  
+  <!--DAY 3-->
+  <div data-role="page" id="day3" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Mon 18th</h1>
+      <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[4]/i);">
+        <div class="day3_time">Mon 18th at {start_time} - {end_time}</div>
+        <div class="day3Title">{title}</div>
+      </div>
+    </div>
+  </div><!--end day3-->
+  
+  <!--DAY 4-->
+  <div data-role="page" id="day4" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Tues 19th</h1>
+      <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[5]/i);">
+        <div class="day4_time">Tues 19th at {start_time} - {end_time}</div>
+        <div class="day4Title">{title}</div>
+      </div>
+    </div>
+  </div><!--end day4-->
+  
+    <!--DAY 5-->
+  <div data-role="page" id="day5" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Wed 20th</h1>
+      <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[6]/i);">
+        <div class="day5_time">Wed 20th at {start_time}</div>
+        <div class="day5Title">{title}</div>
+      </div>
+    </div>
+  </div><!--end day5-->
+  
+  <!-- CONTACT PAGE -->
+  <div data-role="page" id="contact_page" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Contact</h1>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div role="main" class="ui-content">
+      <div class="link_button">
+        <h1>MSC Fantasia</h1>
+     
+          <p><a href="tel:00870764878834" target="_blank" class="ui-btn ui-corner-all contact_details">00870 764878834</a></p>
+          <p><a href="tel:00870764878835" target="_blank" class="ui-btn ui-corner-all contact_details">00870 764878835</a></p>  <p><a href="tel:00870764878837" target="_blank" class="ui-btn ui-corner-all contact_details">00870 764878837</a></p>
+</div>
+      <div class="link_button">
+        <h1>Advantage Travel</h1>
+        <p><strong>Nicky Appleby / Dani Ives:</strong><br />
+        <a href="tel:+447944196993" target="_blank" class="ui-btn ui-corner-all contact_details">
+          07944 196993</a></p>
+          <p><a href="mailto:events@advantagetravelpartnership.com" target="_blank" class="ui-btn ui-corner-all contact_details">
+          events@advantagetravelpartnership.com</a></p>
+          <p><strong>Colin O'Neill:</strong><br />
+            <a href="tel:+447967588979" target="_blank" class="ui-btn ui-corner-all contact_details">
+          07967 588979</a></p><p><a href="mailto:colinos@advantagetravelpartnership.com" class="ui-btn ui-corner-all contact_details">colino@advantagetravelpartnership.com</a></p>
+      </div>
+      <div class="link_button">
+        <h1>MSC</h1>
+        <p><strong>Alyshia Bartlett:</strong><br />
+        <a href="tel:+447920011392" target="_blank" class="ui-btn ui-corner-all contact_details">
+          07920 011392</a></p><p><a href="mailto:alyshia.bartlett@msccruises.co.uk" target="_blank" class="ui-btn ui-corner-all contact_details">alyshia.bartlett@msccruises.co.uk</a></p>
+          <p><strong>Danielle Weller:</strong><br />
+            <a href="tel:+447917632544" target="_blank" class="ui-btn ui-corner-all contact_details">
+         07917 632544</a></p>
+        <p><a href="mailto:danielle.weller@msccruises.co.uk" class="ui-btn ui-corner-all contact_details">danielle.weller@msccruises.co.uk</a></p>
+      </div>
+</div>
+     <div data-role="footer">
+		<a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="60%"></a>
+	</div><!--end footer--> 
+  </div><!--end contact_page-->
+
+<!-- NEW DELEGATES page -->
+<div data-role="page" id="delegate_list" >
+<div data-role="header" data-position="fixed" data-theme="b">
+<h1>Delegates</h1>
+<a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a>  </div>
+<div role="main" class="ui-content">
+<!--<div id="attendee_sponsor">Attendee List Brought to you by Intuitive</div>-->
+<div id="search_area">
+<form>
+<input data-type="search" id="divOfPs-input">
+</form>
+</div>
+
+<div id="delegate_listview" spry:region="delegates" class="elements" data-filter="true" data-input="#divOfPs-input">
+<p class="delegatelist" spry:repeat="delegates" spry:setrow="delegates"> <a href="#delegate_detail"><strong>{Organization}</strong> - {First_Name} {Last_Name}</a></p>
+</div>
+</div>
+<div data-role="footer">
+		<a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="60%"></a>
+	</div><!--end footer-->
+</div><!--end delegate_list-->
+  
+  <!-- NEW DELEGATES DETAIL page -->
+  <div data-role="page" id="delegate_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Delegates</h1>
+      
+      <a href="#delegate_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div role="main" class="ui-content">
+<div spry:detailregion="delegates">
+  <h3>{First_Name} {Last_Name}</h3>
+  <p>Organisation: {Organization}
+    </p>
+  <!--<p><a href="mailto:{Email_Address}?cc={G}&subject=I am attending The Advantage Conference 2016" class="ui-btn ui-mini ui-icon-mail ui-btn-icon-right">Send {First_Name} an email </a></p>-->
+</div>
+    </div>
+  </div><!--end delegate_detail--  
+  
+    <!-- START OF NEWS BLOCK -->
+  <div data-role="page" id="news_list" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>News</h1>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a> </div>
+    <div spry:region="dsNews" role="main"  class="ui-content SpryHiddenRegion">
+      <ul data-role="listview">
+        <li spry:repeat="dsNews"  spry:setrow="dsNews" > <a href="#news_detail">{news_headline} - {showdate}</a>
+      </ul> 
+    </div>
+    <div data-role="footer">
+		<a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="60%"></a>
+	</div><!--end footer-->
+  </div><!--end News_list-->
+  
+    <!-- NEWS DETAIL page -->
+  <div data-role="page" id="news_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>News</h1>
+      
+      <a href="#news_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div role="main" class="ui-content">
+      <div id="news details">
+      <div spry:detailregion="dsNews">
+      <h3>{news_headline}</h3>
+      <h5>{showdate}</h5>
+      <p>{news_article}</p>
+      </div>
+      </div>
+    </div>
+  </div><!--end news_detail-->
+  
+      <!-- START OF SOCIAL BLOCK -->
+  <div data-role="page" id="social_list" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Social Events</h1>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a> </div>
+    <div spry:region="dsSocial" role="main"  class="ui-content SpryHiddenRegion">
+      <ul data-role="listview">
+        <!--<li spry:repeat="dsSocial"  spry:setrow="dsSocial" > <a href="#social_detail">{cms_heading}</a>-->
+        
+         <li data-role="list-divider">Day One (Saturday 16th April)</li>
+        <li spry:repeat="dsSocial" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsSocial" > <a href="#social_detail">{time} - {cms_heading}</a></li>
+        
+                 <li data-role="list-divider">Day Two (Sunday 17th April)</li>
+        <li spry:repeat="dsSocial" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsSocial" > <a href="#social_detail">{time} - {cms_heading}</a></li>
+        
+                 <li data-role="list-divider">Day Three (Monday 18th April)</li>
+        <li spry:repeat="dsSocial" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsSocial" > <a href="#social_detail">{time} - {cms_heading}</a></li>
+        
+        <li data-role="list-divider">Day Four (Tuesday 19th April)</li>
+        <li spry:repeat="dsSocial" spry:test="'{date_time}'.match(/^[5]/i);" spry:setrow="dsSocial" > <a href="#social_detail">{time} - {cms_heading}</a></li>
+        
+      </ul> 
+    </div>
+    <div data-role="footer">
+		<a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="60%"></a>
+	</div><!--end footer-->
+  </div><!--end social_list-->
+  
+    <!-- NEW SOCIAL DETAIL page -->
+  <div data-role="page" id="social_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Social Events</h1>
+      
+      <a href="#social_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div role="main" class="ui-content">
+<div spry:detailregion="dsSocial">
+  <h3>{cms_heading}</h3>
+  <h5>{friendly_date} - {time}</h5>
+  <p>{cms_content}</p>
+  
+</div>
+    </div>
+  </div><!--end social_detail-->
+   
+  
+  <!--SPONSOR PAGES-->
+  <div data-role="page" id="sponsor_list" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sponsors</h1>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsSponsors" role="main"  class="ui-content SpryHiddenRegion">
+      <ul data-role="listview">
+        <!--<li data-role="list-divider">A</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[A]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">B</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[B]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">C</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[C]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">D</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[D]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">E</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[E]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">F</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[F]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">G</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[G]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">H</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[H]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">I</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[I]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">J</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[J]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">K</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[K]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">L</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[L]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">M</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[M]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">N</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[N]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">O</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[O]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">P</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[P]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">Q</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[Q]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">R</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[R]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">S</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[S]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">T</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[T]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">U</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[U]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">V</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[V]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">W</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[W]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">X</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[X]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">Y</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[Y]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">Z</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[Z]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>-->
+        <li spry:repeat="dsSponsors" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+
+      </ul>
+      </div>
+      <div data-role="footer">
+		<a href="#app_sponsor"><img src="site_images/iphone5_menu_intuitive_base.png" width="60%"></a>
+	</div><!--end footer-->
+  </div><!--end sponsor_list-->
+  
+  <!--SPONSOR DETAIL-->
+  <div data-role="page" id="sponsor_detail" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sponsors</h1>
+      <a href="#sponsor_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsSponsors" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="dsSponsors">
+        <div spry:when="'{iphone_image}' != '' &amp;&amp; '{iphone_image}' != 'undefined'"> 
+</div>
+         <!--<div spry:default="spry:default"> 
+         <h1>{dexhibitor_name}</h1>
+        </div>--> 
+      </div>
+      <div class="descriptive_text">
+        <h3>{exhibitor_name}</h3>
+        <p spry:if="'{client_image}' != '' &amp;&amp; '{client_image}' != 'undefined'"><img src="uploads/{client_image}" width="200" /></p>
+        <p>{description}</p>
+        <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'"><a href="#" onclick="window.open('{website}','_blank','location=yes','enableViewPortScale=yes');" class="ui-btn ui-corner-all">Visit Website</a></p>
+      </div>
+    </div>
+  </div><!--end sponsor_detail-->
+  
+  <!--APP SPONSOR-->
+  <div data-role="page" id="app_sponsor">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>&nbsp;</h1>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div role="main" class="ui-content">
+      <div class="top_detail">
+        <h1>Welcome to the Advantage Conference 2016</h1>
+      </div> 
+      <div class="descriptive_text">
+        <p>On behalf of the Advantage Travel Partnership team and board of directors, I would like to extend a very warm welcome to you for joining us on board MSC Fantasia for the 2016 Advantage Conference.</p>
+        <p>As always, we do recognise the effort many of you have put in to be with us on this exciting conference cruise and I can assure you that we will offer you all a programme that will more than justify your time and cost investment. Although some of you will have the benefit of experiencing a cruise for the very first time, we expect everyone to derive real value from the overall conference experience.</p>
+        <p>Echoing the conference theme of Blink, the business programme will place a strong emphasis on understanding the scale, pace and nature of the inevitable changes that we will all face in the future.  However, we intend to go well beyond charting change and will offer a range of solutions to allow our members and business partners to thrive in this changing environment. Our speakers will be thought-provoking and the business sessions will be tailored to both a leisure and business travel audience.</p>
+        <p>As far as the social programme is concerned, we are delighted to incorporate our conference into a cruise and we intend to take full advantage of what MSC Fantasia and the Mediterranean destinations en route have to offer our delegates.</p>
+        <p>So please do enjoy the next few days and I can confidently promise you a voyage of exciting discovery, offering you great business potential to take back to your individual businesses.</p>
+        <p>Very kind regards</p>
+        <p>Julia Lo Bue-Said<br>
+          Managing Director<br>
+          Advantage Travel Partnership</p>
+        
+<a href="#" onclick="window.open('http://advantageconference.co.uk/','_blank','location=yes','enableViewPortScale=yes');" class="ui-btn ui-corner-all">Visit Website</a>      </div>
+    </div>
+  </div><!--end app_sponsor-->
+ 
+  <!--  OFFLINE -->
+<div data-role="page" id="offline" >
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>OFFLINE</h1>
+    </div>
+    <div role="main" class="ui-content">
+    <div id="offline">You have slow, or no internet connection. Please quit the App, connect to the internet and relaunch.</div>
+    
+      </div>
+      
+  </div><!--end offline-->
+  
+</div><!--end pagecontainer-->
+</body>
+</html>
