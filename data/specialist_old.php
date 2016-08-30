@@ -43,31 +43,29 @@ $query_Recordset1 = "SELECT cms_content.cms_id,
 	cms_content.publish, 
 	cms_content.sort_order, 
 	cms_content.advertising, 
-	cms_content.speaker1_name,
-	cms_content.speaker1_desc,
-	cms_content.speaker1_img,
-	cms_content.speaker2_name,
-	cms_content.speaker2_desc,
-	cms_content.speaker2_img,
-	cms_content.speaker3_name,
-	cms_content.speaker3_desc,
-	cms_content.speaker3_img,
-	cms_content.speaker4_name,
-	cms_content.speaker4_desc,
-	cms_content.speaker4_img,
-	cms_content.speaker5_name,
-	cms_content.speaker5_desc,
-	cms_content.speaker5_img,
+	cms_content.speaker, 
 	cms_content.date_time, 
 	cms_content.time, 
+	cms_speakers.spkr_advertising, 
+	cms_speakers.publish, 
+	cms_speakers.spkr_cat, 
+	cms_speakers.iphone_mugshot, 
+	cms_speakers.spkr_image2_alt, 
+	cms_speakers.spkr_image2, 
+	cms_speakers.spkr_image1_alt, 
+	cms_speakers.spkr_image1, 
+	cms_speakers.spkr_content, 
+	cms_speakers.spkr_heading, 
+	cms_speakers.spkr_id, 
 	schedule_title.schedule_title_id, 
 	schedule_title.schedule_date, 
 	schedule_title.schedule_title, 
 	schedule_title.friendly_date, 
 	schedule_title.publish
-FROM cms_content INNER JOIN schedule_title ON cms_content.date_time = schedule_title.schedule_title_id
+FROM cms_content INNER JOIN cms_speakers ON cms_content.speaker = cms_speakers.spkr_id
+	 INNER JOIN schedule_title ON cms_content.date_time = schedule_title.schedule_title_id
 
-WHERE cms_content.publish = 'y' AND cms_content.cms_cat = 8 ORDER BY cms_content.sort_order ASC";
+WHERE cms_content.publish = 'y' AND cms_content.cms_cat = 7 ORDER BY cms_content.sort_order ASC";
 $Recordset1 = mysql_query($query_Recordset1, $abtaFrontConn) or die(mysql_error());
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);

@@ -420,3 +420,8 @@ body, html {
 	padding: 20px;
 	text-shadow: none;
 }
+
+p.speakers {
+	text-align: center;
+	font-weight:bold;
+}
