@@ -107,7 +107,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 
 <plugin name="org.apache.cordova.inappbrowser" source="pgb" spec="0.6.0" />
 
-<plugin name="org.apache.cordova.network-information" source="pgb" spec="0.2.7" />
+<plugin name="org.apache.cordova.network-information" source="pgb"  />
 
 	
 	<feature name="http://api.phonegap.com/1.0/network"/>
