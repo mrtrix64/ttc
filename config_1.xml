@@ -66,34 +66,34 @@ The Travel Convention is the UK's largest and most significant annual event for 
 <icon src="tileicon.png" gap:platform="winphone" gap:role="background" />
 
 <!--SPLASH-->
-<splash src="splash.png" width="320" height="480" />
+<gap:splash src="splash.png" width="320" height="480" />
 <!-- iPhone and iPod touch -->
-<splash src="splash/Default.png" gap:platform="ios" width="320" height="480" />
-<splash src="splash/Default@2x.png" gap:platform="ios" width="640" height="960" />
+<gap:splash src="splash/Default.png" gap:platform="ios" width="320" height="480" />
+<gap:splash src="splash/Default@2x.png" gap:platform="ios" width="640" height="960" />
 
 <!-- iPhone 5 / iPod Touch (5th Generation) -->
-<splash src="splash/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+<gap:splash src="splash/Default-568h@2x.png" gap:platform="ios" width="640" height="1136" />
 
 <!-- iPhone 6 -->
-<splash src="splash/Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
-<splash src="splash/Default-Portrait-736h@3x.png" gap:platform="ios" width="1242" height="2208" />
+<gap:splash src="splash/Default-667h@2x.png" gap:platform="ios" width="750" height="1334" />
+<gap:splash src="splash/Default-Portrait-736h@3x.png" gap:platform="ios" width="1242" height="2208" />
 
 <!-- iPad -->
-<splash src="splash/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
+<gap:splash src="splash/Default-Portrait.png" gap:platform="ios" width="768" height="1024" />
 
 <!-- Retina iPad -->
-<splash src="splash/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
+<gap:splash src="splash/Default-Portrait@2x.png" gap:platform="ios" width="1536" height="2048" />
 
 <!--Android-->
-<splash src="splash/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-<splash src="splash/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-<splash src="splash/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-<splash src="splash/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-<splash src="splash/fr-xhdpi.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
-<splash src="splash/portrait-xxhdpi.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
+<gap:splash src="splash/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+<gap:splash src="splash/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+<gap:splash src="splash/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+<gap:splash src="splash/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+<gap:splash src="splash/fr-xhdpi.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
+<gap:splash src="splash/portrait-xxhdpi.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
 
 <!--Windows Phone-->
-<splash src="splash/splash.jpg" gap:platform="winphone" />
+<gap:splash src="splash/splash.jpg" gap:platform="winphone" />
 
 <preference name='phonegap-version' value='cli-5.2.0' />
 	
@@ -103,12 +103,11 @@ The Travel Convention is the UK's largest and most significant annual event for 
 	
 	<preference name="DisallowOverscroll" value="true" />
 				
-	<plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" source="pgb" spec="1.2.0" />
-
-<plugin name="org.apache.cordova.inappbrowser" source="pgb" spec="0.6.0" />
-
-<plugin name="org.apache.cordova.network-information" source="pgb" spec="0.2.7" />
-
+	<plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
+	
+	<gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" version="1.2.0" />
+	
+    <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
 	
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<access origin="*" />
