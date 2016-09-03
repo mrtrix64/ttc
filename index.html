@@ -23,8 +23,8 @@ $(document).bind("mobileinit", function(){
 <script src="webform.js" type="text/javascript"></script>
 
 
-<script type="text/javascript" src="externalConn.js"></script>
-<!--<script type="text/javascript" src="localConn.js"></script>-->
+<!--<script type="text/javascript" src="externalConn.js"></script>-->
+<script type="text/javascript" src="localConn.js"></script>
 
 <script type="text/javascript" src="delegates.js"></script>
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
@@ -284,10 +284,11 @@ addToHomescreen();
       </div>
       <div class="descriptive_text">
       <p class="speakers">Speaker(s)</p>
-      <a spry:if="'{speaker1_name}' != '' &amp;&amp; '{speaker1_name}' != 'undefined'" href="#plenary_speaker1_detail" class="ui-btn ui-corner-all">{speaker1_name} >></a>
-      <a  spry:if="'{speaker2_name}' != '' &amp;&amp; '{speaker2_name}' != 'undefined'" href="#plenary_speaker2_detail" class="ui-btn ui-corner-all">{speaker2_name} >></a><a spry:if="'{speaker3_name}' != '' &amp;&amp; '{speaker3_name}' != 'undefined'" href="#plenary_speaker3_detail" class="ui-btn ui-corner-all">{speaker3_name} >></a>
-      <a spry:if="'{speaker4_name}' != '' &amp;&amp; '{speaker4_name}' != 'undefined'" href="#plenary_speaker4_detail" class="ui-btn ui-corner-all">{speaker4_name} >></a>
-      <a spry:if="'{speaker5_name}' != '' &amp;&amp; '{speaker5_name}' != 'undefined'" href="#plenary_speaker5_detail" class="ui-btn ui-corner-all">{speaker1_name} >></a>
+      <a spry:if="'{speaker1_name}' != '' &amp;&amp; '{speaker1_name}' != 'undefined'" href="#specialist_speaker1_detail" class="ui-btn ui-corner-all">{speaker1_name} >></a>
+      <a  spry:if="'{speaker2_name}' != '' &amp;&amp; '{speaker2_name}' != 'undefined'" href="#specialist_speaker2_detail" class="ui-btn ui-corner-all">{speaker2_name} >></a>
+      <a spry:if="'{speaker3_name}' != '' &amp;&amp; '{speaker3_name}' != 'undefined'" href="#specialist_speaker3_detail" class="ui-btn ui-corner-all">{speaker3_name} >></a>
+      <a spry:if="'{speaker4_name}' != '' &amp;&amp; '{speaker4_name}' != 'undefined'" href="#specialist_speaker4_detail" class="ui-btn ui-corner-all">{speaker4_name} >></a>
+      <a spry:if="'{speaker5_name}' != '' &amp;&amp; '{speaker5_name}' != 'undefined'" href="#specialist_speaker5_detail" class="ui-btn ui-corner-all">{speaker5_name} >></a>
         <p>{cms_content}</p>
       </div>
     </div>
