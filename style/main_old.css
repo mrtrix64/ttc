@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 .red {
 	color: #b80f28;
 }
@@ -7,157 +12,43 @@
 .green {
 	color: #71b506;
 }
-.biege {
-	color: #BEAF7C;
+ul {
+	margin: 10px;
+	padding: 10px;
+}
+li {
+	margin-bottom: 7px;
+}
+p, h1, h2, h3 {
+	margin-bottom: 10px;
+}
+#sponsor_detail .descriptive_text h3 {
+	margin: 0px 0px 10px 0px;
+}
+	
+#home, #schedulemenu, #session_list,  #twitter_page, #contact_page,
+#contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4 {
+	background: url(../site_images/iphone5_background.png) no-repeat left top;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#home, #app_sponsor, #contact_page, #contact_message_page, #abta_detail, #sponsor_detail {
+	text-align:center;
 }
 
-
-#schedule {
-position:absolute;
-left:0px;
-top:30px;
-width:86px;
-height:86px;
-z-index:1;
-}
-
-#speakers {
-position:absolute;
-left:101px;
-top:30px;
-width:86px;
-height:86px;
-z-index:1;
-}
-
-#qanda {
-position:absolute;
-left:203px;
-top:30px;
-width:86px;
-height:86px;
-z-index:1;
-}
-
-
-#map {
-position:absolute;
-left:0px;
-top:131px;
-width:86px;
-height:86px;
-z-index:1;
-}
-
-#sponsors {
-position:absolute;
-left:101px;
-top:131px;
-width:86px;
-height:86px;
-z-index:1;
-}
-
-#contact {
-position:absolute;
-left:203px;
-top:131px;
-width:86px;
-height:86px;
-z-index:1;
-}
-
-
-#twitter {
-position:absolute;
-left:0px;
-top: 232px;
-width:86px;
-height:86px;
-z-index:1;
-}
-
-#linkedin {
-position:absolute;
-left:101px;
-top:232px;
-width:86px;
-height:86px;
-z-index:1;
-}
-
-#appsponsor {
-position:absolute;
-left:203px;
-top:232px;
-width:86px;
-height:86px;
-z-index:1;
-}
-#home {
-background-image: url(../site_images/bigbg.jpg);
-background-repeat: no-repeat; 
-text-align: center;
-}
-
-#schedulemenu {
-background-image: url(../site_images/bigbg.jpg);
-background-repeat: no-repeat;
-
-}
-#session_list {
-background-image: url(../site_images/bigbg.jpg);
-background-repeat: no-repeat;
-
-}
-#app_sponsor {
-text-align: center;
-
-}
-#twitter_page {
-background-image: url(../site_images/bigbg.jpg);
-background-repeat: no-repeat;
-}
-
-#contact_page, #contact_message_page {
-background-image: url(../site_images/bigbg.jpg);
-background-repeat: no-repeat;
-text-align: center;
-}
-#qanda_desk {
-background-image: url(../site_images/bigbglight.jpg);
-background-repeat: no-repeat;
-}
-#abta_detail {
-	text-align: center;
-}
-#day1 {
-background-image: url(../site_images/bigbg.jpg);
-background-repeat: no-repeat;
-}
-#day2 {
-background-image: url(../site_images/bigbg.jpg);
-background-repeat: no-repeat;
-}
-#day3 {
-background-image: url(../site_images/bigbg.jpg);
-background-repeat: no-repeat;
-}
-#day4 {
-background-image: url(../site_images/bigbg.jpg);
-background-repeat: no-repeat;
-}
 .day1_time {
 font-weight: bold;
 color: #FFF;
-background-color: #489598;
+background-color: #e03a3e;
 padding: 10px;
 }
 .day1Title {
 padding: 0px;
 margin-bottom: 0px;
-border: 1px solid #489598;
-color: #489598;
+border: 1px solid #e03a3e;
+color: #e03a3e;
 background-color: #FFF;
 padding: 0px 8px;
 }
@@ -165,31 +56,31 @@ padding: 0px 8px;
 .day2_time {
 font-weight: bold;
 color: #FFF;
-background-color: #9A1129;
+background-color: #ad7ab5;
 padding: 10px;
 }
 .day2Title {
 padding: 0px;
 margin-bottom: 0px;
-border: 1px solid #9A1129;
-color: #9A1129;
+border: 1px solid #ad7ab5;
+color: #ad7ab5;
 background-color: #FFF;
 padding: 0px 8px;
 }
 .day3_time {
 font-weight: bold;
 color: #FFF;
-background-color: #71B506;
+background-color: #fcb316;
 padding: 10px;
 }
 .day3Title {
 padding: 0px;
 margin-bottom: 0px;
-border: 1px solid #71B506;
-color: #71B506;
+border: 1px solid #fcb316;
+color: #fcb316;
 background-color: #FFF;
 padding: 0px 8px;
-}
+} 
 .day4_time {
 font-weight: bold;
 color: #FFF;
@@ -219,9 +110,7 @@ padding: 0px 8px;
 	width: 100%;
 	padding: 15px 15px 20px 15px;
 }
-#sponsor_detail {
-	text-align: center;
-}
+
 #sponsor_detail .top_detail {
 	min-height: 75px;
 	padding-bottom: 15px;
@@ -244,11 +133,20 @@ padding: 0px 8px;
 	color: #71b506;
 	font-size: 20px;
 }
-#speaker_detail .ui-content, #sponsor_detail .ui-content, #hotel_detail .ui-content, #plenary_detail .ui-content, #plenary_speaker_detail .ui-content, #masterclass_detail .ui-content, #masterclass_speaker_detail .ui-content, #discussion_detail .ui-content, #discussion_speaker_detail .ui-content, #forum_detail .ui-content, #forum_speaker_detail .ui-content, #app_sponsor .ui-content, #abta_detail .ui-content  {
+#app_sponsor .top_detail, #app_sponsor .top_detail img {
+	margin: 0;
+	padding: 0;
+/*	border: none;*/
+	display: block;
+}
+#speaker_detail .ui-content, #sponsor_detail .ui-content, #hotel_detail .ui-content, #plenary_detail .ui-content, #plenary_speaker_detail .ui-content, #specialist_detail .ui-content, #specialist_session_speaker_detail .ui-content, #discussion_detail .ui-content, #discussion_speaker_detail .ui-content, #forum_detail .ui-content, #forum_speaker_detail .ui-content, #app_sponsor .ui-content, #abta_detail .ui-content  {
 	margin: 0;
 	padding: 0;
 }
-#day1 .ui-content, #day2 .ui-content, #day3 .ui-content {
+#plenary_speaker_detail .top_detail {
+	min-height: 95px;
+}
+#day1 .ui-content, #day2 .ui-content, #day3 .ui-content, #day4 .ui-content {
 	padding: 0px;
 }
 
@@ -267,12 +165,13 @@ padding: 0px 8px;
 	text-align: center;
 	font-size: 15px;
 	font-weight: bold;
-	color: #666;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	color: #666 !important;
+	-webkit-border-radius:1em;
+	-moz-border-radius:1em;
+	border-radius:1em;
 }
 p.weblink {
-	margin: 0px 0px 10px 0px;
+	margin: 10px 0px 10px 0px;
 }
 .link_button {
 	margin: 5px auto 0 auto;
@@ -284,17 +183,63 @@ p.weblink {
 .SpryHiddenRegion {
 visibility: hidden;
 }
-
-#menu_items {
-width: 288px;
-height: 500px;
-position: relative;
-text-align: left;
-margin: 0px auto;
+#logo_container {
+	width: 50%;
+	margin: 0px auto;
 }
+#logo_container img {
+	width: 100%;
+	height: auto;
+	margin: 2em 0;
+}
+#menu_items {
+	width: 100%;
+	text-align: center;
+	display:inline-block;
+}
+
+#menu_items img {
+	width: 100%;
+	height: auto;
+	display:block;
+}
+
+.buttons img {
+	width:100%;
+	height: auto;
+	display:block;
+}
+.buttons {
+	display:inline-block;
+	width:30%;
+	height:auto;
+}
+#app_sponsor_logo {
+	  position:absolute;
+	  width:100%;
+	  height:auto;
+	  bottom: 0;
+}
+
+#app_sponsor_logo img, #app_sponsor_logo_home img, div[data-role=footer] img {
+	display: block;
+}
+#home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow,
+#contact_page .ui-footer, #contact_page .ui-footer a.ui-link, #contact_page .ui-footer a.ui-btn, #contact_page .ui-footer a.ui-shadow  {
+	border: none;
+	text-shadow: none;
+	margin:0;
+	padding:0;
+	background: none;
+	width:100%;
+}
+#home, #schedulemenu, #session_list, #contact_page {
+	position: relative;
+}
+
 .ui-header .ui-title {
-	font-size: 22px;
-	margin: .4em 90px .6em;
+	/*font-size: 22px;
+	margin: .4em 90px .6em;*/
 }
 #qanda_desk .ui-content {
 	padding: 0 5%;
@@ -310,7 +255,7 @@ margin: 0px auto;
 .noscriptmsg {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #FFF;
-	background-image: url(../site_images/bigbg.jpg);
+	background-image: url(../site_images/iphone5_background.png);
 	background-repeat: no-repeat;
 	text-align: center;
 	vertical-align: middle;
@@ -326,13 +271,17 @@ margin: 0px auto;
 	padding-bottom: 0px;
 }
 .sponsor_image {
-	background-image: url(../site_images/appsponsor.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	height: 90px;
+	text-align: center;
+	height: 100px;
 	width: 100%;
+}
+ul.ui-listview + p.sponsor_image {
+	margin-top: 30px;
+}
+ul.ui-listview[data-inset="true"] + p.sponsor_image {
+	margin-top: 10px;
 }
 .sponsor_hompeage {
 	margin-top: 0px;
@@ -345,4 +294,134 @@ margin: 0px auto;
 	width: 100%;
 	position: absolute;
 	top: 320px;
+}
+
+
+.portrait, .portrait .ui-page,
+  .landscape, .landscape .ui-page {
+	  min-height: 100%;
+  }
+  
+#blocked {
+	display: none;
+}
+
+
+
+div[data-role=header] a.ui-corner-all, div[data-role=content] a.ui-corner-all {
+	-webkit-border-radius:1em !important;
+	-moz-border-radius:1em !important;
+	border-radius:1em !important;
+}
+	
+#search_area form {
+	background-color: #f9f9f9;
+}
+#delegate_page div[data-role=content]{
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+#delegate_page div.elements {
+	/*margin-top: 3em;*/
+}
+@media only screen and (min-width: 768px) { 
+#home, #schedulemenu, #session_list, #twitter_page, #contact_page,
+#contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4
+{
+  background: url(../site_images/ipad_background.png) no-repeat left top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+#menu_items {
+	width:70%;
+	text-align:center;
+}
+#logo_container {
+	width: 30%;
+	margin: 0 auto;
+}
+div[data-role=content] {
+	line-height: 1.5em;
+}
+#home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow,
+#contact_page .ui-footer, #contact_page .ui-footer a.ui-link, #contact_page .ui-footer a.ui-btn, #contact_page .ui-footer a.ui-shadow  {
+	margin-top:4em;
+}
+}
+
+
+body, html {
+	height: 100%;
+}
+
+.delegatelist {
+	padding-top: 7px;
+	padding-bottom: 14px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+.delegatelist a:link, .delegatelist a:visited, .delegatelist a:hover, .delegatelist a:active {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+#delegate_listview {
+	margin: 0px;
+	padding: 0px;	/*display: none;*/
+}
+#message {
+	/*display: none;*/
+	font-size: 16px;
+	font-weight: bold;
+	color: #F00;
+}
+#theform {
+	margin-top: 15px;
+}
+#message h1 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #F00;
+}
+
+#attendee_sponsor {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+#search_area {
+	margin: 0px;
+	padding: 0px;
+}
+
+#attendee_sponsor {
+	font-size: 13px;
+	color: #666;
+	background-color: #CCC;
+	padding: 10px;
+	border: 1px solid #666;
+}
+
+#delegate_email_view {
+	display: none;
+}
+#clearbutton {
+	display: none;
+}
+
+#offline {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #F00;
+	padding: 20px;
+	text-shadow: none;
+}
+
+p.speakers {
+	text-align: center;
+	font-weight:bold;
 }
