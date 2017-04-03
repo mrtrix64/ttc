@@ -26,7 +26,7 @@ p, h1, h2, h3 {
 	margin: 0px 0px 10px 0px;
 }
 	
-#home, #schedulemenu, #session_list,  #twitter_page, #contact_page,
+#home,  #schedulemenu, #session_list,  #twitter_page, 
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4 {
 	background: url(../site_images/iphone6plus_background.png) no-repeat left top;
 	-webkit-background-size: cover;
@@ -34,7 +34,7 @@ p, h1, h2, h3 {
     -o-background-size: cover;
     background-size: cover;
 }
-#home, #app_sponsor, #contact_page, #contact_message_page, #abta_detail, #sponsor_detail {
+#home, #app_sponsor,  #contact_message_page, #abta_detail, #sponsor_detail {
 	text-align:center;
 }
 
@@ -109,6 +109,7 @@ padding: 0px 8px;
 	position: relative;
 	width: 100%;
 	padding: 15px 15px 20px 15px;
+	min-height: 90px;
 }
 
 #sponsor_detail .top_detail {
@@ -124,14 +125,16 @@ padding: 0px 8px;
 	font-size: 20px;
 	padding: 0;
 	margin: 0;
+	word-wrap: break-word;
 }
-#hotel_detail .top_detail h1 {
+#hotel_detail .top_detail h1, #accommodation_detail .top_detail h1 {
 	color: #14848e;
 	font-size: 20px;
 }
 #sponsor_detail .top_detail h1 {
 	color: #71b506;
 	font-size: 20px;
+	margin-left: -30px;
 }
 #app_sponsor .top_detail, #app_sponsor .top_detail img {
 	margin: 0;
@@ -139,10 +142,11 @@ padding: 0px 8px;
 /*	border: none;*/
 	display: block;
 }
-#speaker_detail .ui-content, #sponsor_detail .ui-content, #hotel_detail .ui-content, #plenary_detail .ui-content, #plenary_speaker_detail .ui-content, #specialist_detail .ui-content, #specialist_session_speaker_detail .ui-content, #discussion_detail .ui-content, #discussion_speaker_detail .ui-content, #forum_detail .ui-content, #forum_speaker_detail .ui-content, #app_sponsor .ui-content, #abta_detail .ui-content  {
+#speaker_detail .ui-content, #sponsor_detail .ui-content, #hotel_detail .ui-content, #plenary_detail .ui-content, #plenary_speaker_detail .ui-content, #specialist_detail .ui-content, #specialist_session_speaker_detail .ui-content, #discussion_detail .ui-content, #discussion_speaker_detail .ui-content, #forum_detail .ui-content, #forum_speaker_detail .ui-content, #app_sponsor .ui-content, #abta_detail .ui-content, #sporting_events_detail .ui-content, #social_events_detail .ui-content, #activities_detail .ui-content, #accommodation_detail .ui-content, #advertising .ui-content, #destination .ui-content, #register_now .ui-content, #sponsorship .ui-content, #the_event .ui-content, #travel .ui-content, #theme .ui-content, #contact_page .ui-content, #delegate_page .ui-content, #home .ui-content  {
 	margin: 0;
 	padding: 0;
 }
+
 #plenary_speaker_detail .top_detail {
 	min-height: 95px;
 }
@@ -193,9 +197,10 @@ visibility: hidden;
 	margin: 2em 0;
 }
 #menu_items {
-	width: 100%;
+	width: 90%;
 	text-align: center;
 	display:inline-block;
+	margin-bottom: 1em;
 }
 
 #menu_items img {
@@ -214,18 +219,32 @@ visibility: hidden;
 	width:30%;
 	height:auto;
 }
-#app_sponsor_logo {
-	  position:absolute;
+.app_sponsor_logo {
+	  position:relative;
 	  width:100%;
 	  height:auto;
 	  bottom: 0;
 }
-
-#app_sponsor_logo img, #app_sponsor_logo_home img, div[data-role=footer] img {
+img.app_sponsor_logo_home {
+	margin-bottom: 1em;
+}
+.app_sponsor_logo img, .app_sponsor_logo_home img, div[data-role=footer] img {
 	display: block;
 }
 #home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow,
-#contact_page .ui-footer, #contact_page .ui-footer a.ui-link, #contact_page .ui-footer a.ui-btn, #contact_page .ui-footer a.ui-shadow  {
+#contact_page .ui-footer, #contact_page .ui-footer a.ui-link, #contact_page .ui-footer a.ui-btn, #contact_page .ui-footer a.ui-shadow,
+#info .ui-footer, #info .ui-footer a.ui-link, #info .ui-footer a.ui-btn, #info .ui-footer a.ui-shadow,
+#abta_detail .ui-footer, #abta_detail .ui-footer a.ui-link, #abta_detail .ui-footer a.ui-btn, #abta_detail .ui-footer a.ui-shadow,
+#destination .ui-footer, #destination .ui-footer a.ui-link, #destination .ui-footer a.ui-btn, #destination .ui-footer a.ui-shadow,
+#networking .ui-footer, #networking .ui-footer a.ui-link, #networking .ui-footer a.ui-btn, #networking .ui-footer a.ui-shadow,
+#hotel_list .ui-footer, #hotel_list .ui-footer a.ui-link, #hotel_list .ui-footer a.ui-btn, #hotel_list .ui-footer a.ui-shadow,
+#sponsors .ui-footer, #sponsors .ui-footer a.ui-link, #sponsors .ui-footer a.ui-btn, #sponsors .ui-footer a.ui-shadow,
+#registration .ui-footer, #registration .ui-footer a.ui-link, #registration .ui-footer a.ui-btn, #registration .ui-footer a.ui-shadow,
+#register_now .ui-footer, #register_now .ui-footer a.ui-link, #register_now .ui-footer a.ui-btn, #register_now .ui-footer a.ui-shadow,
+#the_event .ui-footer, #the_event .ui-footer a.ui-link, #the_event .ui-footer a.ui-btn, #the_event .ui-footer a.ui-shadow,
+#day1 .ui-footer, #day1 .ui-footer a.ui-link, #day1 .ui-footer a.ui-btn, #day1 .ui-footer a.ui-shadow,
+#day2 .ui-footer, #day2 .ui-footer a.ui-link, #day2 .ui-footer a.ui-btn, #day2 .ui-footer a.ui-shadow,
+#day3 .ui-footer, #day3 .ui-footer a.ui-link, #day3 .ui-footer a.ui-btn, #day3 .ui-footer a.ui-shadow  {
 	border: none;
 	text-shadow: none;
 	margin:0;
@@ -233,14 +252,13 @@ visibility: hidden;
 	background: none;
 	width:100%;
 }
+#hotel_list .ui-footer, #day1 .ui-footer, #day2 .ui-footer, #day3 .ui-footer {
+	margin-top: 10px;
+}
 #home, #schedulemenu, #session_list, #contact_page {
 	position: relative;
 }
 
-.ui-header .ui-title {
-	/*font-size: 22px;
-	margin: .4em 90px .6em;*/
-}
 #qanda_desk .ui-content {
 	padding: 0 5%;
 }
@@ -324,36 +342,11 @@ div[data-role=header] a.ui-corner-all, div[data-role=content] a.ui-corner-all {
 #delegate_page div.elements {
 	/*margin-top: 3em;*/
 }
-@media only screen and (min-width: 768px) { 
-#home, #schedulemenu, #session_list, #twitter_page, #contact_page,
-#contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4
-{
-  background: url(../site_images/ipad_background.png) no-repeat left top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-}
-#menu_items {
-	width:70%;
-	text-align:center;
-}
-#logo_container {
-	width: 30%;
-	margin: 0 auto;
-}
-div[data-role=content] {
-	line-height: 1.5em;
-}
-#home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow,
-#contact_page .ui-footer, #contact_page .ui-footer a.ui-link, #contact_page .ui-footer a.ui-btn, #contact_page .ui-footer a.ui-shadow  {
-	margin-top:4em;
-}
-}
 
 
 body, html {
 	height: 100%;
+	background-color: #fff;
 }
 
 .delegatelist {
@@ -425,3 +418,138 @@ p.speakers {
 	text-align: center;
 	font-weight:bold;
 }
+
+iframe {
+	border: none;
+	width:100%;
+	margin: 20px 0px 10px 0px;
+}
+
+div.scraped_heading {
+	-moz-box-shadow: 3px 3px 10px #666;
+	-webkit-box-shadow: 3px 3px 10px #666;
+	box-shadow: 3px 3px 10px #666;
+	background-color: #FFF;
+	border: 1px solid #999;
+	position: relative;
+	min-height: 90px;
+}
+.scraped_heading h1 {
+	font-size:20px;
+	color: #b80f28;
+	padding: 15px 0px 20px 15px;
+	margin: 0;
+}
+
+
+/* --IMAGE ROTATOR --*/
+/* rotator in-page placement */
+div.rotator, div.rotator2, div.rotator3, div.rotator4, div.rotator5, div.rotator6, div.rotator7, div.rotator8, div.rotator9, div.rotator10, div.rotator11, div.rotator12, div.rotator13, div.rotator14, div.rotator15, div.rotator16, div.rotator17 {
+	position:relative;
+	width: 100%;
+	padding-bottom: 10px;
+	height: 180px;
+}
+div.rotator ul, div.rotator ul li {
+	margin: 0;
+	padding: 0;
+	
+}
+
+/*div.rotator css --*/
+div.rotator ul li, div.rotator2 ul li, div.rotator3 ul li, div.rotator4 ul li, div.rotator5 ul li, div.rotator6 ul li, div.rotator7 ul li,
+div.rotator8 ul li, div.rotator9 ul li, div.rotator10 ul li, div.rotator11 ul li, div.rotator12 ul li, div.rotator13 ul li, div.rotator14 ul li, div.rotator15 ul li, div.rotator16 ul li, div.rotator17 ul li {
+	/*float:left;*/
+	position:absolute;
+	list-style: none;
+	background-color: #fff;
+}
+div.rotator ul, div.rotator ul li, div.rotator2 ul, div.rotator2 ul li, div.rotator3 ul, div.rotator3 ul li, div.rotator4 ul, div.rotator4 ul li, div.rotator5 ul, div.rotator5 ul li, div.rotator6 ul, div.rotator6 ul li, div.rotator7 ul, div.rotator7 ul li, div.rotator8 ul, div.rotator8 ul li, div.rotator9 ul, div.rotator9 ul li, div.rotator10 ul, div.rotator10 ul li, div.rotator11 ul, div.rotator11 ul li, div.rotator12 ul, div.rotator12 ul li, div.rotator13 ul, div.rotator13 ul li, div.rotator14 ul, div.rotator14 ul li, div.rotator15 ul, div.rotator15 ul li, div.rotator16 ul, div.rotator16 ul l, div.rotator17 ul, div.rotator17 ul li {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+div.rotator ul li.show, div.rotator2 ul li.show, div.rotator3 ul li.show, div.rotator4 ul li.show, div.rotator5 ul li.show, div.rotator6 ul li.show, div.rotator7 ul li.show, div.rotator8 ul li.show, div.rotator9 ul li.show, div.rotator10 ul li.show, div.rotator11 ul li.show, div.rotator12 ul li.show, div.rotator13 ul li.show, div.rotator14 ul li.show, div.rotator15 ul li.show, div.rotator16 ul li.show, div.rotator17 ul li.show  {
+	z-index:500;
+}
+
+img.float {
+	float: right;
+	margin: 0.75em 0.5em 0.5em 0.5em;	
+}
+
+p.mainsite a:link, p.mainsite a:visited, p.mainsite a:hover, p.mainsite a:active {
+	color: #fff;
+	font-size: 90%;
+}
+
+@media only screen and (min-width: 320px) { 
+p.mainsite {
+	margin: 0;
+	padding; 0;
+	display: block;
+	margin-top: -6em;
+	
+}
+}
+@media only screen and (min-width: 736px) { 
+p.mainsite {
+	margin: 0;
+	padding; 0;
+	display: block;
+	margin-top: -3em;
+	
+}
+}
+
+@media only screen and (min-width: 768px) { 
+#home, #schedulemenu, #session_list, #twitter_page, 
+#contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4
+{
+  background: url(../site_images/ipad_background.png) no-repeat left top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+#menu_items {
+	width:70%;
+	text-align:center;
+}
+#logo_container {
+	width: 30%;
+	margin: 0 auto;
+}
+div[data-role=content] {
+	line-height: 1.5em;
+}
+#home .ui-footer, #home .ui-footer a.ui-link, #home .ui-footer a.ui-btn, #home .ui-footer a.ui-shadow,
+#contact_page .ui-footer, #contact_page .ui-footer a.ui-link, #contact_page .ui-footer a.ui-btn, #contact_page .ui-footer a.ui-shadow  {
+	margin-top:4em;
+}
+p.mainsite {
+	margin: 0;
+	padding; 0;
+	display: block;
+	margin-top: -6em;
+	
+}
+}
+
+@media only screen
+and (min-width: 1025px) {
+iframe {
+	min-height: 700px;
+	
+}
+p.mainsite {
+	margin: 0;
+	padding; 0;
+	display: block;
+	margin-top: -3em;
+	
+}
+}
+

@@ -39,3 +39,22 @@ dsDates.setColumnType("schedule_title_id", "number");
 dsDates.setColumnType("schedule_date", "date");
 
 var delegates = new Spry.Data.XMLDataSet("http://localhost/ttc_ios/ttc_ios_2014/ttc_ios/data/delegates.php?view_xml=1", "recordset/record");
+
+var dsSpeakers = new Spry.Data.XMLDataSet("http://localhost/ttc_ios/ttc_ios_2014/ttc_ios/data/speakers.php?view_xml=1", "recordset/record");
+dsSpeakers.setColumnType("spkr_content", "html");
+
+var dsSocial = new Spry.Data.XMLDataSet("http://localhost/ttc_ios/ttc_ios_2014/ttc_ios/data/social_events.php?view_xml=1", "recordset/record");
+dsSocial.setColumnType("cms_content", "html");
+
+var dsSporting = new Spry.Data.XMLDataSet("http://localhost/ttc_ios/ttc_ios_2014/ttc_ios/data/sporting_events.php?view_xml=1", "recordset/record");
+dsSporting.setColumnType("cms_content", "html");
+
+var dsActivities = new Spry.Data.XMLDataSet("http://localhost/ttc_ios/ttc_ios_2014/ttc_ios/data/activities.php?view_xml=1", "recordset/record");
+dsActivities.setColumnType("cms_content", "html");
+
+var dsAccommodation = new Spry.Data.XMLDataSet("http://localhost/ttc_ios/ttc_ios_2014/ttc_ios/data/accommodation.php?view_xml=1", "recordset/record");
+dsAccommodation.setColumnType("hotel_name", "html");
+dsAccommodation.setColumnType("google_map", "html");
+dsAccommodation.setColumnType("description", "html");
+dsAccommodation.setColumnType("amenities", "html");
+dsAccommodation.setColumnType("website", "html");

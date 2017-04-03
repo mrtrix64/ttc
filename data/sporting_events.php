@@ -32,40 +32,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 
 mysql_select_db($database_abtaFrontConn, $abtaFrontConn);
-$query_Recordset1 = "SELECT cms_content.cms_id, 
-	cms_content.cms_heading, 
-	cms_content.cms_content, 
-	cms_content.cms_image1, 
-	cms_content.cms_image1_alt, 
-	cms_content.cms_image2, 
-	cms_content.cms_image2_alt, 
-	cms_content.cms_cat, 
-	cms_content.publish, 
-	cms_content.sort_order, 
-	cms_content.advertising, 
-	cms_content.speaker, 
-	cms_content.date_time, 
-	cms_content.time, 
-	cms_speakers.spkr_advertising, 
-	cms_speakers.publish, 
-	cms_speakers.spkr_cat, 
-	cms_speakers.iphone_mugshot, 
-	cms_speakers.spkr_image2_alt, 
-	cms_speakers.spkr_image2, 
-	cms_speakers.spkr_image1_alt, 
-	cms_speakers.spkr_image1, 
-	cms_speakers.spkr_content, 
-	cms_speakers.spkr_heading, 
-	cms_speakers.spkr_id, 
-	schedule_title.schedule_title_id, 
-	schedule_title.schedule_date, 
-	schedule_title.schedule_title, 
-	schedule_title.friendly_date, 
-	schedule_title.publish
-FROM cms_content INNER JOIN cms_speakers ON cms_content.speaker = cms_speakers.spkr_id
-	 INNER JOIN schedule_title ON cms_content.date_time = schedule_title.schedule_title_id
-
-WHERE cms_content.publish = 'y' AND cms_content.cms_cat = 7 ORDER BY cms_content.sort_order ASC";
+$query_Recordset1 = "SELECT * FROM cms_content WHERE publish = 'y' AND cms_cat = 9";
 $Recordset1 = mysql_query($query_Recordset1, $abtaFrontConn) or die(mysql_error());
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);
@@ -111,6 +78,17 @@ if (isset($_GET['view_xml'])) {
 	echo "</recordset>";
 	die(); 
 }
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
 
+<body>
+</body>
+</html>
+<?php
 mysql_free_result($Recordset1);
 ?>

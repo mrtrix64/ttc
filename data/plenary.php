@@ -67,8 +67,7 @@ $query_Recordset1 = "SELECT cms_content.cms_id,
 	schedule_title.publish
 FROM cms_content INNER JOIN schedule_title ON cms_content.date_time = schedule_title.schedule_title_id
 
-WHERE cms_content.publish = 'y' AND cms_content.cms_cat = 8 ORDER BY cms_content.sort_order ASC";
-$Recordset1 = mysql_query($query_Recordset1, $abtaFrontConn) or die(mysql_error());
+WHERE cms_content.publish = 'y' AND cms_content.cms_cat = 8 ORDER BY cms_content.sort_order ASC";$Recordset1 = mysql_query($query_Recordset1, $abtaFrontConn) or die(mysql_error());
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);
 

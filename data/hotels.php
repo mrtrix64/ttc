@@ -36,7 +36,7 @@ $query_Recordset1 = "SELECT * FROM accom WHERE publish = 'y' ORDER BY hotel_name
 $Recordset1 = mysql_query($query_Recordset1, $abtaFrontConn) or die(mysql_error());
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);mysql_select_db($database_abtaFrontConn, $abtaFrontConn);
-$query_Recordset1 = "SELECT accomId, type, hotel_name, google_map, address, member_rates, non_member_rates, dbl_member_rates, dbl_non_member_rates, `description`, amenities, website, buddy, publish FROM accom WHERE publish = 'y' ORDER BY hotel_name ASC";
+$query_Recordset1 = "SELECT accomId, type, hotel_name, google_map, address, member_rates, non_member_rates, dbl_member_rates, dbl_non_member_rates, `description`, amenities, website, buddy, publish, image_1, image_2 FROM accom WHERE publish = 'y' ORDER BY hotel_name ASC";
 $Recordset1 = mysql_query($query_Recordset1, $abtaFrontConn) or die(mysql_error());
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);
