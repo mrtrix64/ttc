@@ -2,14 +2,14 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id = "com.dellardavies.ttc"
-        version = "6.0.3">
+        version = "7.0.0">
 <config-file platform="ios" parent="CFBundleShortVersionString">
 <string>128</string>
 </config-file>
 	<name>TTC</name>
 
 	<description>
-The Travel Convention is the UK's largest and most significant annual event for senior travel industry professionals, organised by ABTA - The UK's leading travel association. This handy App gives you everything you will need for the 2016 Convention, schedule times, session information, places, sponsor list and more...	</description>
+The Travel Convention is the UK's largest and most significant annual event for senior travel industry professionals, organised by ABTA - The UK's leading travel association. This handy App gives you everything you will need for the 2017 Convention, schedule times, session information, places, sponsor list and more...	</description>
 
 	<author href="http://thetravelconvention.com" email="support@thetravelconvention.com">
 		Colin Miller
@@ -50,8 +50,6 @@ The Travel Convention is the UK's largest and most significant annual event for 
 <!-- iPad  Spotlight and Settings Icon -->
 <icon src="icon-50.png" platform="ios" width="50" height="50" />
 <icon src="icon-50@2x.png" platform="ios" width="100" height="100" />
-
-
 
 
 <!-- Android -->
@@ -97,7 +95,8 @@ The Travel Convention is the UK's largest and most significant annual event for 
 <!--Windows Phone-->
 <splash src="splash/splash.jpg" platform="winphone" />
 
-<preference name='phonegap-version' value='cli-5.2.0' />
+<!--<preference name='phonegap-version' value='cli-5.2.0' />-->
+<preference name="phonegap-version" value="cli-6.5.0" />
 	
 	<preference name="show-splash-screen-spinner" value="true" />
 
@@ -111,6 +110,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 
 <plugin name="org.apache.cordova.network-information" source="pgb" spec="0.2.7" /-->
 
+<plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
 	
 	<!--<feature name="http://api.phonegap.com/1.0/network"/>-->
 	<access origin="*" />
