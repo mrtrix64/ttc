@@ -103,6 +103,8 @@ The Travel Convention is the UK's largest and most significant annual event for 
 	<preference name="orientation" value="portrait" />
 	
 	<preference name="DisallowOverscroll" value="true" />
+	
+	<preference name="StatusBarOverlaysWebView" value="true" />
 				
 <!--<plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay" source="pgb" spec="1.2.0" />
 
