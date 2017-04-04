@@ -10,7 +10,7 @@ $abtabackend = mysql_connect($hostname_abtabackend, $username_abtabackend, $pass
 /*$hostname_abtabackend = "internal-db.s99712.gridserver.com";
 $database_abtabackend = "db99712_abtatravel17";
 $username_abtabackend = "db99712_anne";
-$password_abtabackend = "treestump2010";
+$password_abtabackend = "Treestump17@@";
 $abtabackend = mysql_connect($hostname_abtabackend, $username_abtabackend, $password_abtabackend) or trigger_error(mysql_error(),E_USER_ERROR); */
 ?>
 <?php include('cms_screening.php'); ?>

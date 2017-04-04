@@ -116,4 +116,6 @@ The Travel Convention is the UK's largest and most significant annual event for 
 	
 	<!--<feature name="http://api.phonegap.com/1.0/network"/>-->
 	<access origin="*" />
+	
+	<allow-navigation href="http://http://e-update.co.uk/*" />
 </widget>
