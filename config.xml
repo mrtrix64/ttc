@@ -119,6 +119,8 @@ The Travel Convention is the UK's largest and most significant annual event for 
 <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
 
 <plugin name="cordova-plugin-statusbar" spec="~2.2.2" />
+
+<preference name="StatusBarOverlaysWebView" value="false" />
 	
 	<!--<feature name="http://api.phonegap.com/1.0/network"/>-->
 	
