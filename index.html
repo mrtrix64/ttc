@@ -36,22 +36,1022 @@ $(document).bind("mobileinit", function(){
 <script>
 addToHomescreen();
 </script>
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
 </head>
-
 <body>
 <div class="pagecontainer"> 
-<div data-role="page" id="the_event">
+  
+  <!--HOME-->
+<div data-role="page" id="home">
+    <div role="main" class="ui-content" id="menupage">
+      <div id="logo_container"><img src="site_images/ttc_logo_large.png" width="100%" /></div>
+<div id="menu_items">
+        <div class="buttons"><a href="#info"><img src="site_images/2017/info_button.svg" alt="Info" width="100%" /></a></div>
+        <div class="buttons"><a href="#registration"><img src="site_images/2017/registration_button.svg" alt="Registration"></a></div>
+        <div class="buttons"><a href="#schedulemenu"><img src="site_images/2017/programme_button.svg" alt="Programme"></a></div>
+        <div class="buttons"><a href="#session_list"><img src="site_images/2017/sessions_button.svg" alt="Sessions"></a></div>
+        <div class="buttons"><a href="#networking"><img src="site_images/2017/networking_button.svg" alt="Networking"></a></div>
+        <div class="buttons"><a href="#delegate_page"><img src="site_images/2017/delegates_button.svg"  alt="Delegates"></a></div>
+        <div class="buttons"><a href="#sponsors"><img src="site_images/2017/sponsors_button.svg" alt="Sponsors"></a></div>
+        <div class="buttons"><a href="#hotel_list"><img src="site_images/2017/places_button.svg" alt="Places"></a></div>
+        <div class="buttons"><a href="#app_sponsor"><img src="site_images/2017/app_sponsor_button.svg" alt="The Sponsor"></a></div>
+    </div><!--end menu_items-->
+    </div><!--end role=content-->
+    <div data-role="footer"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a></div><!--end footer-->
+  </div><!--end home-->
+    
+  <!--INFO-->
+    <div data-role="page" id="info">
+    <div data-role="header" data-position="fixed" data-theme="b"> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a>
+      <h1>Info</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#the_event">The Event</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#abta_detail">About Abta</a></li>
+        <li><a href="#contact_page">Contact Us</a></li>
+        <li><a href="#" onclick="window.open('http://twitter.com/thetravelconv','_system','location=yes', 'enableViewPortScale=yes');">Twitter</a></li>
+      </ul>
+    </div><!--end ui-content-->
+    <div data-role="footer">
+		<a href="#app_sponsor"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
+	</div><!--end footer-->
+  </div><!-- end info-->
+    
+    <!--THE EVENT-->
+    <div data-role="page" id="the_event">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>The Event</h1>
+      <a href="#info" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+
+	<div role="main" class="ui-content">
+      <div class="scraped_heading">
+        <h1>The Event</h1>
+      </div>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_the_event.php" width="100%"></iframe>
+	</div><!-- end ui-content -->
+    </div><!-- end the_event-->
+    
+    <!--DESTINATION-->
+     <div data-role="page" id="destination">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Destination</h1>
+      <a href="#info" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!-- /header -->
+
+	<div role="main" class="ui-content">
+    <div class="scraped_heading">
+        <h1>Destination</h1>
+      </div>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_destination.php" width="100%"></iframe>
+	</div><!-- end ui-content -->
+    </div><!-- end destination-->
+    
+        <!--REGISTRATION-->
+     <div data-role="page" id="registration">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Registration</h1>
+       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!-- /header -->
+
+	<div role="main" class="ui-content">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#register_now">Register Now</a></li>
+        <li><a href="#accommodation">Accommodation</a></li>
+        <li><a href="#travel">Travel</a></li>
+      </ul>
+      </div><!-- end ui-content-->
+      <div data-role="footer">
+		<a href="#app_sponsor"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
+	</div><!--end footer-->
+    </div><!-- end registration-->
+    
+    <!--REGISTER NOW-->
+     <div data-role="page" id="register_now">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Register Now</h1>
+      <a href="#registration" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!-- end header -->
+	<div role="main" class="ui-content">
+    <div class="scraped_heading">
+        <h1>Register Now</h1>
+      </div>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_registration.php" width="100%"></iframe>
+	</div><!-- end ui-content -->
+    </div><!-- end register_now-->
+    
+    <!--ACCOMMODATION-->
+     <div data-role="page" id="accommodation">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Accommodation</h1>
+      <a href="#registration" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!-- end header -->
+
+	<div role="main" class="ui-content" spry:region="dsAccommodation">
+      <ul data-role="listview">
+        <li spry:repeat="dsAccommodation"  spry:setrow="dsAccommodation"><a href="#accommodation_detail">{hotel_name}</a></li>
+      </ul>
+      </div><!-- end ui-content -->
+    </div><!-- end accommodation-->
+    
+    <!--ACCOMMODATION DETAIL-->
+  <div data-role="page" id="accommodation_detail">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Accommodation</h1>
+      <a href="#accommodation" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div spry:detailregion="dsAccommodation" role="main"  class="ui-content SpryHiddenRegion">
+      <div class="top_detail">
+        <h1>{hotel_name}</h1>
+        <h4>{address}</h4>
+      </div>
+      <div class="descriptive_text">
+      <p><strong>Single occupancy: £{member_rates}</strong><br />
+        <strong>Twin/double occupancy: £{dbl_member_rates}</strong></p>
+        <span spry:if="'{image_1}' != '' &amp;&amp; '{image_1}' != 'undefined'"><img src="http://www.thetravelconvention.com/uploads/{image_1}" width="50%" class="float" /></span>
+        <span spry:if="'{image_2}' != '' &amp;&amp; '{image_2}' != 'undefined'"><img src="http://www.thetravelconvention.com/uploads/{image_2}" width="50%" class="float" /></span>
+        <p>{description}</p>
+        <p><strong>Amenities</strong></p>
+        <p>{amenities}</p>
+        <p><a href="{website}" target="_blank" class="ui-btn ui-corner-all">Visit Website</a></p>
+        <p spry:if="'{google_map}' != ''&amp;&amp; '{google_map}' != 'undefined'"><a href="{google_map}" target="_blank" class="ui-btn ui-corner-all">View in Google Maps</a></p>
+      </div>
+    </div><!-- end ui-content -->
+  </div><!-- end accommodation-->
+    
+    <!--TRAVEL-->
+     <div data-role="page" id="travel">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Travel</h1>
+      <a href="#registration" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!-- end header -->
+
+	<div role="main" class="ui-content">
+    <div class="scraped_heading">
+        <h1>Travel</h1>
+      </div>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_travel.php" width="100%"></iframe>
+	</div><!-- end ui-content -->
+    </div><!-- end travel-->
+
+  <!--SCHEDULE MENU-->
+  <div data-role="page" id="schedulemenu">
+    <div data-role="header" data-position="fixed" data-theme="b"> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a>
+      <h1>Programme</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#day1">Monday 9 October 2017</a></li>
+        <li><a href="#day2">Tuesday 10 October 2017</a></li>
+        <li><a href="#day3">Wednesday 11 October 2017</a></li>
+      </ul>
+      </div>
+      <div id="app_sponsor_logo"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
+    </div><!--end app_sponsor_logo-->
+  </div><!-- end schedulemenu-->
+  
+  <!--SESSION LIST-->
+  <div data-role="page" id="session_list">
+    <div data-role="header" data-theme="b" data-position="fixed"> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> 
+      <h1>Sessions</h1>
+    </div><!-- end header -->
+    <div role="main" class="ui-content">
+      <ul data-role="listview" data-inset="true">
+      <li><a href="#theme">Theme</a></li>
+        <li><a href="#plenary_list">Plenary Sessions</a></li>
+        <li><a href="#specialist_list">Specialist Sessions</a></li>
+        <li><a href="#speaker_list">Speakers</a></li>
+      </ul>
+      </div><!-- end ui-content -->
+      <div id="app_sponsor_logo"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
+    </div><!--end app_sponsor_logo-->
+  </div><!--end session_list-->
+  
+  <!--THEME-->
+     <div data-role="page" id="theme">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Theme</h1>
+      <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!-- end header -->
+	<div role="main" class="ui-content">
+    <div class="scraped_heading">
+        <h1>Theme</h1>
+      </div>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_business_theme.php" width="100%"></iframe>
+	</div><!-- end ui-content -->
+    <div data-role="footer">
+		<a href="#app_sponsor"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
+	</div><!--end footer-->
+    </div><!-- end theme-->
+  
+  <!-- START OF PLENARY BLOCK -->
+  <div data-role="page" id="plenary_list">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Plenary Sessions</h1>
+      <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <ul data-role="listview">
+        <li data-role="list-divider">Day One (Monday 9 October)</li>
+        <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>
+        <li data-role="list-divider">Day Two (Tuesday 10 October)</li>
+        <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>
+        <li data-role="list-divider">Day Three (Wednesday 11 October)</li>
+        <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a> 
+      </ul>
+    </div>
+  </div><!--end plenary_list-->
+  
+  <!-- PLENARY DETAIL-->
+  <div data-role="page" id="plenary_detail">
+    <div data-role="header" data-theme="b">
+      <h1>Plenary Sessions</h1>
+      <a href="#plenary_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div class="top_detail" >
+        <h1>{cms_heading}</h1>
+        <h3>{friendly_date} - {time}</h3>
+      </div>
+      <div class="descriptive_text">
+      <p class="speakers">Speaker(s)</p>
+      <a spry:if="'{speaker1_name}' != '' &amp;&amp; '{speaker1_name}' != 'undefined'" href="#plenary_speaker1_detail" class="ui-btn ui-corner-all">{speaker1_name} >></a>
+      <a  spry:if="'{speaker2_name}' != '' &amp;&amp; '{speaker2_name}' != 'undefined'" href="#plenary_speaker2_detail" class="ui-btn ui-corner-all">{speaker2_name} >></a><a spry:if="'{speaker3_name}' != '' &amp;&amp; '{speaker3_name}' != 'undefined'" href="#plenary_speaker3_detail" class="ui-btn ui-corner-all">{speaker3_name} >></a>
+      <a spry:if="'{speaker4_name}' != '' &amp;&amp; '{speaker4_name}' != 'undefined'" href="#plenary_speaker4_detail" class="ui-btn ui-corner-all">{speaker4_name} >></a>
+      <a spry:if="'{speaker5_name}' != '' &amp;&amp; '{speaker5_name}' != 'undefined'" href="#plenary_speaker5_detail" class="ui-btn ui-corner-all">{speaker1_name} >></a>
+        <p>{cms_content}</p>
+      </div>
+    </div>
+  </div><!--end plenary_detail-->
+  
+  <!-- PLENARY SPEAKER 1 DETAIL -->
+  <div data-role="page" id="plenary_speaker1_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker1_img}' != '' &amp;&amp; '{speaker1_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker1_img}" alt="{speaker1_name}" width="75" height="95" border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail">
+        <img src="head.png" alt="{speaker1_name}" width="75" height="95" border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker1_desc}</p>
+      </div>
+    </div>
+  </div><!--end plenary_speaker1_detail-->
+  
+    <!-- PLENARY SPEAKER 2 DETAIL -->
+  <div data-role="page" id="plenary_speaker2_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker2_img}' != '' &amp;&amp; '{speaker2_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker2_img}" alt="{speaker2_name}" width="75" height="95" border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker2_name}" width="75" height="95" border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker2_desc}</p>
+      </div>
+    </div>
+  </div><!--end plenary_speaker2_detail-->
+  
+      <!-- PLENARY SPEAKER 3 DETAIL -->
+  <div data-role="page" id="plenary_speaker3_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker3_img}' != '' &amp;&amp; '{speaker3_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker3_img}" alt="{speaker3_name}" width="75" height="95" border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker3_name}" width="75" height="95" border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker3_desc}</p>
+      </div>
+    </div>
+  </div><!--end plenary_speaker3_detail-->
+  
+  <!-- PLENARY SPEAKER 4 DETAIL -->
+  <div data-role="page" id="plenary_speaker4_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker4_img}' != '' &amp;&amp; '{speaker4_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker4_img}" alt="{speaker4_name}" width="75" height="95" border="0">
+          <h1>{speaker4_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker4_name}" width="75" height="95" border="0">
+          <h1>{speaker4_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker4_desc}</p>
+      </div>
+    </div>
+  </div><!--end plenary_speaker4_detail-->
+  
+  <!-- PLENARY SPEAKER 5 DETAIL -->
+  <div data-role="page" id="plenary_speaker5_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#plenary_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker5_img}' != '' &amp;&amp; '{speaker5_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker5_img}" alt="{speaker5_name}" width="75" height="95" border="0">
+          <h1>{speaker5_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker5_name}" width="75" height="95" border="0">
+          <h1>{speaker5_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker5_desc}</p>
+      </div>
+    </div>
+  </div><!--end plenary_speaker5_detail-->
+  
+  <!-- START OF SPECIALIST SESSIONS BLOCK -->
+  <div data-role="page" id="specialist_list">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Specialist Sessions</h1>
+      <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+      <ul data-role="listview">
+        <li data-role="list-divider">Day One (Monday 9th October)</li>
+        <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a>
+        <li data-role="list-divider">Day Two (Tuesday 10th October)</li>
+        <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a>
+        <li data-role="list-divider">Day Three (Wednesday 11th October)</li>
+        <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a> 
+      </ul>
+     </div>
+  </div><!--end specialist_list-->
+  
+  <!-- SPECIALIST SESSIONS DETAIL-->
+  <div data-role="page" id="specialist_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Specialist Sessions</h1>
+      <a href="#specialist_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+      <div class="top_detail" >
+        <h1>{cms_heading}</h1>
+        <h3>{friendly_date} - {time}</h3>
+      </div>
+      <div class="descriptive_text">
+      <p class="speakers">Speaker(s)</p>
+      <a spry:if="'{speaker1_name}' != '' &amp;&amp; '{speaker1_name}' != 'undefined'" href="#specialist_speaker1_detail" class="ui-btn ui-corner-all">{speaker1_name} >></a>
+      <a  spry:if="'{speaker2_name}' != '' &amp;&amp; '{speaker2_name}' != 'undefined'" href="#specialist_speaker2_detail" class="ui-btn ui-corner-all">{speaker2_name} >></a>
+      <a spry:if="'{speaker3_name}' != '' &amp;&amp; '{speaker3_name}' != 'undefined'" href="#specialist_speaker3_detail" class="ui-btn ui-corner-all">{speaker3_name} >></a>
+      <a spry:if="'{speaker4_name}' != '' &amp;&amp; '{speaker4_name}' != 'undefined'" href="#specialist_speaker4_detail" class="ui-btn ui-corner-all">{speaker4_name} >></a>
+      <a spry:if="'{speaker5_name}' != '' &amp;&amp; '{speaker5_name}' != 'undefined'" href="#specialist_speaker5_detail" class="ui-btn ui-corner-all">{speaker5_name} >></a>
+        <p>{cms_content}</p>
+      </div>
+    </div>
+  </div><!--end specialist_detail -->
+  
+  <!-- SPECIALIST SPEAKER 1 DETAIL -->
+  <div data-role="page" id="specialist_speaker1_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#specialist_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker1_img}' != '' &amp;&amp; '{speaker1_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker1_img}" alt="{speaker1_name}" width="75" height="95" border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker1_name}" width="75" height="95" border="0">
+          <h1>{speaker1_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker1_desc}</p>
+      </div>
+    </div>
+  </div><!--end specialist_speaker1_detail-->
+  
+  <!-- SPECIALIST SPEAKER 2 DETAIL -->
+  <div data-role="page" id="specialist_speaker2_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#specialist_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker2_img}' != '' &amp;&amp; '{speaker2_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker2_img}" alt="{speaker2_name}" width="75" height="95"  border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker2_name}" width="75" height="95" border="0">
+          <h1>{speaker2_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker2_desc}</p>
+      </div>
+    </div>
+  </div><!--end specialist_speaker2_detail-->
+  
+  <!-- SPECIALIST SPEAKER 3 DETAIL -->
+  <div data-role="page" id="specialist_speaker3_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#specialist_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker3_img}' != '' &amp;&amp; '{speaker3_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker3_img}" alt="{speaker3_name}" width="75" height="95"  border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker3_name}" width="75" height="95" border="0">
+          <h1>{speaker3_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker3_desc}</p>
+      </div>
+    </div>
+  </div><!--end specialist_speaker3_detail-->
+  
+  <!-- SPECIALIST SPEAKER 4 DETAIL -->
+  <div data-role="page" id="specialist_speaker4_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#specialist_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker4_img}' != '' &amp;&amp; '{speaker4_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker4_img}" alt="{speaker4_name}" width="75" height="95"  border="0">
+          <h1>{speaker4_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker4_name}" width="75" height="95" border="0">
+          <h1>{speaker4_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker4_desc}</p>
+      </div>      
+    </div>
+  </div><!--end specialist_speaker4_detail-->
+  
+    <!-- SPECIALIST SPEAKER 5 DETAIL -->
+  <div data-role="page" id="specialist_speaker5_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Speakers</h1>
+      <a href="#specialist_detail" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{speaker5_img}' != '' &amp;&amp; '{speaker5_img}' != 'undefined'" class="top_detail"> <img src="http://www.thetravelconvention.com/uploads/{speaker5_img}" alt="{speaker5_name}" width="75" height="95"  border="0">
+          <h1>{speaker5_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{speaker5_name}" width="75" height="95" border="0">
+          <h1>{speaker5_name}</h1>
+          <h2>{cms_heading}</h2>
+          <h3>{time} - {friendly_date}</h3>
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{speaker5_desc}</p>
+      </div>      
+    </div>
+  </div><!--end specialist_speaker5_detail-->
+  
+  <!--SPEAKER LIST-->
+  <div data-role="page" id="speaker_list">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all">Home</a>
+            <h1>Speakers</h1>
+ </div>
+    <div role="main" class="ui-content" spry:region="dsSpeakers">
+      <ul data-role="listview">
+        <li spry:repeat="dsSpeakers"  spry:setrow="dsSpeakers"><a href="#speaker_detail">{spkr_heading}</a></li>
+      </ul>
+      </div>
+  </div><!--end speaker_list-->
+  
+  <!--SPEAKER DETAIL-->   
+  <div  data-role="page" id="speaker_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <a href="#speaker_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> 
+            <h1>Speakers</h1>
+</div>
+    <div spry:detailregion="dsSpeakers" role="main" class="ui-content SpryHiddenRegion">
+      <div spry:choose="spry:choose">
+        <div spry:when="'{spkr_image1}' != '' &amp;&amp; '{spkr_image1}' != 'undefined'" class="top_detail"><img src="http://www.thetravelconvention.com/uploads/{spkr_image1}" alt="{spkr_heading}" width="75" height="95"  border="0">
+          <h1>{spkr_heading}</h1>
+        </div>
+        <div spry:default="spry:default" class="top_detail"> <img src="head.png" alt="{spkr_heading}" width="75" height="95" border="0">
+          <h1>{spkr_heading}</h1>
+       </div>
+      </div>
+      <div class="descriptive_text">
+        <p>{spkr_content}</p>
+      </div>      
+    </div>
+  </div><!--end speaker_detail-->
+    
+    <!--NETWORKING-->
+    <div data-role="page" id="networking">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Networking</h1>
+       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+	<div role="main" class="ui-content">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#social_events">Social Events</a></li>
+        <li><a href="#sporting_events">Sporting Events</a></li>
+        <li><a href="#activities">Activities</a></li>
+      </ul>
+      </div><!--end ui-content-->
+      <div data-role="footer">
+		<a href="#app_sponsor"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
+	</div><!--end footer--> 
+    </div><!-- end networking-->
+    
+    <!--SOCIAL EVENTS-->
+    <div data-role="page" id="social_events">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Social Events</h1>
+      <a href="#networking" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div role="main" class="ui-content" spry:region="dsSocial">
+      <ul data-role="listview">
+        <li spry:repeat="dsSocial"  spry:setrow="dsSocial"><a href="#social_events_detail">{cms_heading}</a></li>
+      </ul>
+      </div><!-- end ui-content -->
+    </div><!-- end social_events-->
+    
+    <!--SOCIAL EVENTS DETAIL-->
+    <div data-role="page" id="social_events_detail">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Social Events</h1>
+      <a href="#social_events" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div spry:detailregion="dsSocial" role="main"  class="ui-content SpryHiddenRegion">
+<div class="top_detail">
+  <h1>{cms_heading}</h1>
+  <h3>{time}</h3>
+</div>
+<div class="descriptive_text">
+<span spry:if="'{cms_image1}' != '' &amp;&amp; '{cms_image1}' != 'undefined'"><img src="http://www.thetravelconvention.com/uploads/{cms_image1}" width="30%" class="float" /></span>
+        <p>{cms_content}</p>
+      </div>
+    </div><!-- end ui-content -->
+  </div><!-- end social_events_detail-->
+    
+    <!--SPORTING EVENTS-->
+    <div data-role="page" id="sporting_events">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sporting Events</h1>
+      <a href="#networking" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div role="main" class="ui-content" spry:region="dsSporting">
+      <ul data-role="listview">
+        <li spry:repeat="dsSporting"  spry:setrow="dsSporting"><a href="#sporting_events_detail">{cms_heading}</a></li>
+      </ul>
+      </div><!-- end ui-content -->
+    </div><!-- end sporting_events-->
+    
+    <!--SPORTING EVENTS DETAIL-->
+    <div data-role="page" id="sporting_events_detail">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sporting Events</h1>
+      <a href="#sporting_events" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div spry:detailregion="dsSporting" role="main"  class="ui-content SpryHiddenRegion">
+<div class="top_detail">
+  <h1>{cms_heading}</h1>
+  <h3>{time}</h3>
+</div>
+<div class="descriptive_text">
+<span spry:if="'{cms_image1}' != '' &amp;&amp; '{cms_image1}' != 'undefined'"><img src="http://www.thetravelconvention.com/uploads/{cms_image1}" width="30%" class="float" /></span>
+        <p>{cms_content}</p>
+      </div>
+    </div><!-- end ui-content -->
+  </div><!-- end social_events_detail-->
+    
+    <!--ACTIVITIES-->
+    <div data-role="page" id="activities">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Activities</h1>
+      <a href="#networking" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div role="main" class="ui-content" spry:region="dsActivities">
+      <ul data-role="listview">
+        <li spry:repeat="dsActivities"  spry:setrow="dsActivities"><a href="#activities_detail">{cms_heading}</a></li>
+      </ul>
+      </div><!-- /content -->
+    </div><!-- end activities-->
+    
+    <!--ACTIVITIES DETAIL-->
+    <div data-role="page" id="activities_detail">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Activities</h1>
+      <a href="#activities" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div spry:detailregion="dsActivities" role="main"  class="ui-content SpryHiddenRegion">
+    <div class="top_detail"><h1>{cms_heading}</h1>
+        <h3>{time}</h3></div>
+      <div class="descriptive_text">
+      <span spry:if="'{cms_image1}' != '' &amp;&amp; '{cms_image1}' != 'undefined'"><img src="http://www.thetravelconvention.com/uploads/{cms_image1}" width="30%" class="float" /></span>
+        <p>{cms_content}</p>
+      </div>
+    </div><!-- end ui-content -->
+  </div><!-- end activities_detail-->   
+  
+  <!--DAY 1-->
+  <div data-role="page" id="day1">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Mon 9th</h1>
+      <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[2]/i);">
+        <div class="day1_time">Mon 9th at {start_time} - {end_time}</div>
+        <div class="day1Title">{title}</div>
+      </div>
+    </div>
+  </div><!--end day1-->
+  
+  <!--DAY 2-->
+  <div data-role="page" id="day2">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Tues 10th</h1>
+      <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+    <div spry:region="dsSchedule" role="main" class="ui-content SpryHiddenRegion">
+      <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[3]/i);">
+        <div class="day2_time">Tues 10th at {start_time} - {end_time}</div>
+        <div class="day2Title">{title}</div>
+      </div>
+      </div>
+  </div><!--end day2-->
+  
+  <!--DAY 3-->
+  <div data-role="page" id="day3">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Wed 11th</h1>
+      <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[4]/i);">
+        <div class="day3_time">Wed 11th at {start_time} - {end_time}</div>
+        <div class="day3Title">{title}</div>
+      </div>
+</div>
+  </div><!--end day3-->
+  
+  <!-- CONTACT PAGE -->
+  <div data-role="page" id="contact_page">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Contact Us</h1>
+      <a href="#info" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div role="main" class="ui-content">
+    <div class="scraped_heading">
+        <h1>Contact Us</h1>
+      </div>
+    <iframe src="http://e-update.co.uk/ttc_ios/data/scrape_contact.php" width="100%"></iframe>
+      </div><!-- end ui-content -->
+  </div><!--end contact_page-->
+  
+  <!-- NEW DELEGATES LOGIN page -->
+<div data-role="page" id="delegate_page">
 <div data-role="header" data-position="fixed" data-theme="b">
-      <h1>The Event</h1></div>
-      <div role="main" class="ui-content">
-<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_the_event.php" width="100%"></iframe>
+<h1>Delegates</h1>
+<a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+<div role="main" class="ui-content">
+    <div class="scraped_heading">
+        <h1>Delegates</h1>
+      </div>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_del_list.php" width="100%"></iframe>
+	</div><!-- end ui-content -->
+<!--<div role="main" class="ui-content">
+
+<div id="theform">
+<p>To view the delegate list, please enter the email address that you have used to register with The Travel Convention.</p>
+  
+<p>Email Address:
+  <input type='text' id='txtEmail'/>
+    <input type='submit' id='btnValidate' Value='Login and View Delegates'/>
+</p>
+</div>
+
+<div id="message">
+</div>
+<div>
+<button id="clearbutton" onclick="clearStorage()">Log Out</button> 
+</div>
+
+<div id="delegate_email_view" spry:region="delegates" class="elements" data-filter="true" data-input="#divOfPs-input">
+<p class="delegatelist" spry:repeat="delegates" spry:setrow="delegates"> {Email_Address}</p>
+</div>
+</div>-->
+</div><!--end delegate_page-->
+
+<!-- NEW DELEGATES page -->
+<div data-role="page" id="delegate_list">
+<div data-role="header" data-position="fixed" data-theme="b">
+<h1>Delegates</h1>
+<a href="#delegate_page" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">Login</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+<div role="main" class="ui-content">
+<div id="attendee_sponsor"><!--Attendee List Brought to you by Intuitive--></div>
+<div id="search_area">
+<form>
+<input data-type="search" id="divOfPs-input">
+</form>
+</div>
+
+<div id="delegate_listview" spry:region="delegates" class="elements" data-filter="true" data-input="#divOfPs-input">
+<p class="delegatelist" spry:repeat="delegates" spry:setrow="delegates"> <a href="#delegate_detail"><strong>{Organization}</strong> - {First_Name} {Last_Name}</a></p>
 </div>
 </div>
-</div> 
+</div><!--end delegate_list-->
+  
+  <!-- NEW DELEGATES DETAIL page -->
+  <div data-role="page" id="delegate_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Delegates</h1>
+      
+      <a href="#delegate_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div role="main" class="ui-content">
+      <div id="delegate details">
+      <div spry:detailregion="delegates">
+      <h3>{First_Name} {Last_Name}</h3>
+      <p>Organisation: {Organization}
+        <br>
+        Position: {Position}
+      </p>
+        <br>
+        <br>
+
+      <p><a href="mailto:{Email_Address}?cc={G}&subject=I am attending The Travel Convention 2016" class="ui-btn ui-mini ui-icon-mail ui-btn-icon-right">Send {First_Name} an email </a></p>
+      </div>
+      </div>
+    </div>
+  </div><!--end delegate_detail-->
+  
+  <!-- HOTELS (PLACES) -->
+  <div data-role="page" id="hotel_list">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Places</h1>
+      <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div role="main" class="ui-content" spry:region="dsHotels">
+      <ul data-role="listview">
+        <li data-role="list-divider">Hotels</li>
+        <li spry:repeat="dsHotels" spry:test="'{type}'.match(/^[H]/i);" spry:setrow="dsHotels" ><a href="#hotel_detail">{hotel_name}</a></li>
+        <li data-role="list-divider">Venues</li>
+        <li spry:repeat="dsHotels" spry:test="'{type}'.match(/^[V]/i);" spry:setrow="dsHotels" ><a href="#hotel_detail">{hotel_name}</a></li>
+      </ul>
+      </div>
+      <div data-role="footer">
+		<a href="#app_sponsor"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
+	</div><!--end footer--> 
+  </div><!--end hotel_list-->
+  
+  <!--HOTEL DETAIL-->
+  <div data-role="page" id="hotel_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Places</h1>
+      <a href="#hotel_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsHotels" role="main"  class="ui-content SpryHiddenRegion">
+      <div class="top_detail">
+        <h1>{hotel_name}</h1>
+        <h4>{address}</h4>
+      </div>
+      <div class="descriptive_text"> 
+      <span spry:if="'{image_1}' != '' &amp;&amp; '{image_1}' != 'undefined'"><img src="http://www.thetravelconvention.com/uploads/{image_1}" width="50%" class="float" /></span>
+        <span spry:if="'{image_2}' != '' &amp;&amp; '{image_2}' != 'undefined'"><img src="http://www.thetravelconvention.com/uploads/{image_2}" width="50%" class="float" /></span>
+        <p>{description}</p>
+        <span spry:if="'{type}' != 'v' &amp;&amp; '{type}' != 'undefined'"><p><strong>Amenities</strong></p></span>
+        <p>{amenities}</p>
+<a href="#" onclick="window.open('{website}','_blank','location=yes','enableViewPortScale=yes');" class="ui-btn ui-corner-all">Visit Website</a>
+        <p spry:if="'{google_map}' != ''&amp;&amp; '{google_map}' != 'undefined'"><a href="#" onclick="window.open('{google_map}','_blank','location=yes','EnableViewPortScale=yes');" class="ui-btn ui-corner-all">View in Google Maps</a></p>
+      </div>
+    </div>
+  </div><!--end hotel_detail-->
+  
+  <!--SPONSOR PAGES-->
+  
+  <!--SPONSORS-->
+    <div data-role="page" id="sponsors">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sponsors</h1>
+       <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div role="main" class="ui-content">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#sponsor_list">Sponsor List</a></li>
+        <li><a href="#commercial_opportunities">Commercial Opportunities</a></li>
+      </ul>
+      </div><!--end ui-content-->
+      <div data-role="footer">
+		<a href="#app_sponsor"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
+	</div><!--end footer--> 
+    </div><!-- end sponsors-->
+      
+  <!--SPONSOR LIST-->
+  <div data-role="page" id="sponsor_list">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sponsors</h1>
+      <a href="#sponsors" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a></div>
+    <div spry:region="dsSponsors" role="main"  class="ui-content SpryHiddenRegion">
+      <ul data-role="listview">
+        <li data-role="list-divider">A</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[A]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">B</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[B]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">C</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[C]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">D</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[D]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">E</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[E]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">F</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[F]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">G</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[G]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">H</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[H]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">I</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[I]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">J</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[J]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">K</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[K]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">L</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[L]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">M</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[M]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">N</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[N]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">O</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[O]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">P</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[P]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">Q</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[Q]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">R</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[R]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">S</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[S]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">T</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[T]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">U</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[U]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">V</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[V]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">W</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[W]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">X</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[X]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">Y</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[Y]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+        <li data-role="list-divider">Z</li>
+        <li spry:repeat="dsSponsors" spry:test="'{exhibitor_name}'.match(/^[Z]/i);" spry:setrow="dsSponsors" ><a href="#sponsor_detail">{exhibitor_name}</a></li>
+      </ul>
+      </div>
+  </div><!--end sponsor_list-->
+  
+  <!--SPONSOR DETAIL-->
+  <div data-role="page" id="sponsor_detail">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sponsors</h1>
+      <a href="#sponsor_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
+    <div spry:detailregion="dsSponsors" role="main"  class="ui-content SpryHiddenRegion">
+      <div spry:choose="dsSponsors">
+        <div spry:when="'{client_image}' != '' &amp;&amp; '{client_image}' != 'undefined'" class="top_detail"> 
+          <img src="http://www.thetravelconvention.com/uploads/{client_image}" alt="{exhibitor_name}" width="30%">
+</div>
+        <div spry:default="spry:default" class="top_detail"> 
+          <h1>{exhibitor_name}</h1> 
+        </div>
+      </div>
+      <div class="descriptive_text">
+        <h3>{exhibitor_name}</h3>
+        <p>{description}</p>
+        <p spry:if="'{website}' != 'http://www.'&amp;&amp; '{website}' != 'undefined'"><a href="#" onclick="window.open('{website}','_system','location=yes','enableViewPortScale=yes');" class="ui-btn ui-corner-all">Visit Website</a></p>
+      </div>
+    </div>
+  </div><!--end sponsor_detail-->
+  
+  <!--COMMERCIAL OPPORTUNITES-->
+    <div data-role="page" id="commercial_opportunities">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Commercial Opportunites</h1>
+      <a href="#sponsors" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div role="main" class="ui-content">
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#sponsorship">Sponsorship</a></li>
+        <li><a href="#advertising">Advertising</a></li>
+      </ul></div><!-- end ui-content -->
+    </div><!-- end commercial_opportunities-->
+    
+    <!--SPONSORSHIP-->
+    <div data-role="page" id="sponsorship">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Sponsorship</h1>
+      <a href="#commercial_opportunities" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div role="main" class="ui-content">
+    <div class="scraped_heading">
+        <h1>Sponsorship</h1>
+      </div>
+    <iframe src="http://e-update.co.uk/ttc_ios/data/scrape_sponsorship.php" width="100%"></iframe>
+      </div><!-- end ui-content -->
+    </div><!-- end sponsorship-->
+    
+    <!--ADVERTISING-->
+    <div data-role="page" id="advertising">
+	<div data-role="header" data-position="fixed" data-theme="b">
+      <h1>Advertising</h1>
+      <a href="#commercial_opportunities" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+	<div role="main" class="ui-content">
+    <div class="scraped_heading">
+        <h1>Advertising</h1>
+      </div>
+    <iframe src="http://e-update.co.uk/ttc_ios/data/scrape_advertising.php" width="100%"></iframe>
+      </div><!-- end ui-content -->
+    </div><!-- end advertising-->
+    
+  
+  <!--APP SPONSOR-->
+  <div data-role="page" id="app_sponsor">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>App Sponsor</h1>
+    <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+    <div role="main" class="ui-content">
+      <div class="top_detail"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%" alt="Traveltek">      
+</div><!--end top_detail--> 
+      <div class="descriptive_text">
+      <p><strong>About Traveltek </strong></p>
+      <p>Traveltek is widely recognised as one of the world’s leading travel technology providers. A pioneer in its field, the company has been delivering cutting-edge solutions to travel agents, tour operators and wholesalers for almost two decades.</p>
+      <p>The Glasgow-headquartered company, which has offices in the Midlands, Sydney, Miami and Dubai, offers a comprehensive range of finely-tuned products that meet the unique needs of the global travel trade, helping companies remain top of their game in today’s fiercely competitive market place.</p>
+      <p>Traveltek’s unrivalled portfolio features dynamic packaging solutions; consumer-facing websites; integrated booking platforms for staff and clients; back-office systems that produce bookings reports and client documentation; a CRM to manage clients and enquiries; a tour operating platform that controls pricing and distributes contracts; and an API that connects travel companies to a global database of leading travel suppliers. </p>
+      <p>Traveltek is the industry’s leading provider of cruise booking solutions, empowering the trade to hand-pick every component of a customised cruise itinerary and sell it as one package. </p>
+      <p>Named the ‘World Leading Dynamic Packaging Solutions Provider’ at the World Travel Awards in 2014 and 2015, Traveltek offers its valued travel partners bespoke solutions that help them work smarter, improve their bottom line and enhance customer experience and retention. </p>
+      <a href="#" onclick="window.open('http://www.traveltek.net','_blank','location=yes','enableViewPortScale=yes');" class="ui-btn ui-corner-all">Visit Website</a>
+           </div><!--end descriptive_text-->
+    </div><!--end ui-content-->
+  </div><!--end app_sponsor-->
+ 
+  <!--  OFFLINE -->
+<div data-role="page" id="offline">
+    <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>OFFLINE</h1>
+    </div><!--end header-->
+    <div role="main" class="ui-content">
+    <div id="offline">You have slow, or no internet connection. Please quit the App, connect to the internet and relaunch.</div>
+      </div><!--ed ui-content-->
+  </div><!--end offline-->
+
+<!--ABTA PAGE-->
+  <div data-role="page" id="abta_detail">
+     <div data-role="header" data-position="fixed" data-theme="b">
+      <h1>ABTA</h1>
+      <a href="#info" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
+    <div role="main" class="ui-content">
+      <div class="top_detail"><img src="abta.gif" alt="ABTA" width="145" height="78"></div>
+      <div class="descriptive_text">
+        <p>ABTA has been a trusted travel brand for over 65 years. Our purpose is to help our Members to grow their businesses successfully and sustainably, and to help their customers travel with confidence.</p>
+        <p>The ABTA brand stands for support, protection and expertise. This means consumers have confidence in ABTA and a strong trust in ABTA Members. These qualities are core to us as they ensure that holidaymakers remain confident in the holiday products that they buy from our Members. </p>
+        <p>We help our Members and their customers navigate through today's changing travel landscape by raising standards in the industry; offering schemes of financial protection; providing an independent complaints resolution service should something go wrong; giving guidance on issues from sustainability to health and safety and by presenting a united voice to government to ensure the industry and the public get a fair deal.</p>
+        <p>ABTA currently has nearly 1,200 Members, with a combined annual UK turnover exceeding £33 billion. For more details about what we do, what being an ABTA Member means and how we help the British public travel with confidence visit <a href="http://www.abta.com" target="_blank">www.abta.com</a>.</p>
+        <p><strong>
+          Would you like to know more about ABTA? </strong></p>
+        <p>
+          Have you ever thought about how you can receive more services from ABTA or wanted to meet the ABTA team face to face to discuss your business needs? </p>
+        <p>They will have a small team of staff to meet you during the Convention. You can either drop by or pre-book an appointment by sending an email to <a href="mailto:membersinfo@abta.co.uk">membersinfo@abta.co.uk</a>.</p>
+<a href="#" onclick="window.open('http://www.abta.com/home','_blank','location=yes','enableViewPortScale=yes');" class="ui-btn ui-corner-all">Visit Website</a>      </div><!--end descriptive_text-->
+    </div><!--end ui-content-->
+  </div><!--end abta_detail-->
+    
+</div><!--END PAGECONTAINER-->
 </body>
 </html>
