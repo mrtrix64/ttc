@@ -244,7 +244,8 @@ img.app_sponsor_logo_home {
 #the_event .ui-footer, #the_event .ui-footer a.ui-link, #the_event .ui-footer a.ui-btn, #the_event .ui-footer a.ui-shadow,
 #day1 .ui-footer, #day1 .ui-footer a.ui-link, #day1 .ui-footer a.ui-btn, #day1 .ui-footer a.ui-shadow,
 #day2 .ui-footer, #day2 .ui-footer a.ui-link, #day2 .ui-footer a.ui-btn, #day2 .ui-footer a.ui-shadow,
-#day3 .ui-footer, #day3 .ui-footer a.ui-link, #day3 .ui-footer a.ui-btn, #day3 .ui-footer a.ui-shadow  {
+#day3 .ui-footer, #day3 .ui-footer a.ui-link, #day3 .ui-footer a.ui-btn, #day3 .ui-footer a.ui-shadow,
+#theme .ui-footer, #theme .ui-footer a.ui-link, #theme .ui-footer a.ui-btn, #theme .ui-footer a.ui-shadow  {
 	border: none;
 	text-shadow: none;
 	margin:0;
