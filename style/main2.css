@@ -420,8 +420,15 @@ p.speakers {
 }
 
 /*--iframes with scraped content--*/
+iframe {
+	width: 100%;
+	background-color: #fff;
+	min-height: 700px;
+	margin: 20px 0px 20px 0px;
+}
+	
 
-.full-screen-preview {
+/*.full-screen-preview {
             height: 100%;
             padding: 0px;
             margin: 0px;
@@ -439,7 +446,7 @@ p.speakers {
             min-width: 100%;
             -webkit-overflow-scrolling: touch;
             height: 100% !important
-        }
+        }*/
 
 div.scraped_heading {
 	-moz-box-shadow: 3px 3px 10px #666;

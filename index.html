@@ -29,23 +29,6 @@ $(document).bind("mobileinit", function(){
 
 <script type="text/javascript" src="delegates.js"></script>
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-<script>
-        //function to fix height of iframe!
-        var calcHeight = function () {
-            var headerDimensions = $('.preview__header').height();
-            $('.full-screen-preview__frame').height($(window).height() - headerDimensions);
-        }
-
-        $(document).ready(function () {
-            calcHeight();
-        });
-
-        $(window).resize(function () {
-            calcHeight();
-        }).load(function () {
-            calcHeight();
-        });
-    </script>
 <link href="SpryAssets/SpryStackedContainers.css" rel="stylesheet" type="text/css">
 <link href="style/main2.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="style/addtohomescreen.css">
@@ -105,7 +88,7 @@ addToHomescreen();
       <div class="scraped_heading">
         <h1>The Event</h1>
       </div>
-		<iframe class="full-screen-preview__frame" src="http://e-update.co.uk/ttc_ios/data/scrape_the_event.php" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_the_event.php"></iframe>
 	</div><!-- end ui-content -->
     </div><!-- end the_event-->
     
@@ -119,7 +102,7 @@ addToHomescreen();
     <div class="scraped_heading">
         <h1>Destination</h1>
       </div>
-		<iframe class="full-screen-preview__frame" src="http://e-update.co.uk/ttc_ios/data/scrape_destination.php" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+		<iframe  src="http://e-update.co.uk/ttc_ios/data/scrape_destination.php" ></iframe>
 	</div><!-- end ui-content -->
     </div><!-- end destination-->
     
@@ -150,7 +133,7 @@ addToHomescreen();
     <div class="scraped_heading">
         <h1>Register Now</h1>
       </div>
-		<iframe class="full-screen-preview__frame" src="http://e-update.co.uk/ttc_ios/data/scrape_registration.php" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_registration.php"></iframe>
 	</div><!-- end ui-content -->
     </div><!-- end register_now-->
     
@@ -201,7 +184,7 @@ addToHomescreen();
     <div class="scraped_heading">
         <h1>Travel</h1>
       </div>
-		<iframe class="full-screen-preview__frame" src="http://e-update.co.uk/ttc_ios/data/scrape_travel.php" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_travel.php" name="preview-frame"></iframe>
 	</div><!-- end ui-content -->
     </div><!-- end travel-->
 
@@ -247,7 +230,7 @@ addToHomescreen();
     <div class="scraped_heading">
         <h1>Theme</h1>
       </div>
-		<iframe class="full-screen-preview__frame" src="http://e-update.co.uk/ttc_ios/data/scrape_business_theme.php" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_business_theme.php"></iframe>
 	</div><!-- end ui-content -->
     <div data-role="footer">
 		<a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
@@ -756,7 +739,7 @@ addToHomescreen();
     <div class="scraped_heading">
         <h1>Contact Us</h1>
       </div>
-    <iframe class="full-screen-preview__frame" src="http://e-update.co.uk/ttc_ios/data/scrape_contact.php" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+    <iframe src="http://e-update.co.uk/ttc_ios/data/scrape_contact.php"></iframe>
       </div><!-- end ui-content -->
   </div><!--end contact_page-->
   
@@ -769,7 +752,7 @@ addToHomescreen();
     <div class="scraped_heading">
         <h1>Delegates</h1>
       </div>
-		<iframe class="full-screen-preview__frame" src="http://e-update.co.uk/ttc_ios/data/scrape_del_list.php" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_del_list.php"></iframe>
 	</div><!-- end ui-content -->
 <!--<div role="main" class="ui-content">
 
@@ -1000,7 +983,7 @@ addToHomescreen();
     <div class="scraped_heading">
         <h1>Sponsorship</h1>
       </div>
-    <iframe class="full-screen-preview__frame" src="http://e-update.co.uk/ttc_ios/data/scrape_sponsorship.php" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+    <iframe src="http://e-update.co.uk/ttc_ios/data/scrape_sponsorship.php"></iframe>
       </div><!-- end ui-content -->
     </div><!-- end sponsorship-->
     
@@ -1013,7 +996,7 @@ addToHomescreen();
     <div class="scraped_heading">
         <h1>Advertising</h1>
       </div>
-    <iframe class="full-screen-preview__frame" src="http://e-update.co.uk/ttc_ios/data/scrape_advertising.php" name="preview-frame" frameborder="0" noresize="noresize"></iframe>
+    <iframe src="http://e-update.co.uk/ttc_ios/data/scrape_advertising.php"></iframe>
       </div><!-- end ui-content -->
     </div><!-- end advertising-->
     
