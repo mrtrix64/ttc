@@ -419,11 +419,27 @@ p.speakers {
 	font-weight:bold;
 }
 
-iframe {
-	border: none;
-	width:100%;
-	margin: 20px 0px 10px 0px;
-}
+/*--iframes with scraped content--*/
+
+.full-screen-preview {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden
+        }
+        
+.full-screen-preview__frame {
+            width: 100%;
+            background-color: #fff;
+			margin: 20px 0px 20px 0px;
+        }
+        
+.full-screen-preview__frame.-ios-fix {
+            width: 10px;
+            min-width: 100%;
+            -webkit-overflow-scrolling: touch;
+            height: 100% !important
+        }
 
 div.scraped_heading {
 	-moz-box-shadow: 3px 3px 10px #666;
@@ -540,10 +556,6 @@ p.mainsite {
 
 @media only screen
 and (min-width: 1025px) {
-iframe {
-	min-height: 700px;
-	
-}
 p.mainsite {
 	margin: 0;
 	padding; 0;
