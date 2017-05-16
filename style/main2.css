@@ -123,7 +123,7 @@ padding: 0px 8px;
 .top_detail h1 {
 	color: #b80f28;
 	font-size: 20px;
-	padding: 0;
+	padding: 0px 20px 0px 0px;
 	margin: 0;
 	word-wrap: break-word;
 }

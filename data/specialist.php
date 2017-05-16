@@ -32,39 +32,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 
 mysql_select_db($database_abtaFrontConn, $abtaFrontConn);
-$query_Recordset1 = "SELECT cms_content.cms_id, 
-	cms_content.cms_heading, 
-	cms_content.cms_content, 
-	cms_content.cms_image1, 
-	cms_content.cms_image1_alt, 
-	cms_content.cms_image2, 
-	cms_content.cms_image2_alt, 
-	cms_content.cms_cat, 
-	cms_content.publish, 
-	cms_content.sort_order, 
-	cms_content.advertising, 
-	cms_content.speaker1_name,
-	cms_content.speaker1_desc,
-	cms_content.speaker1_img,
-	cms_content.speaker2_name,
-	cms_content.speaker2_desc,
-	cms_content.speaker2_img,
-	cms_content.speaker3_name,
-	cms_content.speaker3_desc,
-	cms_content.speaker3_img,
-	cms_content.speaker4_name,
-	cms_content.speaker4_desc,
-	cms_content.speaker4_img,
-	cms_content.speaker5_name,
-	cms_content.speaker5_desc,
-	cms_content.speaker5_img,
-	cms_content.date_time, 
-	cms_content.time, 
-	schedule_title.schedule_title_id, 
-	schedule_title.schedule_date, 
-	schedule_title.schedule_title, 
-	schedule_title.friendly_date, 
-	schedule_title.publish
+$query_Recordset1 = "SELECT *
 FROM cms_content INNER JOIN cms_speakers ON cms_content.speaker = cms_speakers.spkr_id
 	 INNER JOIN schedule_title ON cms_content.date_time = schedule_title.schedule_title_id
 

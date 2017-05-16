@@ -2,9 +2,9 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id = "com.dellardavies.ttc"
-        version = "7.0.3">
+        version = "7.0.4">
 <config-file platform="ios" parent="CFBundleShortVersionString">
-<string>132</string>
+<string>133</string>
 </config-file>
 	<name>TTC</name>
 
