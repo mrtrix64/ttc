@@ -24,8 +24,8 @@ $(document).bind("mobileinit", function(){
 <script src="SpryAssets/SpryData.js" type="text/javascript"></script>
 <script src="webform.js" type="text/javascript"></script>
 
-<script type="text/javascript" src="externalConn.js"></script>
-<!--<script type="text/javascript" src="localConn.js"></script>-->
+<!--<script type="text/javascript" src="externalConn.js"></script>-->
+<script type="text/javascript" src="localConn.js"></script>
 
 <script type="text/javascript" src="delegates.js"></script>
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
@@ -564,7 +564,7 @@ addToHomescreen();
  </div>
     <div role="main" class="ui-content" spry:region="dsSpeakers">
       <ul data-role="listview">
-        <li spry:repeat="dsSpeakers"  spry:setrow="dsSpeakers" spry:if="'{spkr_id}' != '254'"><a spry:if="'{spkr_id}' != '254'" href="#speaker_detail">{spkr_heading}</a></li>
+       <li  spry:repeat="dsSpeakers"  spry:setrow="dsSpeakers" spry:if="'{spkr_id}' != '254'"><a spry:if="'{spkr_id}' != '254'" href="#speaker_detail">{spkr_heading}</a></li>
       </ul>
       </div>
   </div><!--end speaker_list-->
