@@ -382,8 +382,12 @@ body, html {
 }
 
 #attendee_sponsor {
-	margin-top: 15px;
 	margin-bottom: 20px;
+	-moz-box-shadow: 3px 3px 10px #666;
+	-webkit-box-shadow: 3px 3px 10px #666;
+	box-shadow: 3px 3px 10px #666;
+	background-color: #FFF;
+	border: 1px solid #999;
 }
 
 #search_area {
@@ -391,13 +395,13 @@ body, html {
 	padding: 0px;
 }
 
-#attendee_sponsor {
+/*#attendee_sponsor {
 	font-size: 13px;
 	color: #666;
 	background-color: #CCC;
 	padding: 10px;
 	border: 1px solid #666;
-}
+}*/
 
 #delegate_email_view {
 	display: none;
