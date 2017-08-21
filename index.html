@@ -24,8 +24,8 @@ $(document).bind("mobileinit", function(){
 <script src="SpryAssets/SpryData.js" type="text/javascript"></script>
 <script src="webform.js" type="text/javascript"></script>
 
-<script type="text/javascript" src="externalConn.js"></script>
-<!--<script type="text/javascript" src="localConn.js"></script>-->
+<!--<script type="text/javascript" src="externalConn.js"></script>-->
+<script type="text/javascript" src="localConn.js"></script>
 
 <script type="text/javascript" src="delegates.js"></script>
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
@@ -758,12 +758,16 @@ addToHomescreen();
 <div role="main" class="ui-content">
 
 <div id="theform">
-<p>To view the delegate list, please enter the email address that you have used to register with The Travel Convention.</p>
+<p class="mediumtext">To view the delegate list, please enter the email address (in lower case) that you have used to register with for The Travel Convention.</p>
   
 <p>Email Address:
   <input type='text' id='txtEmail'/>
     <input type='submit' id='btnValidate' Value='Login and View Delegates'/>
 </p>
+<p class="smalltext">Please note:<br>
+If you have requested for your contact details to be excluded from the app, you will not be able to access the app delegate list with your email address.<br>  Please contact 
+<a href="mailto:moreinfo@thetravelconvention.com">moreinfo@thetravelconvention.com</a>
+ for access details. If a delegate has requested privacy, you will not be able to email them via the app as the ‘to’ field will display blank.</p>
 </div>
 
 <div id="message">
@@ -792,6 +796,7 @@ addToHomescreen();
 </div>
 
 <div id="delegate_listview" spry:region="delegates" class="elements" data-filter="true" data-input="#divOfPs-input">
+<p class="mediumtext">Please note: if a delegate has requested privacy, you will not be able to email them via the app as the ‘to’ field will display blank.</p>
 <p class="delegatelist" spry:repeat="delegates" spry:setrow="delegates"> <a href="#delegate_detail"><strong>{Organization}</strong> - {First_Name} {Last_Name}</a></p>
 </div>
 </div>
