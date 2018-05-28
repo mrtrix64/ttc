@@ -32,7 +32,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 
 mysql_select_db($database_abtaFrontConn, $abtaFrontConn);
-$query_Recordset1 = "SELECT * FROM cms_content WHERE publish = 'y' AND cms_cat = 4";
+$query_Recordset1 = "SELECT * FROM cms_content WHERE publish = 'y' AND cms_cat = 4 ORDER BY sort_order ASC";
 $Recordset1 = mysql_query($query_Recordset1, $abtaFrontConn) or die(mysql_error());
 $row_Recordset1 = mysql_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysql_num_rows($Recordset1);

@@ -195,9 +195,9 @@ addToHomescreen();
     </div>
     <div role="main" class="ui-content">
       <ul data-role="listview" data-inset="true">
-        <li><a href="#day1">Monday 9 October 2017</a></li>
-        <li><a href="#day2">Tuesday 10 October 2017</a></li>
-        <li><a href="#day3">Wednesday 11 October 2017</a></li>
+        <li><a href="#day1">Monday 8 October 2018</a></li>
+        <li><a href="#day2">Tuesday 9 October 2018</a></li>
+        <li><a href="#day3">Wednesday 10 October 2018</a></li>
       </ul>
       </div>
       <div id="app_sponsor_logo"><a href="#app_sponsor"><img src="site_images/iphone6plus_menu_traveltek_base.png" width="100%"></a>
@@ -244,11 +244,11 @@ addToHomescreen();
       <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
     <div spry:region="dsPlenary" role="main"  class="ui-content SpryHiddenRegion">
       <ul data-role="listview">
-        <li data-role="list-divider">Day One (Monday 9 October)</li>
+        <li data-role="list-divider">Day One (Monday 8 October)</li>
         <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>
-        <li data-role="list-divider">Day Two (Tuesday 10 October)</li>
+        <li data-role="list-divider">Day Two (Tuesday 9 October)</li>
         <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a>
-        <li data-role="list-divider">Day Three (Wednesday 11 October)</li>
+        <li data-role="list-divider">Day Three (Wednesday 10 October)</li>
         <li spry:repeat="dsPlenary" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsPlenary" > <a href="#plenary_detail">{time} - {cms_heading}</a> 
       </ul>
     </div>
@@ -403,11 +403,11 @@ addToHomescreen();
       <a href="#session_list" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
     <div spry:region="dsSpecialist" role="main"  class="ui-content SpryHiddenRegion">
       <ul data-role="listview">
-        <li data-role="list-divider">Day One (Monday 9th October)</li>
+        <li data-role="list-divider">Day One (Monday 8th October)</li>
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[2]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a>
-        <li data-role="list-divider">Day Two (Tuesday 10th October)</li>
+        <li data-role="list-divider">Day Two (Tuesday 9th October)</li>
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[3]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a>
-        <li data-role="list-divider">Day Three (Wednesday 11th October)</li>
+        <li data-role="list-divider">Day Three (Wednesday 10th October)</li>
         <li spry:repeat="dsSpecialist" spry:test="'{date_time}'.match(/^[4]/i);" spry:setrow="dsSpecialist" > <a href="#specialist_detail">{time} - {cms_heading}</a> 
       </ul>
      </div>
@@ -695,11 +695,11 @@ addToHomescreen();
   <!--DAY 1-->
   <div data-role="page" id="day1">
     <div data-role="header" data-position="fixed" data-theme="b">
-      <h1>Mon 9th</h1>
+      <h1>Mon 8th</h1>
       <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
     <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
       <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[2]/i);">
-        <div class="day1_time">Mon 9th at {start_time} - {end_time}</div>
+        <div class="day1_time">Mon 8th at {start_time} - {end_time}</div>
         <div class="day1Title">{title}</div>
       </div>
     </div>
@@ -708,11 +708,11 @@ addToHomescreen();
   <!--DAY 2-->
   <div data-role="page" id="day2">
     <div data-role="header" data-position="fixed" data-theme="b">
-      <h1>Tues 10th</h1>
+      <h1>Tues 9th</h1>
       <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div><!--end header-->
     <div spry:region="dsSchedule" role="main" class="ui-content SpryHiddenRegion">
       <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[3]/i);">
-        <div class="day2_time">Tues 10th at {start_time} - {end_time}</div>
+        <div class="day2_time">Tues 9th at {start_time} - {end_time}</div>
         <div class="day2Title">{title}</div>
       </div>
       </div>
@@ -721,11 +721,11 @@ addToHomescreen();
   <!--DAY 3-->
   <div data-role="page" id="day3">
     <div data-role="header" data-position="fixed" data-theme="b">
-      <h1>Wed 11th</h1>
+      <h1>Wed 10th</h1>
       <a href="#schedulemenu" class="ui-btn ui-btn-b ui-icon-back ui-btn-icon-left ui-corner-all">back</a> <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
     <div spry:region="dsSchedule" role="main"  class="ui-content SpryHiddenRegion">
       <div spry:repeat="dsSchedule" spry:test="'{title_date}'.match(/^[4]/i);">
-        <div class="day3_time">Wed 11th at {start_time} - {end_time}</div>
+        <div class="day3_time">Wed 10th at {start_time} - {end_time}</div>
         <div class="day3Title">{title}</div>
       </div>
 </div>
@@ -749,13 +749,13 @@ addToHomescreen();
 <div data-role="header" data-position="fixed" data-theme="b">
 <h1>Delegates</h1>
 <a href="#home" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left ui-corner-all" >Home</a> </div>
-<!--<div role="main" class="ui-content">
+<div role="main" class="ui-content">
     <div class="scraped_heading">
         <h1>Delegates</h1>
       </div>
 		<iframe src="http://e-update.co.uk/ttc_ios/data/scrape_del_list.php"></iframe>
-	</div>-->
-<div role="main" class="ui-content">
+	</div>
+<!--<div role="main" class="ui-content">
 
 <div id="theform">
 <p class="mediumtext">To view the delegate list, please enter the email address (in lower case) that you have used to register with for The Travel Convention.</p>
@@ -779,7 +779,7 @@ If you have requested for your contact details to be excluded from the app, you 
 <div id="delegate_email_view" spry:region="delegates" class="elements" data-filter="true" data-input="#divOfPs-input">
 <p class="delegatelist" spry:repeat="delegates" spry:setrow="delegates"> {Email_Address}</p>
 </div>
-</div>
+</div>-->
 </div><!--end delegate_page-->
 
 <!-- NEW DELEGATES page -->
