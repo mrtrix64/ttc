@@ -42,7 +42,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 
 <!-- iPad -->
 <icon src="icon-72.png" platform="ios" width="72" height="72" />
-<icon src="icon72@2x.png" platform="ios" width="144" height="144" />
+<!--<icon src="icon72@2x.png" platform="ios" width="144" height="144" />-->
 
 <!-- iPhone Spotlight and Settings Icon -->
 <icon src="icon-small.png" platform="ios" width="29" height="29" />
