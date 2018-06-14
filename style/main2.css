@@ -32,7 +32,7 @@ p, h1, h2, h3 {
 	
 #home,  #schedulemenu, #session_list,  #twitter_page, 
 #contact_message_page, #qanda_desk, #day1, #day2, #day3, #day4 {
-	background: url(../site_images/test_background.png) no-repeat left top;
+	background: url(../site_images/iphone6plus_background.png) no-repeat left top;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -278,7 +278,7 @@ img.app_sponsor_logo_home {
 .noscriptmsg {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #FFF;
-	background-image: url(../site_images/test_background.png);
+	background-image: url(../site_images/iphone6plus_background.png);
 	background-repeat: no-repeat;
 	text-align: center;
 	vertical-align: middle;
