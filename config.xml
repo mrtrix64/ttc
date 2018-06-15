@@ -90,9 +90,9 @@ The Travel Convention is the UK's largest and most significant annual event for 
 
 
 
-<!--<preference name="phonegap-version" value="cli-7.0.1" />
+<preference name="phonegap-version" value="cli-7.0.1" />
 	
-	<preference name="show-splash-screen-spinner" value="true" />
+<!--	<preference name="show-splash-screen-spinner" value="true" />
 
 	<preference name="orientation" value="portrait" />
 	
