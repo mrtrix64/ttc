@@ -3,9 +3,9 @@
 	padding: 0;
 }
 /*body {
-	padding-top: constant(safe-area-inset-top); /*ios 11.0*/
-	padding-top: env(safe-area-inset-top); /*ios 11.2*/
-}*/
+	padding-top: constant(safe-area-inset-top);
+	padding-top: env(safe-area-inset-top);
+} */
 
 .red {
 	color: #b80f28;
