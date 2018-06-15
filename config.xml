@@ -87,7 +87,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 </platform>
 
 
-<preference name="phonegap-version" value="cli-7.1.0" />
+<preference name="phonegap-version" value="cli-8.0.0" />
 	
 <preference name="show-splash-screen-spinner" value="true" />
 
