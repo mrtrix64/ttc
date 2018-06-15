@@ -75,7 +75,6 @@ The Travel Convention is the UK's largest and most significant annual event for 
 
 
 <preference name="phonegap-version" value="cli-7.0.1" />
-<preference name='pgb-builder-version' value='1' />
 	
 <preference name="show-splash-screen-spinner" value="true" />
 
@@ -85,7 +84,6 @@ The Travel Convention is the UK's largest and most significant annual event for 
 
 <plugin name="cordova-plugin-network-information" spec="2.0.1" />
 
-
 <plugin name="cordova-plugin-inappbrowser" spec="3.0.0" />
 
 <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
@@ -93,12 +91,12 @@ The Travel Convention is the UK's largest and most significant annual event for 
 <preference name="StatusBarOverlaysWebView" value="false" />
 <preference name="StatusBarBackgroundColor" value="#000000" />
 
-<!--<edit-config target="UIStatusBarHidden" file="*-Info.plist" mode="overwrite" platform="ios">
+<edit-config target="UIStatusBarHidden" file="*-Info.plist" mode="overwrite" platform="ios">
   <true/>
 </edit-config>
 <edit-config target="UIViewControllerBasedStatusBarAppearance" file="*-Info.plist" mode="overwrite" platform="ios">
   <false/>
-</edit-config>-->
+</edit-config>
 	
 	<access origin="*" />
   <allow-navigation href="*" />
