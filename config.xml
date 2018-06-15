@@ -102,10 +102,10 @@ The Travel Convention is the UK's largest and most significant annual event for 
 
 <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
 
-<plugin name="cordova-plugin-statusbar" spec="~2.2.2" />
+<!--<plugin name="cordova-plugin-statusbar" spec="~2.2.2" />
 
 <preference name="StatusBarOverlaysWebView" value="false" />
-<preference name="StatusBarBackgroundColor" value="#f30a2b" />
+<preference name="StatusBarBackgroundColor" value="#f30a2b" />-->
 	
 	<access origin="*" />
   <allow-navigation href="*" />
