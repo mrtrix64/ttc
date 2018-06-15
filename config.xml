@@ -53,19 +53,6 @@ The Travel Convention is the UK's largest and most significant annual event for 
 <icon src="icon-50@2x.png" platform="ios" width="100" height="100" />
 
 
-<!-- Android -->
-<!--<icon src="ldpi.png" platform="android" qualifier="ldpi" />
-<icon src="mdpi.png" platform="android" qualifier="mdpi" />
-<icon src="hdpi.png" platform="android" qualifier="hdpi" />
-<icon src="xhdpi.png" platform="android" qualifier="xhdpi" />
-<icon src="xxhdpi.png" platform="android" qualifier="xxhdpi" />
-<icon src="fr-xxhdpi.png" platform="android" qualifier="fr-xxhdpi" />
-<icon src="xxxhdpi.png" platform="android" qualifier="xxxhdpi" />-->
-
-<!-- Windows Phone -->
-<!--<icon src="icon-48.png" platform="winphone" />
-<icon src="tileicon.png" platform="winphone" role="background" />-->
-
 <!--SPLASH-->
 <platform name="ios">
  <!-- 1334x1334 --> 
@@ -87,7 +74,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 </platform>
 
 
-<preference name="phonegap-version" value="cli-8.0.0" />
+<preference name="phonegap-version" value="cli-7.0.1" />
 	
 <preference name="show-splash-screen-spinner" value="true" />
 
@@ -102,8 +89,15 @@ The Travel Convention is the UK's largest and most significant annual event for 
 
 <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
 
-<preference name="StatusBarOverlaysWebView" value="lightcontent" />
+<preference name="StatusBarOverlaysWebView" value="false" />
 <preference name="StatusBarBackgroundColor" value="#000000" />
+
+<edit-config target="UIStatusBarHidden" file="*-Info.plist" mode="overwrite" platform="ios">
+  <true/>
+</edit-config>
+<edit-config target="UIViewControllerBasedStatusBarAppearance" file="*-Info.plist" mode="overwrite" platform="ios">
+  <false/>
+</edit-config>
 	
 	<access origin="*" />
   <allow-navigation href="*" />
