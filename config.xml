@@ -67,7 +67,7 @@ The Travel Convention is the UK's largest and most significant annual event for 
 <icon src="tileicon.png" platform="winphone" role="background" />
 
 <!--SPLASH-->
-<platform name=”ios”>
+<platform name="ios">
  <!-- 1334x1334 --> 
  <splash src="splash/Default@2x~iphone~anyany.png" />
  <!-- 750x1334 -->
