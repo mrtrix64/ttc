@@ -4,7 +4,7 @@
         id = "com.dellardavies.ttc"
         version = "8.0.0">
 <config-file platform="ios" parent="CFBundleShortVersionString">
-<string>139</string>
+<string>140</string>
 </config-file>
 	<name>TTC</name>
 
