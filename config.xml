@@ -3,9 +3,12 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id = "com.dellardavies.ttc"
         version = "8.0.0">
-<config-file platform="ios" parent="CFBundleShortVersionString">
+<!--<config-file platform="ios" parent="CFBundleShortVersionString">
 <string>140</string>
-</config-file>
+</config-file>-->
+<edit-config target="CFBundleShortVersionString" file="*-Info.plist"  mode="merge">
+<string>140</string>
+</edit-config>
 	<name>TTC</name>
 
 	<description>
