@@ -2,10 +2,10 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id = "com.dellardavies.ttc"
-        version = "8.0.5">
+        version = "8.0.6">
 
 <edit-config target="CFBundleShortVersionString" file="*-Info.plist"  mode="merge">
-<string>145</string>
+<string>146</string>
 </edit-config>
 	<name>TTC</name>
 
