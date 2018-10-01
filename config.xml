@@ -5,7 +5,7 @@
         version = "8.0.7">
 
 <edit-config target="CFBundleShortVersionString" file="*-Info.plist"  mode="merge">
-<string>147</string>
+<string>148</string>
 </edit-config>
 	<name>TTC</name>
 
